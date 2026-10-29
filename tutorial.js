@@ -73,13 +73,15 @@
   #tutCard button.pri{background:var(--accent,#B8336A);border-color:var(--accent,#B8336A);color:var(--accent-ink,#fff)}
   #tutCard .tutx{position:absolute;top:8px;right:8px;border:0;background:none;font-size:16px;line-height:1;padding:4px 6px;color:var(--fg-2,#6F6069)}
   #tutCard .tutwait{color:var(--fg-2,#6F6069);font-size:12px;font-style:italic}
-  #tutCard.done h3::after{content:' ✓';color:var(--ok,#2E7D57)}`;
+  #tutCard.done h3::after{content:' ✓';color:var(--ok,#2E7D57)}
+  .iconcolors label.tut-on,.iconcolors label.tut-on:hover{outline:2.5px solid var(--accent,#B8336A)!important;outline-offset:2px}`;
   document.head.appendChild(css);
 
-  let i = -1, snap = {}, timer = null, spot = null, card = null;
+  let i = -1, snap = {}, timer = null, spot = null, card = null, onEl = null;
   function place() {
     const s = STEPS[i]; if (!s) return;
     const el = typeof s.target === 'function' ? s.target() : s.target && $(s.target), r = el && el.getBoundingClientRect();
+    if (onEl !== el) { if (onEl) onEl.classList.remove('tut-on'); onEl = el || null; if (onEl) onEl.classList.add('tut-on'); }   // pink frame on the pointed-at control, only during the tour
     const vis = r && r.width > 0 && r.height > 0;
     if (vis) { const p = 6; Object.assign(spot.style, { display: 'block', left: r.left - p + 'px', top: r.top - p + 'px', width: r.width + 2 * p + 'px', height: r.height + 2 * p + 'px' }); }
     else spot.style.display = 'none';
@@ -123,6 +125,7 @@
   }
   function end() {
     clearInterval(timer); i = -1;
+    if (onEl) onEl.classList.remove('tut-on'); onEl = null;
     removeEventListener('resize', place); removeEventListener('scroll', place, true);
     if (spot) spot.remove(); if (card) card.remove(); spot = card = null;
   }
