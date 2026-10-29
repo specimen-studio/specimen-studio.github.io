@@ -30,10 +30,16 @@
   const hasGlow = () => tops().some(o => { let g = false; walk(o, x => { if (x.glow || x.part === 'glow') g = true; }); return g; });
   const openTab = t => { const b = $(`.rail [data-tab="${t}"]`); if (b && b.getAttribute('aria-selected') !== 'true') b.click(); };
   const search = q => { const i = $('#libSearch'); if (i) { i.focus(); } };
+  const hue = css => { const m = (css || '').match(/\d+/g); if (!m) return null; const [r, g, b] = m.slice(0, 3).map(v => +v / 255), mx = Math.max(r, g, b), mn = Math.min(r, g, b), d = mx - mn; if (d < 0.15) return null; const h = mx === r ? ((g - b) / d) % 6 : mx === g ? (b - r) / d + 2 : (r - g) / d + 4; return (h * 60 + 360) % 360; };
+  const fatSquare = () => {   // the square for the fat droplets in "Colours in this icon": by name, else the most yellow one
+    const ls = [...document.querySelectorAll('#inspector .partcolors label')]; if (!ls.length) return null;
+    return ls.find(l => /lipid|fat|droplet/i.test(l.title)) || ls.find(l => { const h = hue(getComputedStyle(l).backgroundColor); return h !== null && h >= 35 && h <= 65; }) || ls[0];
+  };
 
   /* ── steps: target = what to spotlight; wait = done when true (else a Next button); start = runs when the step opens ── */
   const STEPS = [
     { title: 'Welcome to Specimen Studio', text: 'In about 2 minutes you\'ll build a small figure: a mouse, its liver and a liver cell, with an arrow, a label and a coloured detail. You can leave at any time with ✕.' },
+    { title: 'Your work is saved in this browser', target: '.rail [data-tab="projects"]', text: 'Specimen Studio keeps your figure automatically, but <b>only in this browser on this computer</b>. Clearing the browser data, a private window or another computer won\'t have it. To keep a real copy, open <b>Figures</b> and choose <b>Save to computer</b>; later, <b>Open from computer</b> brings it back.' },
     { title: 'The gallery', target: '.rail [data-tab="gallery"]', start: () => openTab('gallery'), text: 'All icons live here, sorted by category. They\'re free to use in your figures. When you export, you get the short credit line to put under your figure.' },
     { title: 'Search for an icon', target: '#libSearch', start: () => { openTab('gallery'); search(); }, text: 'Type <b>mouse</b> in the search box.', wait: () => /mouse/i.test(($('#libSearch') || {}).value || '') },
     { title: 'Put it on the page', target: '#libBody', snap: () => ({ n: icons() }), text: 'Click the mouse icon, or drag it onto the white page.', wait: s => icons() > s.n },
@@ -41,13 +47,13 @@
     { title: 'Add a liver cell', target: '#libSearch', start: () => openTab('gallery'), snap: () => ({ n: icons() }), text: 'Search <b>steatotic hepatocyte</b> and add it: a liver cell with fat droplets.', wait: s => icons() > s.n },
     { title: 'Arrange them', target: '#stage', text: 'Drag the icons into a row: mouse → liver → cell. Pull a corner handle to resize. Click Next when you\'re happy.' },
     { title: 'Select the cell', target: '#stage', text: 'Click the liver cell once to select it. Its settings open in the panel on the right.', wait: () => !!canvas.getActiveObject() },
-    { title: 'Recolour a part', target: '#inspector', snap: () => ({ c: colours() }), text: 'In the right panel, click one of the icon\'s colours and pick a new one, for example the fat droplets. Every shade of that part changes together.', wait: s => colours() !== s.c },
+    { title: 'Recolour a part', target: () => fatSquare() || $('#inspector'), start: () => { const q = fatSquare(); if (q) q.scrollIntoView({ block: 'center' }); }, snap: () => ({ c: colours() }), text: 'In the right panel, under <b>Colours in this icon</b>, click the highlighted square (the fat droplets) and pick a new colour. All its shades change together.', wait: s => colours() !== s.c },
     { title: 'Show inflammation', target: '#inspector', text: 'Still in the right panel, scroll down to <b>Glow</b> and choose red, a quick way to mark inflammation. (Or click Next to skip.)', wait: () => hasGlow() },
     { title: 'Draw an arrow', target: '.tools [data-tool="arrow"]', snap: () => ({ n: count('connector') }), text: 'Pick the arrow tool, then drag on the page from the liver to the cell.', wait: s => count('connector') > s.n },
     { title: 'Add a label', target: '.tools [data-tool="text"]', snap: () => ({ n: count('textbox') + count('i-text') }), text: 'Pick the text tool, click under the cell and type, for example <b>Steatosis</b>.', wait: s => count('textbox') + count('i-text') > s.n },
     ...(inClaude ? [{ title: 'AI drawing (beta)', target: '.rail [data-tab="ai"]', text: 'Here Claude can draw simple schematic icons in the library style (beta: best for proteins, symbols and charts). For realistic pictures, use the gallery.' }] : []),
     { title: 'Export your figure', target: '#btnExport', text: 'Click <b>Export</b> to save it as PNG for Word or PowerPoint, SVG for Affinity or Illustrator, or PDF. The credit line for your legend is written for you.', wait: () => { const m = $('#exportModal'); return !!m && !m.hidden; } },
-    { title: 'That\'s it!', text: 'Your figure is saved in this browser as you work. Use <b>Save</b> to keep it under a name, or save it to your computer. You can rerun this tour with the <b>Tutorial</b> button at the top.' }
+    { title: 'That\'s it!', target: '#btnTutorial', text: 'Remember: your figure is only kept in this browser. Use <b>Figures → Save to computer</b> to keep a file. You can come back to this tour any time with the <b>Tutorial</b> button, highlighted here.' }
   ];
 
   /* ── look ── */
@@ -69,7 +75,7 @@
   let i = -1, snap = {}, timer = null, spot = null, card = null;
   function place() {
     const s = STEPS[i]; if (!s) return;
-    const el = s.target && $(s.target), r = el && el.getBoundingClientRect();
+    const el = typeof s.target === 'function' ? s.target() : s.target && $(s.target), r = el && el.getBoundingClientRect();
     const vis = r && r.width > 0 && r.height > 0;
     if (vis) { const p = 6; Object.assign(spot.style, { display: 'block', left: r.left - p + 'px', top: r.top - p + 'px', width: r.width + 2 * p + 'px', height: r.height + 2 * p + 'px' }); }
     else spot.style.display = 'none';
