@@ -728,7 +728,7 @@ function toast(msg, kind = '') {
 }
 const debounce = (fn, ms) => { let t; return (...a) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); }; };
 const capP = name => (window.claude && typeof window.claude.use === 'function') ? Promise.resolve(window.claude.use(name)).catch(() => null) : Promise.resolve(null);
-const caps = { sample: capP('sample'), db: capP('db'), assets: capP('assets'), downloads: capP('downloads') };
+const caps = { sample: capP('sample'), db: capP('db'), assets: capP('assets'), downloads: capP('downloads'), user: capP('user') };
 
 /* ───────────────────────── library (folder-based) ───────────────────────── */
 const LIB = { ready: false, icons: [], categories: [], templates: [], error: null };
@@ -1245,7 +1245,15 @@ function setArtboard(sz, keepView) {
 const Store = {
   db: null, assets: null, ready: false, libCbs: [], projCbs: [], lib: [], projects: [],
   async init() {
-    this.db = await caps.db; this.assets = await caps.assets; this.ready = true;
+    // Only the owner (Nuria) keeps figures and My icons in the page's store; the store's rules let nobody else read or write it.
+    // Everyone else who opens the Claude link saves privately in their own browser, like on the website (29 Oct).
+    const db = await caps.db, u = await caps.user;
+    let mine = false;
+    if (db) {
+      if (u) { try { mine = await u.isOwner(); } catch (e) { mine = false; } }
+      else { try { mine = !(await db.collection('projects').limit(1).get()).empty; } catch (e) { mine = false; } }   // no answer about the viewer: only the owner can see these rows
+    }
+    this.db = mine ? db : null; this.assets = mine ? await caps.assets : null; this.ready = true;
     if (this.db) {
       this.db.collection('library').onSnapshot(s => { this.lib = s.docs.map(d => ({ id: d.id, ...d.data() })).sort((a, b) => (b.createdAt || 0) - (a.createdAt || 0)); this.libCbs.forEach(f => f()); }, () => { });
       this.db.collection('projects').onSnapshot(s => { this.projects = s.docs.map(d => ({ id: d.id, ...d.data() })).sort((a, b) => (b.updatedAt || 0) - (a.updatedAt || 0)); this.projCbs.forEach(f => f()); }, () => { });
@@ -1318,7 +1326,7 @@ const Store = {
   }
 };
 function renderStoreNote() {
-  $('#storeNote').innerHTML = Store.cloud ? 'Figures and <b>My icons</b> are saved with this page, so they are here next time.' : 'Figures and <b>My icons</b> are saved in this browser only. Open the page in Claude to keep them with the page.';
+  $('#storeNote').innerHTML = Store.cloud ? 'Figures and <b>My icons</b> are saved with this page, so they are here next time.' : 'Figures and <b>My icons</b> are saved privately in this browser only. Use <b>Save to computer</b> to keep a copy.';
 }
 
 /* ───────────────────────── icons → objects ───────────────────────── */
@@ -4484,7 +4492,7 @@ function renderInspector() {
         <label class="small muted">Background tolerance <input type="range" id="bgTol" min="2" max="45" value="14"></label>
         <button class="btn" id="bgGo">Remove background</button>
         <label class="small muted">Colours when converting <input type="range" id="trColors" min="2" max="24" value="8"></label>
-        <button class="btn" id="traceGo">Convert to vector (rough)</button>
+        <button class="btn" id="traceGo">Convert to vector</button>
 
         <p class="small muted" style="margin:0">Works only for simple, flat icons. Pictures can stay as PNG in your figure.</p>
         <button class="btn ai-only" id="redrawGo" data-ai-action>Redraw in our style with AI</button></div>
@@ -4717,7 +4725,7 @@ function bindInspector(o) {
         const svg = traceImage(o, +$('#trColors').value); const g = await svgToObject(svg); const name = (o.name || 'Image') + ' (vector)';
         await replaceObject(o, g, name);
         toast('Converted to vector. Double-click it to recolour single parts, or Save to My icons to keep it.');
-      } catch (err) { toast(err.message || 'Could not convert this image', 'err'); b.disabled = false; b.textContent = 'Convert to vector (rough)'; }
+      } catch (err) { toast(err.message || 'Could not convert this image', 'err'); b.disabled = false; b.textContent = 'Convert to vector'; }
     });
     on('#redrawGo', 'click', async () => { const c = elementToCanvas(o._originalElement || o.getElement(), 1024); loadRef(await new Promise(r => c.toBlob(r, 'image/png')), o.name || '', ''); toast('Write what it shows, then press “Draw it in our style”'); });
     caps.sample.then(s => { const b = $('#redrawGo'); if (b && !s) { b.disabled = true; b.title = 'Needs this page open in Claude'; } });
