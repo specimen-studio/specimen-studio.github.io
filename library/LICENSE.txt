@@ -6,12 +6,15 @@ International licence (CC BY 4.0): https://creativecommons.org/licenses/by/4.0/
 
 You may use, share and adapt them, also commercially, as long as you give credit.
 
-How to credit a figure that uses these icons:
-  Figure designed by the authors using Specimen Studio (CC BY 4.0); icons created with
-  AI assistance (ChatGPT, Claude).
+Credit in a figure legend - this line is sufficient:
+  Created with Specimen Studio. Icons were generated with ChatGPT (OpenAI) and
+  Claude (Anthropic) and vectorised.
 
-How the icons were made: each icon was generated with AI image tools (ChatGPT, Claude)
-from human-written prompts, then vectorised and reviewed.
+For the methods / AI-use statement:
+  Schematic icons were obtained from the Specimen Studio icon library (CC BY 4.0).
+  They were generated with ChatGPT (OpenAI) and Claude (Anthropic) from human-written
+  prompts, then vectorised and reviewed. The authors designed and assembled the figure.
+
 Some journals restrict AI-generated images; please check your journal's AI policy.
 
 (Inside the SVG files, "license: own" is an internal tag of the Specimen Studio app

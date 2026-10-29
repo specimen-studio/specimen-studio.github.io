@@ -34,7 +34,7 @@
   /* ── steps: target = what to spotlight; wait = done when true (else a Next button); start = runs when the step opens ── */
   const STEPS = [
     { title: 'Welcome to Specimen Studio', text: 'In about 2 minutes you\'ll build a small figure: a mouse, its liver and a liver cell, with an arrow, a label and a coloured detail. You can leave at any time with ✕.' },
-    { title: 'The gallery', target: '.rail [data-tab="gallery"]', start: () => openTab('gallery'), text: 'All icons live here, sorted by category. They\'re free to use in your figures. When you export, you get the short credit line to put under your figure (CC BY 4.0).' },
+    { title: 'The gallery', target: '.rail [data-tab="gallery"]', start: () => openTab('gallery'), text: 'All icons live here, sorted by category. They\'re free to use in your figures. When you export, you get the short credit line to put under your figure.' },
     { title: 'Search for an icon', target: '#libSearch', start: () => { openTab('gallery'); search(); }, text: 'Type <b>mouse</b> in the search box.', wait: () => /mouse/i.test(($('#libSearch') || {}).value || '') },
     { title: 'Put it on the page', target: '#libBody', snap: () => ({ n: icons() }), text: 'Click the mouse icon, or drag it onto the white page.', wait: s => icons() > s.n },
     { title: 'Add the liver', target: '#libSearch', start: () => openTab('gallery'), snap: () => ({ n: icons() }), text: 'Now search <b>liver</b> and add the mouse liver the same way.', wait: s => icons() > s.n },
