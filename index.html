@@ -3436,7 +3436,7 @@ const fmtKind = o => !o ? null : isTextLeaf(o) ? 'text' : o.type === 'connector'
 const KIND_NAME = { text: 'text', arrow: 'arrow or line', label: 'shape with text', note: 'note (callout, step, …)', panel: 'titled panel', brush: 'brush stroke', shape: 'shape', icon: 'icon or picture' };
 function stampHint() {
   const h = $('#stageHint'); h.hidden = false;
-  if (tool === 'clone') h.textContent = stampSrc ? `Clone: click where a copy of “${stampSrc.name}” should go · Esc or V to stop` : 'Clone: click the item to copy first';
+  if (tool === 'clone') h.textContent = stampSrc ? `Clone: click an empty spot to place a copy of “${stampSrc.name}” · click another item to copy that instead · Shift+click to place on top · Esc or V to stop` : 'Clone: click the item to copy first';
   else h.textContent = stampSrc ? `Format painter: click any ${KIND_NAME[stampSrc.kind]} to give it the ${stampSrc.kind === 'note' ? 'style' : stampSrc.kind === 'icon' ? 'size (and, for the same icon, all its colours)' : 'size and style'} of “${stampSrc.obj.name || KIND_NAME[stampSrc.kind]}” · Esc or V to stop` : 'Format painter: click the item whose size and style you want to copy';
 }
 function stampSource(t, objs) {
@@ -3518,7 +3518,10 @@ function applyFormat(src, kind, o) {
 function stampClick(opt) {
   const e = opt.e;
   if (tool === 'clone') {
-    if (!stampSrc) { const t = pickAt(e); if (!t) { toast('Click the item to copy'); return; } stampSource('clone', [t]); stampHint(); return; }
+    // clicking an item picks it as the thing to copy; clicking empty space places a copy (Shift+click places a copy on top of an item)
+    const hit = e.shiftKey && stampSrc ? null : pickAt(e);
+    if (hit) { stampSource('clone', [hit]); stampHint(); return; }
+    if (!stampSrc) { toast('Click the item to copy'); return; }
     const p = canvas.getPointer(e), dx = p.x - stampSrc.cx, dy = p.y - stampSrc.cy;
     fabric.util.enlivenObjects(JSON.parse(JSON.stringify(stampSrc.json)), list => {
       list.forEach(o => { o.set({ left: o.left + dx, top: o.top + dy }); canvas.add(o); o.setCoords(); });
