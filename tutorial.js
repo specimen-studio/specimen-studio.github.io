@@ -31,6 +31,9 @@
   const openTab = t => { const b = $(`.rail [data-tab="${t}"]`); if (b && b.getAttribute('aria-selected') !== 'true') b.click(); };
   const search = q => { const i = $('#libSearch'); if (i) { i.focus(); } };
   const hue = css => { const m = (css || '').match(/\d+/g); if (!m) return null; const [r, g, b] = m.slice(0, 3).map(v => +v / 255), mx = Math.max(r, g, b), mn = Math.min(r, g, b), d = mx - mn; if (d < 0.15) return null; const h = mx === r ? ((g - b) / d) % 6 : mx === g ? (b - r) / d + 2 : (r - g) / d + 4; return (h * 60 + 360) % 360; };
+  // a colour really chosen in the right panel (pointing at a square only previews where that colour is, so don't count it)
+  let recoloured = false;
+  document.addEventListener('change', e => { if (e.target.matches && e.target.matches('#inspector input[type="color"]')) recoloured = true; }, true);
   const fatSquare = () => {   // the square for the fat droplets in "Colours in this icon": by name, else the most yellow one
     const ls = [...document.querySelectorAll('#inspector .partcolors label')]; if (!ls.length) return null;
     return ls.find(l => /lipid|fat|droplet/i.test(l.title)) || ls.find(l => { const h = hue(getComputedStyle(l).backgroundColor); return h !== null && h >= 35 && h <= 65; }) || ls[0];
@@ -48,7 +51,7 @@
     { title: 'Missing an icon?', target: '#iconRequest', start: () => openTab('gallery'), text: 'If you can\'t find what you need, click <b>Request an icon</b> and tell us what you\'d like. Requested icons may be added to the gallery.' },
     { title: 'Arrange them', target: '#stage', text: 'Drag the icons into a row: mouse → liver → cell. Pull a corner handle to resize. Click Next when you\'re happy.' },
     { title: 'Select the cell', target: '#stage', text: 'Click the liver cell once to select it. Its settings open in the panel on the right.', wait: () => !!canvas.getActiveObject() },
-    { title: 'Recolour a part', target: () => fatSquare() || $('#inspector'), start: () => { const q = fatSquare(); if (q) q.scrollIntoView({ block: 'center' }); }, snap: () => ({ c: colours() }), text: 'In the right panel, under <b>Colours in this icon</b>, click the highlighted square (the fat droplets) and pick a new colour. All its shades change together.', wait: s => colours() !== s.c },
+    { title: 'Recolour a part', target: () => fatSquare() || $('#inspector'), start: () => { recoloured = false; const q = fatSquare(); if (q) q.scrollIntoView({ block: 'center' }); }, text: 'In the right panel, under <b>Colours in this icon</b>, click the highlighted square (the fat droplets) and pick a new colour. All its shades change together.', wait: () => recoloured },
     { title: 'Show inflammation', target: '#inspector', text: 'Still in the right panel, scroll down to <b>Glow</b> and choose red, a quick way to mark inflammation. (Or click Next to skip.)', wait: () => hasGlow() },
     { title: 'Keep your own versions', target: () => $('#inspector [data-op="save"]') || $('#inspector'), start: () => { const b = $('#inspector [data-op="save"]'); if (b) b.scrollIntoView({ block: 'center' }); }, text: 'Like your recoloured cell? Click <b>Save to My icons</b>. It then appears in the gallery under <b>My icons</b>, ready for your next figure' + (inClaude ? '.' : ' (kept in this browser, like your figures).') },
     { title: 'Clone stamp', target: '.tools [data-tool="clone"]', text: 'Need the same item many times, like several mice in a group? Select it, pick the <b>Clone stamp</b> and click on the page: each click places a copy.' },
