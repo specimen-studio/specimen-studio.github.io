@@ -138,6 +138,7 @@ input[type=checkbox]{accent-color:var(--accent)}
 .leafedit{position:absolute;z-index:8;padding:2px 6px;border:1.5px solid var(--accent);border-radius:6px;background:var(--panel);color:var(--fg);text-align:center;box-shadow:var(--shadow);outline:none}
 .spin{width:12px;height:12px;border-radius:50%;border:2px solid var(--line-2);border-top-color:var(--accent);animation:spin .8s linear infinite;flex:none}
 @keyframes spin{to{transform:rotate(360deg)}}
+.ai-only{display:none!important}
 .howcredit{display:flex;flex-direction:column;gap:6px;padding:10px 12px;margin-bottom:8px;border-radius:8px;background:var(--accent-soft);border:1px solid var(--accent)}
 .howcredit .label{color:var(--accent);font-weight:700}
 .howcredit p{color:var(--accent);font-weight:600;font-size:13px;line-height:1.4}
@@ -384,7 +385,7 @@ body.resizing{cursor:col-resize;user-select:none}
     <button role="tab" data-tab="draw" aria-selected="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20c4-1 5-6 9-6s4 4 7 3"/><path d="m14 4 6 6-8 8H6v-6z"/></svg>Draw</button>
     <button role="tab" data-tab="colors" aria-selected="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3a9 9 0 1 0 0 18c1.4 0 2-.9 2-2 0-1.6-1.8-1.7-1.8-3.2 0-1 .8-1.8 1.8-1.8h2.5A4.5 4.5 0 0 0 21 9.5C21 5.9 17 3 12 3z"/><circle cx="7.5" cy="11" r="1.3" fill="currentColor"/><circle cx="10" cy="7" r="1.3" fill="currentColor"/><circle cx="15" cy="7" r="1.3" fill="currentColor"/></svg>Colours</button>
     <span class="railsep"></span>
-    <button role="tab" data-tab="ai" aria-selected="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg>AI draw</button>
+    <button role="tab" data-tab="ai" aria-selected="false" class="ai-only"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg>AI draw</button>
     <button role="tab" data-tab="upload" aria-selected="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V4m0 0L8 8m4-4 4 4"/><path d="M4 15v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3"/></svg>Uploads</button>
     <button role="tab" data-tab="projects" aria-selected="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>Figures</button>
   </nav>
@@ -538,7 +539,7 @@ body.resizing{cursor:col-resize;user-select:none}
         <button class="btn sm primary" id="upSrcOk" hidden style="align-self:flex-start">Place the waiting files</button>
         <input type="text" id="upCredit" placeholder="Credit line, e.g. Author, website, CC BY 4.0" hidden>
         <p class="small muted" style="margin:0">The licence travels with each icon, and the credit line for your figure legend is written automatically.</p></div>
-      <div class="note"><b>Remove background</b>, <b>Convert to vector</b> and <b>Redraw with AI</b> appear in the right panel when a picture is selected.</div>
+      <div class="note"><b>Crop</b>, <b>Remove background</b> and <b>Convert to vector</b><span class="ai-only"> and <b>Redraw with AI</b></span> appear in the right panel when a picture is selected.</div>
       <div class="sec">
         <span class="label">Free icon libraries</span>
         <div id="freeSourcesUp"></div>
@@ -594,6 +595,7 @@ body.resizing{cursor:col-resize;user-select:none}
       <button data-tool="ellipse" aria-pressed="false" title="Ellipse (E)" aria-label="Ellipse"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><ellipse cx="12" cy="12" rx="8" ry="6"/></svg></button>
       <button data-tool="clone" aria-pressed="false" title="Clone stamp (C): each click places a copy of the selected item(s)" aria-label="Clone stamp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 13V9.5a3 3 0 1 1 6 0V13"/><path d="M5 13h14v3H5z"/><path d="M6 19h12"/></svg></button>
       <button data-tool="format" aria-pressed="false" title="Format painter (F): copy size and style to items of the same kind" aria-label="Format painter"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="13" height="6" rx="1.5"/><path d="M17 6h2.5v5H11v3"/><path d="M10 14h2v7h-2z"/></svg></button>
+      <button id="toolCrop" title="Crop the selected picture or icon: drag the frame over it" aria-label="Crop"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2v16h16"/><path d="M2 6h16v16"/></svg></button>
       <span class="sep"></span>
       <button id="viewToggle" aria-pressed="false" title="Grid, rulers &amp; guides" aria-label="Grid and guides"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 9h16M4 15h16M9 4v16M15 4v16"/><rect x="4" y="4" width="16" height="16" rx="2"/></svg></button>
       <span class="sep"></span>
@@ -1401,6 +1403,8 @@ async function handleFiles(files, at, hint) {
     } catch (e) { toast(e.message || `Couldn’t open ${f.name}`, 'err'); }
     if (at) at = { x: at.x + 8 * MM, y: at.y + 8 * MM };
   }
+  // ask again for the next upload: every batch gets its own source (Nuria, 29 Oct)
+  $('#upSource').value = ''; $('#upCredit').value = ''; showSourceState();
 }
 
 /* ───────────────────────── colours ───────────────────────── */
@@ -1951,6 +1955,7 @@ function setTool(t) {
   if (t === 'clone' || t === 'format') stampHint();
   if (t !== 'select') { exitPartMode(); canvas.discardActiveObject().requestRenderAll(); }
 }
+$('#toolCrop').addEventListener('click', () => { const o = canvas.getActiveObject(); if (canCrop(o)) startCrop(o); else toast('Select a picture or an icon first, then click Crop'); });
 $$('.tools [data-tool]').forEach(b => b.addEventListener('click', () => { if (b.dataset.tool === 'draw') { switchTab('draw'); } setTool(b.dataset.tool); }));
 
 canvas.on('mouse:down', opt => {
@@ -2187,6 +2192,7 @@ function alignSel(mode) {
 /* keyboard */
 // part of a text is selected while editing: style changes go to those characters only
 // an icon that came straight from the gallery (no point suggesting it back)
+const canCrop = o => !!o && ((o.type === 'group' && !o.table && !o.labelShape) || o.type === 'image');   // same rule as the context bar
 const fromGallery = o => !!(o && o.iconId && LIB.icons.some(x => x.id === o.iconId));
 const textRanged = o => !!(o && o.isEditing && o.selectionStart !== o.selectionEnd);
 const typing = () => { const a = document.activeElement; const o = canvas.getActiveObject(); return (a && /^(INPUT|TEXTAREA|SELECT)$/.test(a.tagName) && !a.closest('.canvas-container')) || (o && o.isEditing); };
@@ -2298,7 +2304,7 @@ function renderLibrary() {
     let items = allIcons(); if (libCat !== 'all') items = items.filter(x => x.cat === libCat); if (q) items = items.filter(match);
     html += items.length ? `<div class="grid" id="libGrid">${items.map(tileHtml).join('')}</div>` :
       (libCat === 'mine' && !q ? `<div class="empty">${Store.ready ? 'Nothing saved yet. Draw icons with AI, upload SVGs or images, or select something and choose <b>Save to My icons</b>.' : 'Loading your icons…'}</div>`
-        : `<div class="empty">No icons match “${esc(q)}”.<br>Try the free libraries below, or<br><button class="btn sm" id="libDraw" style="margin-top:8px">Draw “${esc(q || 'it')}” with AI</button><br><a href="${esc(ICON_REQUEST_URL)}" target="_blank" rel="noopener" style="display:inline-block;margin-top:8px;color:var(--accent)">Can’t find it? Request this icon ↗</a></div>`);
+        : `<div class="empty">No icons match “${esc(q)}”.<br>Try the free libraries below<span class="ai-only">, or<br><button class="btn sm" id="libDraw" style="margin-top:8px">Draw “${esc(q || 'it')}” with AI</button></span>.<br><a href="${esc(ICON_REQUEST_URL)}" target="_blank" rel="noopener" style="display:inline-block;margin-top:8px;color:var(--accent)">Can’t find it? Request this icon ↗</a></div>`);
   } else {
     const recent = lsGet('ss.recent', []).map(findIcon).filter(Boolean).slice(0, 6);
     if (recent.length) html += `<div class="sec"><div class="sechead"><h3>Recently used</h3></div><div class="grid">${recent.map(tileHtml).join('')}</div></div>`;
@@ -4114,7 +4120,7 @@ function renderFreeSources(el, q) {
   el.innerHTML = `${el.id === 'freeSources' ? `<div class="sechead"><h3>Free icon libraries</h3></div><p class="small muted" style="margin:0">Not in our gallery? These libraries are free to use.</p>` : ''}
     <p class="licguide"><b>CC0</b> free, no credit needed<br><b>CC BY</b> free, credit the author in the figure legend<br><b>Public domain</b> free, no credit needed</p>
     <div class="srclist">${FREE_SOURCES.map((x, i) => `<a class="srccard" data-src="${i}" href="${esc(x.search ? x.url + encodeURIComponent((qq || 'biology') + ' svg') : x.url)}" target="_blank" rel="noopener"><b>${esc(x.name)}</b><span class="lic">${esc(x.lic)}</span><span class="what">${esc(x.mean)}</span><span class="go">${x.search && qq ? `Search “${esc(qq)}” ↗` : 'Open ↗'}</span></a>`).join('')}</div>
-    <p class="licnote">Individual icons can have their own licence, so check it on the website. After adding one, set <b>Source &amp; licence</b> in the right panel. The credit line is then added automatically on Export. You can also use <b>Remake as our own</b> to redraw it in our style, with no credit needed.</p>`;
+    <p class="licnote">Individual icons can have their own licence, so check it on the website. After adding one, set <b>Source &amp; licence</b> in the right panel. The credit line is then added automatically on Export. <span class="ai-only">You can also use <b>Remake as our own</b> to redraw it in our style, with no credit needed.</span></p>`;
 }
 document.addEventListener('click', e => {
   const a = e.target.closest && e.target.closest('.srccard'); if (!a) return;
@@ -4125,7 +4131,7 @@ function uploadSource() {
   const v = ($('#upSource') && $('#upSource').value) || 'own', L = LICENSES.find(x => x.id === v) || LICENSES[0];
   return { license: v, credit: v === 'other' ? ($('#upCredit').value.trim()) : L.credit };
 }
-// Uploads need a source before anything is placed (Nuria, 21 Oct). The choice is kept for this session.
+// Uploads need a source before anything is placed (Nuria, 21 Oct); asked again for every upload (29 Oct).
 let pendingUp = null;
 const sourceReady = () => { const v = $('#upSource').value; return !!v && (v !== 'other' || !!$('#upCredit').value.trim()); };
 const SRC_DOMAINS = [['smart.servier.com', 'servier'], ['servier.com', 'servier'], ['bioicons.com', 'bioicons-by'], ['scidraw.io', 'scidraw'], ['reactome.org', 'reactome'],
@@ -4139,7 +4145,6 @@ function showSourceState() {
   $('#upSrcChosen').hidden = !ok || !!pendingUp; $('#upSource').hidden = ok && !pendingUp; $('#upCredit').hidden = v !== 'other' || (ok && !pendingUp);
   $('#upSrcName').textContent = !L ? '' : v === 'other' ? $('#upCredit').value.trim() : v === 'own' ? 'our own' : L.label.split(' · ')[0];
   $('#upSrcOk').hidden = !(pendingUp && ok);
-  try { if (ok) sessionStorage.setItem('ss-upsrc', JSON.stringify({ v, credit: $('#upCredit').value })); } catch (e) {}
 }
 function askSource(files, at, hint) {
   pendingUp = pendingUp && !at ? { files: pendingUp.files.concat(files), at: pendingUp.at } : { files, at };
@@ -4152,7 +4157,7 @@ function askSource(files, at, hint) {
 }
 function placePending() {
   if (!pendingUp || !sourceReady()) { showSourceState(); return; }
-  const { files, at } = pendingUp; pendingUp = null; $('#upSource').classList.remove('attn'); showSourceState();
+  const { files, at } = pendingUp; pendingUp = null; $('#upSource').classList.remove('attn');
   handleFiles(files, at); closePanelIfNarrow();
 }
 function creditsOf(objs) {
@@ -4202,7 +4207,7 @@ function sourceSection(o) {
     <select class="field" id="srcSel">${LICENSES.map(l => `<option value="${l.id}" ${l.id === lic ? 'selected' : ''}>${esc(l.label)}</option>`).join('')}${lic === 'mixed' ? '<option value="mixed" selected>Combined from credited parts</option>' : ''}</select>
     ${lic === 'other' || lic === 'mixed' ? `<input type="text" id="srcCredit" value="${esc(o.credit || '')}" placeholder="Credit line, e.g. Author, source, licence">` : ''}
     <p class="small muted" style="margin:0">${o.credit ? 'Goes into the legend credit automatically.' : (o.iconId && LIB.icons.some(i => i.id === o.iconId) ? 'From the Specimen Studio icon library by Nuria López-Alcántara. No credit needed.' : 'No credit needed for this element.')}</p>
-    ${lic !== 'own' ? '<button class="btn sm" id="srcRemake" data-ai-action>Remake as our own icon with AI</button>' : ''}</div>`;
+    ${lic !== 'own' ? '<button class="btn sm ai-only" id="srcRemake" data-ai-action>Remake as our own icon with AI</button>' : ''}</div>`;
 }
 function brushSection(o) {
   const d = o.brushData, b = BRUSHES.find(x => x.id === d.brush) || BRUSHES[0], editing = pathEdit && pathEdit.obj === o;
@@ -4389,7 +4394,7 @@ function renderInspector() {
         <div class="kv">${numField('fx', 'X', r1(br.left / MM), 'mm')}${numField('fy', 'Y', r1(br.top / MM), 'mm')}
         ${numField('fw', 'W', r1(br.width / MM), 'mm')}${isText(o) ? '' : numField('fh', 'H', r1(br.height / MM), 'mm')}
         ${numField('fr', '∠', Math.round(o.angle || 0), '°', 1)}${numField('fo', 'α', Math.round((o.opacity ?? 1) * 100), '%', 5, 'min="0" max="100"')}</div>
-        <div class="btnrow"><button data-op="fliph" title="Flip horizontally">${ICON.fliph}</button><button data-op="flipv" title="Flip vertically">${ICON.flipv}</button><button data-op="front" title="Bring to front">${ICON.front}</button><button data-op="fwd" title="Bring forward">${ICON.fwd}</button><button data-op="bwd" title="Send backward">${ICON.bwd}</button><button data-op="back" title="Send to back">${ICON.back}</button></div>
+        <div class="btnrow"><button data-op="fliph" title="Flip horizontally">${ICON.fliph}</button><button data-op="flipv" title="Flip vertically">${ICON.flipv}</button><button data-op="front" title="Bring to front">${ICON.front}</button><button data-op="fwd" title="Bring forward">${ICON.fwd}</button><button data-op="bwd" title="Send backward">${ICON.bwd}</button><button data-op="back" title="Send to back">${ICON.back}</button>${canCrop(o) ? `<button data-op="crop" title="Crop: drag the frame over it">${CTXI.crop}</button>` : ''}</div>
         <div class="btnrow">${['l', 'ch', 'r', 't', 'cv', 'b'].map(k => `<button data-align="${k}" title="Align to figure: ${{ l: 'left', ch: 'centre', r: 'right', t: 'top', cv: 'middle', b: 'bottom' }[k]}">${ICON[k]}</button>`).join('')}</div></div>`;
     }
     if (isText(o)) {
@@ -4460,10 +4465,10 @@ function renderInspector() {
         <div class="presetrow">${PRESETS.map(p => `<button class="pbtn" data-ipreset="${p.id}" title="${esc(p.label)}"><span class="pthumb" data-pv="${p.id}"></span>${esc(p.label)}</button>`).join('')}</div>
         <div class="row"><span class="small muted">Tint all</span><input type="color" class="colorpick" id="tintC" value="#b8336a" aria-label="Tint colour"><button class="btn sm" id="tintGo">Apply tint</button></div></div>
       ${adjustHtml(o)}
-      ${o.brush || isBrushObj(o) ? '' : iconSet(o) ? `<div class="sec"><span class="label">AI draw: new illustration from these icons</span>
+      ${o.brush || isBrushObj(o) ? '' : iconSet(o) ? `<div class="sec ai-only"><span class="label">AI draw: new illustration from these icons</span>
         <p class="small muted" style="margin:0">Describe the illustration. Claude uses these icons as the starting point: organs stay as they are, other icons are redrawn in the same style with the changes needed, and markers or glows are added.</p>
         <textarea id="aiEditTxt" placeholder="e.g. intracranial injection of AAV into the hypothalamus: needle reaching the hypothalamus, liquid in the virus colour, a virus label on the syringe, glowing injection site"></textarea>
-        <button class="btn" id="aiEditGo" data-ai-action>AI draw</button><div class="status" id="inspAiStatus"></div></div>` : `<div class="sec"><span class="label">Edit with AI</span>
+        <button class="btn" id="aiEditGo" data-ai-action>AI draw</button><div class="status" id="inspAiStatus"></div></div>` : `<div class="sec ai-only"><span class="label">Edit with AI</span>
         <div class="seg" id="aiEditMode"><button data-v="add" aria-pressed="${aiEditMode !== 'redraw'}">Add to it</button><button data-v="redraw" aria-pressed="${aiEditMode === 'redraw'}">Redraw it</button></div>
         <p class="small muted" style="margin:0" id="aiEditHint">${aiEditMode === 'redraw' ? 'Claude redraws the whole icon. Its look will change; Ctrl+Z restores it.' : 'The icon stays exactly as it is; Claude draws only what you ask for on top of it.'}</p>
         <textarea id="aiEditTxt" placeholder="${aiEditMode === 'redraw' ? 'e.g. make it a cross-section; show it apoptotic' : 'e.g. add rod-shaped bacteria on the surface; add three lipid droplets'}"></textarea>
@@ -4474,13 +4479,15 @@ function renderInspector() {
       const os = o.getOriginalSize(), cx = o.cropX || 0, cy = o.cropY || 0;
       const crop = { l: Math.round(cx / os.width * 100), t: Math.round(cy / os.height * 100), r: Math.round((os.width - cx - o.width) / os.width * 100), b: Math.round((os.height - cy - o.height) / os.height * 100) };
       const getF = t => (o.filters || []).find(x => x && x.type === t);
-      html += `<div class="sec"><span class="label">Clean up</span>
+      html += `
+      <div class="sec"><span class="label">Clean up</span>
         <label class="small muted">Background tolerance <input type="range" id="bgTol" min="2" max="45" value="14"></label>
         <button class="btn" id="bgGo">Remove background</button>
         <label class="small muted">Colours when converting <input type="range" id="trColors" min="2" max="24" value="8"></label>
-        <button class="btn" id="traceGo">Convert to vector</button>
-        <button class="btn" id="redrawGo" data-ai-action>Redraw in our style with AI</button></div>
-      <div class="sec"><span class="label">Crop</span><div class="kv">${numField('cl', 'L', crop.l, '%', 1, 'min="0" max="95"')}${numField('cr', 'R', crop.r, '%', 1, 'min="0" max="95"')}${numField('ct', 'T', crop.t, '%', 1, 'min="0" max="95"')}${numField('cb', 'B', crop.b, '%', 1, 'min="0" max="95"')}</div></div>
+        <button class="btn" id="traceGo">Convert to vector (rough)</button>
+
+        <p class="small muted" style="margin:0">Works only for simple, flat icons. Pictures can stay as PNG in your figure.</p>
+        <button class="btn ai-only" id="redrawGo" data-ai-action>Redraw in our style with AI</button></div>
       <div class="sec"><span class="label">Adjust</span>
         <label class="small muted">Brightness <input type="range" id="adjB" min="-0.6" max="0.6" step="0.02" value="${getF('Brightness')?.brightness ?? 0}"></label>
         <label class="small muted">Contrast <input type="range" id="adjC" min="-0.6" max="0.6" step="0.02" value="${getF('Contrast')?.contrast ?? 0}"></label>
@@ -4696,6 +4703,8 @@ function bindInspector(o) {
   }
   /* image */
   if (o.type === 'image') {
+    on('#cropGo', 'click', () => startCrop(o));
+
     on('#bgGo', 'click', async e => {
       const b = e.currentTarget; b.disabled = true; b.textContent = 'Removing…';
       try { const blob = await removeBackground(o, +$('#bgTol').value); const { url, assetId } = await storeRaster(blob); await new Promise(r => o.setSrc(url, r, { crossOrigin: 'anonymous', width: o.width, height: o.height, cropX: o.cropX || 0, cropY: o.cropY || 0 })); o.set({ assetId }); canvas.requestRenderAll(); commit(); toast('Background removed. Raise the tolerance if some remains.'); }
@@ -4708,7 +4717,7 @@ function bindInspector(o) {
         const svg = traceImage(o, +$('#trColors').value); const g = await svgToObject(svg); const name = (o.name || 'Image') + ' (vector)';
         await replaceObject(o, g, name);
         toast('Converted to vector. Double-click it to recolour single parts, or Save to My icons to keep it.');
-      } catch (err) { toast(err.message || 'Could not convert this image', 'err'); b.disabled = false; b.textContent = 'Convert to vector'; }
+      } catch (err) { toast(err.message || 'Could not convert this image', 'err'); b.disabled = false; b.textContent = 'Convert to vector (rough)'; }
     });
     on('#redrawGo', 'click', async () => { const c = elementToCanvas(o._originalElement || o.getElement(), 1024); loadRef(await new Promise(r => c.toBlob(r, 'image/png')), o.name || '', ''); toast('Write what it shows, then press “Draw it in our style”'); });
     caps.sample.then(s => { const b = $('#redrawGo'); if (b && !s) { b.disabled = true; b.title = 'Needs this page open in Claude'; } });
@@ -4730,6 +4739,7 @@ function setDash(o, kind, len, gap) {
   gap = gap != null ? gap : d ? d[1] : Math.max(w * 2.2, 1.2 * PT);
   o.set('strokeDashArray', kind === 'dash' ? [len, gap] : kind === 'dot' ? [0.01, gap] : null); if (o.type !== 'connector') o.set('strokeLineCap', kind === 'dot' ? 'round' : 'butt'); }
 async function inspectorOp(op, o, btn) {
+  if (op === 'crop') { startCrop(o); return; }
   switch (op) {
     case 'del': deleteSel(); break; case 'dup': duplicateSel(); break; case 'group': groupSel(); break; case 'ungroup': ungroupSel(); break;
     case 'lock': applyLock(o, true); canvas.requestRenderAll(); commit(); renderInspector(); toast('Locked: it cannot be moved or resized. Click it and press Unlock to change it again.'); break;
@@ -5197,7 +5207,6 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape' && cpopEl) cl
 (async function boot() {
   renderFreeSources($('#freeSourcesUp'), '');
   $('#upSource').innerHTML = '<option value="" disabled selected>— Choose where these files are from —</option>' + LICENSES.map(l => `<option value="${l.id}">${esc(l.label)}</option>`).join('');
-  try { const k = JSON.parse(sessionStorage.getItem('ss-upsrc') || 'null'); if (k && LICENSES.some(l => l.id === k.v)) { $('#upSource').value = k.v; $('#upCredit').value = k.credit || ''; } } catch (e) {}
   $('#upSource').addEventListener('change', e => {
     $('#upCredit').hidden = e.target.value !== 'other';
     if (e.target.value === 'other' && !$('#upCredit').value.trim()) { showSourceState(); $('#upCredit').focus(); return; }
