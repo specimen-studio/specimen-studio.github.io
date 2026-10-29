@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1254 1254" width="1254" height="1254"><title>Survival curve</title><desc>keywords: survival curve, Kaplan-Meier, survival, time to event
+author: Nuria López-Alcántara (Specimen Studio icon library)
+license: own</desc>
+
+
+<g id="curves" fill="none" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"><path id="group_1" d="M130 150H360V230H560V320H760V400H960V470H1140" stroke="#3D74A8"/><path id="group_2" d="M130 150H260V290H400V440H520V560H660V700H820V800H960V880H1140" stroke="#B05A76"/></g>
+<g id="axes" fill="none" stroke="#3A3F4A" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"><path d="M110 70V1144H1184"/></g>
+</svg>

@@ -1,0 +1,103 @@
+{
+ "name": "In vitro experiment",
+ "group": "Study design",
+ "description": "Cells → culture → treatment → two readouts.",
+ "size": {
+  "w": 174,
+  "h": 70
+ },
+ "elements": [
+  {
+   "type": "icon",
+   "ref": "cells/hepatocyte",
+   "x": 20,
+   "y": 32,
+   "w": 20,
+   "label": "Cells"
+  },
+  {
+   "type": "arrow",
+   "from": [
+    33,
+    32
+   ],
+   "to": [
+    47,
+    32
+   ],
+   "head": "arrow",
+   "dashed": false
+  },
+  {
+   "type": "icon",
+   "ref": "lab/plate-6-well",
+   "x": 62,
+   "y": 32,
+   "w": 24,
+   "label": "Culture"
+  },
+  {
+   "type": "arrow",
+   "from": [
+    77,
+    32
+   ],
+   "to": [
+    91,
+    32
+   ],
+   "head": "arrow",
+   "dashed": false
+  },
+  {
+   "type": "icon",
+   "ref": "symbols/capsule",
+   "x": 104,
+   "y": 32,
+   "w": 14,
+   "label": "Treatment"
+  },
+  {
+   "type": "arrow",
+   "from": [
+    114,
+    26
+   ],
+   "to": [
+    134,
+    18
+   ],
+   "head": "arrow",
+   "dashed": false
+  },
+  {
+   "type": "arrow",
+   "from": [
+    114,
+    38
+   ],
+   "to": [
+    134,
+    46
+   ],
+   "head": "arrow",
+   "dashed": false
+  },
+  {
+   "type": "icon",
+   "ref": "lab/qpcr",
+   "x": 150,
+   "y": 18,
+   "w": 18,
+   "label": "Readout 1"
+  },
+  {
+   "type": "icon",
+   "ref": "lab/western-blot",
+   "x": 150,
+   "y": 48,
+   "w": 18,
+   "label": "Readout 2"
+  }
+ ]
+}

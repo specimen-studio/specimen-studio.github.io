@@ -1,0 +1,147 @@
+{
+ "name": "Study timeline",
+ "group": "Study design",
+ "description": "Time axis with four events and a measurement period.",
+ "size": {
+  "w": 174,
+  "h": 70
+ },
+ "elements": [
+  {
+   "type": "arrow",
+   "from": [
+    10,
+    40
+   ],
+   "to": [
+    166,
+    40
+   ],
+   "head": "arrow",
+   "dashed": false
+  },
+  {
+   "type": "text",
+   "text": "Time 0",
+   "x": 18,
+   "y": 47,
+   "size": 7,
+   "bold": false,
+   "align": "center"
+  },
+  {
+   "type": "text",
+   "text": "Time 1",
+   "x": 60,
+   "y": 47,
+   "size": 7,
+   "bold": false,
+   "align": "center"
+  },
+  {
+   "type": "text",
+   "text": "Time 2",
+   "x": 102,
+   "y": 47,
+   "size": 7,
+   "bold": false,
+   "align": "center"
+  },
+  {
+   "type": "text",
+   "text": "Time 3",
+   "x": 144,
+   "y": 47,
+   "size": 7,
+   "bold": false,
+   "align": "center"
+  },
+  {
+   "type": "icon",
+   "ref": "symbols/chow",
+   "x": 18,
+   "y": 26,
+   "w": 14
+  },
+  {
+   "type": "text",
+   "text": "Event 1",
+   "x": 18,
+   "y": 14,
+   "size": 7,
+   "bold": true,
+   "align": "center"
+  },
+  {
+   "type": "icon",
+   "ref": "lab/syringe",
+   "x": 60,
+   "y": 26,
+   "w": 16
+  },
+  {
+   "type": "text",
+   "text": "Event 2",
+   "x": 60,
+   "y": 14,
+   "size": 7,
+   "bold": true,
+   "align": "center"
+  },
+  {
+   "type": "icon",
+   "ref": "lab/mouse-imaging-chamber",
+   "x": 102,
+   "y": 26,
+   "w": 14
+  },
+  {
+   "type": "text",
+   "text": "Event 3",
+   "x": 102,
+   "y": 14,
+   "size": 7,
+   "bold": true,
+   "align": "center"
+  },
+  {
+   "type": "icon",
+   "ref": "organs/liver-mouse",
+   "x": 144,
+   "y": 26,
+   "w": 14
+  },
+  {
+   "type": "text",
+   "text": "Event 4",
+   "x": 144,
+   "y": 14,
+   "size": 7,
+   "bold": true,
+   "align": "center"
+  },
+  {
+   "type": "text",
+   "text": "Measurement period",
+   "x": 81,
+   "y": 58,
+   "size": 7,
+   "bold": false,
+   "align": "center",
+   "color": "#636D79"
+  },
+  {
+   "type": "arrow",
+   "from": [
+    62,
+    53
+   ],
+   "to": [
+    100,
+    53
+   ],
+   "head": "none",
+   "dashed": true
+  }
+ ]
+}

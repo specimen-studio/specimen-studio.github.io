@@ -1,0 +1,156 @@
+{
+ "name": "Graphical abstract",
+ "group": "Layouts",
+ "description": "Square layout: question, model, three key findings.",
+ "size": {
+  "w": 130,
+  "h": 130
+ },
+ "elements": [
+  {
+   "type": "text",
+   "text": "Title of your study",
+   "x": 65,
+   "y": 9,
+   "size": 11,
+   "bold": true,
+   "align": "center",
+   "w": 120
+  },
+  {
+   "type": "text",
+   "text": "One-sentence key message goes here",
+   "x": 65,
+   "y": 17,
+   "size": 8,
+   "bold": false,
+   "align": "center",
+   "w": 110,
+   "color": "#636D79"
+  },
+  {
+   "type": "icon",
+   "ref": "organs/liver-mouse",
+   "x": 65,
+   "y": 52,
+   "w": 44
+  },
+  {
+   "type": "arrow",
+   "from": [
+    65,
+    76
+   ],
+   "to": [
+    24,
+    92
+   ],
+   "head": "arrow",
+   "dashed": false
+  },
+  {
+   "type": "arrow",
+   "from": [
+    65,
+    76
+   ],
+   "to": [
+    65,
+    92
+   ],
+   "head": "arrow",
+   "dashed": false
+  },
+  {
+   "type": "arrow",
+   "from": [
+    65,
+    76
+   ],
+   "to": [
+    106,
+    92
+   ],
+   "head": "arrow",
+   "dashed": false
+  },
+  {
+   "type": "box",
+   "x": 5,
+   "y": 96,
+   "w": 38,
+   "h": 28,
+   "fill": "#EEF7F0",
+   "stroke": "#E1D6E6",
+   "dashed": false
+  },
+  {
+   "type": "box",
+   "x": 46,
+   "y": 96,
+   "w": 38,
+   "h": 28,
+   "fill": "#F4EFF8",
+   "stroke": "#E1D6E6",
+   "dashed": false
+  },
+  {
+   "type": "box",
+   "x": 87,
+   "y": 96,
+   "w": 38,
+   "h": 28,
+   "fill": "#FBEFF3",
+   "stroke": "#E1D6E6",
+   "dashed": false
+  },
+  {
+   "type": "text",
+   "text": "Finding 1",
+   "x": 24,
+   "y": 104,
+   "size": 8,
+   "bold": true,
+   "align": "center"
+  },
+  {
+   "type": "text",
+   "text": "Finding 2",
+   "x": 65,
+   "y": 104,
+   "size": 8,
+   "bold": true,
+   "align": "center"
+  },
+  {
+   "type": "text",
+   "text": "Finding 3",
+   "x": 106,
+   "y": 104,
+   "size": 8,
+   "bold": true,
+   "align": "center"
+  },
+  {
+   "type": "icon",
+   "ref": "symbols/plus",
+   "x": 24,
+   "y": 116,
+   "w": 8
+  },
+  {
+   "type": "icon",
+   "ref": "molecules/methylation",
+   "x": 65,
+   "y": 116,
+   "w": 14
+  },
+  {
+   "type": "icon",
+   "ref": "symbols/minus",
+   "x": 106,
+   "y": 116,
+   "w": 8
+  }
+ ]
+}

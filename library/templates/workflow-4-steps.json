@@ -1,0 +1,91 @@
+{
+ "name": "Experimental workflow",
+ "group": "Study design",
+ "description": "Four steps left to right with captions.",
+ "size": {
+  "w": 174,
+  "h": 70
+ },
+ "elements": [
+  {
+   "type": "text",
+   "text": "Experimental workflow",
+   "x": 87,
+   "y": 7,
+   "size": 10,
+   "bold": true,
+   "align": "center"
+  },
+  {
+   "type": "icon",
+   "ref": "animals/mouse-black-side",
+   "x": 22,
+   "y": 34,
+   "w": 26,
+   "label": "Animal model"
+  },
+  {
+   "type": "arrow",
+   "from": [
+    38,
+    34
+   ],
+   "to": [
+    52,
+    34
+   ],
+   "head": "arrow",
+   "dashed": false
+  },
+  {
+   "type": "icon",
+   "ref": "lab/syringe",
+   "x": 66,
+   "y": 34,
+   "w": 22,
+   "label": "Treatment"
+  },
+  {
+   "type": "arrow",
+   "from": [
+    80,
+    34
+   ],
+   "to": [
+    94,
+    34
+   ],
+   "head": "arrow",
+   "dashed": false
+  },
+  {
+   "type": "icon",
+   "ref": "organs/liver-mouse",
+   "x": 108,
+   "y": 34,
+   "w": 22,
+   "label": "Tissue collection"
+  },
+  {
+   "type": "arrow",
+   "from": [
+    122,
+    34
+   ],
+   "to": [
+    136,
+    34
+   ],
+   "head": "arrow",
+   "dashed": false
+  },
+  {
+   "type": "icon",
+   "ref": "lab/sequencer",
+   "x": 152,
+   "y": 34,
+   "w": 22,
+   "label": "Analysis"
+  }
+ ]
+}

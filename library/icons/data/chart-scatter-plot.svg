@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1254 1254" width="1254" height="1254"><title>Scatter plot</title><desc>keywords: scatter plot, correlation, regression, dots
+author: Nuria López-Alcántara (Specimen Studio icon library)
+license: own</desc>
+
+
+<g id="trend_line" fill="none" stroke="#BF762C" stroke-width="26" stroke-linecap="round"><path d="M200 1020L1130 330"/></g>
+<g id="markers" fill="#9C86D9" stroke="#6A55A8" stroke-width="18"><circle cx="230" cy="1000" r="36"/><circle cx="300" cy="900" r="36"/><circle cx="380" cy="960" r="36"/><circle cx="450" cy="820" r="36"/><circle cx="520" cy="870" r="36"/><circle cx="600" cy="700" r="36"/><circle cx="660" cy="790" r="36"/><circle cx="740" cy="610" r="36"/><circle cx="800" cy="680" r="36"/><circle cx="880" cy="520" r="36"/><circle cx="950" cy="580" r="36"/><circle cx="1020" cy="400" r="36"/><circle cx="1090" cy="470" r="36"/><circle cx="1110" cy="300" r="36"/></g>
+<g id="axes" fill="none" stroke="#3A3F4A" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"><path d="M110 70V1144H1184"/></g>
+</svg>

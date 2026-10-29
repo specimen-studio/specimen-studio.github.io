@@ -1,0 +1,164 @@
+{
+ "name": "Graphical abstract (circles)",
+ "group": "Layouts",
+ "description": "Three overlapping circles with space for a title, a short text and an image, linked by dashed arrows.",
+ "size": {
+  "w": 174,
+  "h": 112
+ },
+ "elements": [
+  {
+   "type": "ellipse",
+   "x": 52,
+   "y": 30,
+   "w": 54,
+   "h": 54,
+   "fill": "#EBCDD3",
+   "stroke": "#EBCDD3"
+  },
+  {
+   "type": "text",
+   "text": "Title 1",
+   "x": 52,
+   "y": 12,
+   "size": 9,
+   "bold": true,
+   "align": "center"
+  },
+  {
+   "type": "text",
+   "text": "Short description",
+   "x": 52,
+   "y": 19,
+   "size": 6.5,
+   "bold": false,
+   "align": "center",
+   "w": 44
+  },
+  {
+   "type": "icon",
+   "ref": "animals/mouse-black-side",
+   "x": 50,
+   "y": 36,
+   "w": 26
+  },
+  {
+   "type": "ellipse",
+   "x": 116,
+   "y": 46,
+   "w": 52,
+   "h": 52,
+   "fill": "#FDF7C9",
+   "stroke": "#FDF7C9"
+  },
+  {
+   "type": "text",
+   "text": "Title 2",
+   "x": 116,
+   "y": 30,
+   "size": 8.5,
+   "bold": true,
+   "align": "center",
+   "w": 44
+  },
+  {
+   "type": "text",
+   "text": "Short description",
+   "x": 116,
+   "y": 37,
+   "size": 6.5,
+   "bold": false,
+   "align": "center"
+  },
+  {
+   "type": "icon",
+   "ref": "organs/liver-mouse",
+   "x": 116,
+   "y": 55,
+   "w": 24
+  },
+  {
+   "type": "ellipse",
+   "x": 70,
+   "y": 86,
+   "w": 54,
+   "h": 50,
+   "fill": "#A9D4DA",
+   "stroke": "#A9D4DA"
+  },
+  {
+   "type": "text",
+   "text": "Title 3",
+   "x": 70,
+   "y": 70,
+   "size": 9,
+   "bold": true,
+   "align": "center"
+  },
+  {
+   "type": "text",
+   "text": "Short description",
+   "x": 70,
+   "y": 77,
+   "size": 6.5,
+   "bold": false,
+   "align": "center",
+   "w": 44
+  },
+  {
+   "type": "icon",
+   "ref": "cells/hepatocyte",
+   "x": 74,
+   "y": 92,
+   "w": 26
+  },
+  {
+   "type": "ellipse",
+   "x": 44,
+   "y": 92,
+   "w": 18,
+   "h": 13,
+   "fill": "#B9839A",
+   "stroke": "#B9839A"
+  },
+  {
+   "type": "text",
+   "text": "Label",
+   "x": 44,
+   "y": 92.5,
+   "size": 6.5,
+   "bold": true,
+   "align": "center",
+   "w": 16,
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "arrow",
+   "from": [
+    60,
+    46
+   ],
+   "to": [
+    92,
+    54
+   ],
+   "head": "arrow",
+   "dashed": true,
+   "curve": 0.3
+  },
+  {
+   "type": "arrow",
+   "from": [
+    44,
+    52
+   ],
+   "to": [
+    48,
+    80
+   ],
+   "head": "arrow",
+   "dashed": true,
+   "curve": -0.4
+  }
+ ]
+}

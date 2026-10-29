@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1254 1254" width="1254" height="1254"><title>Line plot</title><desc>keywords: line plot, line graph, time course, trend, curve
+author: Nuria López-Alcántara (Specimen Studio icon library)
+license: own</desc>
+
+
+<g id="lines" fill="none" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"><polyline points="250,930 480,760 710,800 940,480 1100,330" stroke="#3D74A8"/><polyline points="250,1010 480,960 710,640 940,690 1100,560" stroke="#B05A76"/></g>
+<g id="markers" stroke-width="20"><g fill="#6FA8DC" stroke="#3D74A8"><circle cx="250" cy="930" r="40"/><circle cx="480" cy="760" r="40"/><circle cx="710" cy="800" r="40"/><circle cx="940" cy="480" r="40"/><circle cx="1100" cy="330" r="40"/></g><g fill="#E58FA8" stroke="#B05A76"><circle cx="250" cy="1010" r="40"/><circle cx="480" cy="960" r="40"/><circle cx="710" cy="640" r="40"/><circle cx="940" cy="690" r="40"/><circle cx="1100" cy="560" r="40"/></g></g>
+<g id="axes" fill="none" stroke="#3A3F4A" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"><path d="M110 70V1144H1184"/></g>
+</svg>

@@ -1,0 +1,91 @@
+{
+ "name": "4-panel figure",
+ "group": "Layouts",
+ "description": "Panel letters A–D with tidy gutters.",
+ "size": {
+  "w": 174,
+  "h": 130
+ },
+ "elements": [
+  {
+   "type": "box",
+   "x": 3,
+   "y": 3,
+   "w": 82,
+   "h": 60,
+   "fill": "#FFFFFF",
+   "stroke": "#C9CFD7",
+   "dashed": true
+  },
+  {
+   "type": "box",
+   "x": 89,
+   "y": 3,
+   "w": 82,
+   "h": 60,
+   "fill": "#FFFFFF",
+   "stroke": "#C9CFD7",
+   "dashed": true
+  },
+  {
+   "type": "box",
+   "x": 3,
+   "y": 67,
+   "w": 82,
+   "h": 60,
+   "fill": "#FFFFFF",
+   "stroke": "#C9CFD7",
+   "dashed": true
+  },
+  {
+   "type": "box",
+   "x": 89,
+   "y": 67,
+   "w": 82,
+   "h": 60,
+   "fill": "#FFFFFF",
+   "stroke": "#C9CFD7",
+   "dashed": true
+  },
+  {
+   "type": "text",
+   "text": "A",
+   "x": 7,
+   "y": 8,
+   "size": 12,
+   "bold": true,
+   "align": "left",
+   "w": 6
+  },
+  {
+   "type": "text",
+   "text": "B",
+   "x": 93,
+   "y": 8,
+   "size": 12,
+   "bold": true,
+   "align": "left",
+   "w": 6
+  },
+  {
+   "type": "text",
+   "text": "C",
+   "x": 7,
+   "y": 72,
+   "size": 12,
+   "bold": true,
+   "align": "left",
+   "w": 6
+  },
+  {
+   "type": "text",
+   "text": "D",
+   "x": 93,
+   "y": 72,
+   "size": 12,
+   "bold": true,
+   "align": "left",
+   "w": 6
+  }
+ ]
+}

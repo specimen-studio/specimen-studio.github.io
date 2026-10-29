@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1254 1254" width="1254" height="1254"><title>Western blot bands</title><desc>keywords: western blot, bands, protein, immunoblot, gel
+author: Nuria López-Alcántara (Specimen Studio icon library)
+license: own</desc>
+
+
+<g id="membrane"><rect x="70" y="160" width="1114" height="934" rx="44" fill="#E3E6EC" stroke="#3A3F4A" stroke-width="24" stroke-linejoin="round"/></g>
+<g id="bands"><rect x="144" y="315" width="156" height="110" rx="55" fill="#3A3F4A"/><rect x="346" y="320" width="156" height="100" rx="50" fill="#5C6271"/><rect x="548" y="325" width="156" height="90" rx="45" fill="#828897"/><rect x="750" y="330" width="156" height="80" rx="40" fill="#AEB3BD"/><rect x="952" y="330" width="156" height="80" rx="40" fill="#AEB3BD"/><rect x="144" y="587" width="156" height="80" rx="40" fill="#AEB3BD"/><rect x="346" y="582" width="156" height="90" rx="45" fill="#828897"/><rect x="548" y="577" width="156" height="100" rx="50" fill="#5C6271"/><rect x="750" y="572" width="156" height="110" rx="55" fill="#3A3F4A"/><rect x="952" y="572" width="156" height="110" rx="55" fill="#3A3F4A"/><rect x="144" y="829" width="156" height="110" rx="55" fill="#3A3F4A"/><rect x="346" y="829" width="156" height="110" rx="55" fill="#3A3F4A"/><rect x="548" y="829" width="156" height="110" rx="55" fill="#3A3F4A"/><rect x="750" y="829" width="156" height="110" rx="55" fill="#3A3F4A"/><rect x="952" y="829" width="156" height="110" rx="55" fill="#3A3F4A"/></g>
+</svg>

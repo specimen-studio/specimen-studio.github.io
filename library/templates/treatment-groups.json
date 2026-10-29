@@ -1,0 +1,116 @@
+{
+ "name": "Treatment groups",
+ "group": "Study design",
+ "description": "Control vs treated cohorts converging on shared readouts.",
+ "size": {
+  "w": 174,
+  "h": 100
+ },
+ "elements": [
+  {
+   "type": "box",
+   "x": 4,
+   "y": 10,
+   "w": 88,
+   "h": 40,
+   "fill": "#EEF7F0",
+   "stroke": "#E1D6E6",
+   "dashed": false,
+   "label": "Control"
+  },
+  {
+   "type": "box",
+   "x": 4,
+   "y": 55,
+   "w": 88,
+   "h": 40,
+   "fill": "#FBEFF3",
+   "stroke": "#E1D6E6",
+   "dashed": false,
+   "label": "Treated"
+  },
+  {
+   "type": "icon",
+   "ref": "animals/mouse-black-side",
+   "x": 26,
+   "y": 32,
+   "w": 24
+  },
+  {
+   "type": "icon",
+   "ref": "symbols/diet",
+   "x": 62,
+   "y": 32,
+   "w": 16,
+   "label": "Chow"
+  },
+  {
+   "type": "icon",
+   "ref": "animals/mouse-black-side",
+   "x": 26,
+   "y": 77,
+   "w": 24
+  },
+  {
+   "type": "icon",
+   "ref": "symbols/diet",
+   "x": 62,
+   "y": 77,
+   "w": 16,
+   "label": "High-fat diet"
+  },
+  {
+   "type": "arrow",
+   "from": [
+    94,
+    30
+   ],
+   "to": [
+    116,
+    48
+   ],
+   "head": "arrow",
+   "dashed": false
+  },
+  {
+   "type": "arrow",
+   "from": [
+    94,
+    75
+   ],
+   "to": [
+    116,
+    58
+   ],
+   "head": "arrow",
+   "dashed": false
+  },
+  {
+   "type": "icon",
+   "ref": "organs/liver-mouse",
+   "x": 134,
+   "y": 53,
+   "w": 26
+  },
+  {
+   "type": "text",
+   "text": "n = 8 per group · 12 weeks",
+   "x": 134,
+   "y": 72,
+   "size": 7,
+   "bold": false,
+   "align": "center",
+   "color": "#636D79"
+  },
+  {
+   "type": "text",
+   "text": "Readouts: histology, RNA-seq, metabolomics",
+   "x": 134,
+   "y": 82,
+   "size": 7,
+   "bold": false,
+   "align": "center",
+   "w": 40
+  }
+ ]
+}

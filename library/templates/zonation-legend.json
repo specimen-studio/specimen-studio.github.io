@@ -1,0 +1,188 @@
+{
+ "name": "Liver lobule zonation with legend",
+ "group": "Mechanism",
+ "description": "Tiled lobule (pericentral vs periportal) with a legend panel.",
+ "size": {
+  "w": 174,
+  "h": 110
+ },
+ "elements": [
+  {
+   "type": "text",
+   "text": "Liver lobule",
+   "x": 60,
+   "y": 7,
+   "size": 12,
+   "bold": true,
+   "align": "center"
+  },
+  {
+   "type": "icon",
+   "ref": "organs/lobule-zonated",
+   "x": 60,
+   "y": 60,
+   "w": 92
+  },
+  {
+   "type": "arrow",
+   "from": [
+    116,
+    16
+   ],
+   "to": [
+    116,
+    104
+   ],
+   "head": "none",
+   "dashed": false
+  },
+  {
+   "type": "box",
+   "x": 122,
+   "y": 22,
+   "w": 7,
+   "h": 5,
+   "fill": "#F2A7AF",
+   "stroke": "#A9747A",
+   "dashed": false
+  },
+  {
+   "type": "text",
+   "text": "Pericentral (Glul)",
+   "x": 132,
+   "y": 24.6,
+   "size": 7.5,
+   "bold": true,
+   "align": "left",
+   "w": 50
+  },
+  {
+   "type": "text",
+   "text": "AAV8-Glul-Thrb1",
+   "x": 132,
+   "y": 31,
+   "size": 7,
+   "bold": false,
+   "align": "left",
+   "w": 40,
+   "color": "#C0392B"
+  },
+  {
+   "type": "box",
+   "x": 122,
+   "y": 42,
+   "w": 7,
+   "h": 5,
+   "fill": "#F7C48E",
+   "stroke": "#AC8963",
+   "dashed": false
+  },
+  {
+   "type": "text",
+   "text": "Periportal (Hal)",
+   "x": 132,
+   "y": 44.6,
+   "size": 7.5,
+   "bold": true,
+   "align": "left",
+   "w": 50
+  },
+  {
+   "type": "text",
+   "text": "AAV8-Hal-Thrb",
+   "x": 132,
+   "y": 51,
+   "size": 7,
+   "bold": false,
+   "align": "left",
+   "w": 40,
+   "color": "#D9822B"
+  },
+  {
+   "type": "ellipse",
+   "x": 125.5,
+   "y": 64,
+   "w": 6,
+   "h": 6,
+   "fill": "#A9CDEF",
+   "stroke": "#3A6EB0"
+  },
+  {
+   "type": "text",
+   "text": "Central vein",
+   "x": 132,
+   "y": 64,
+   "size": 7.5,
+   "bold": false,
+   "align": "left",
+   "w": 40
+  },
+  {
+   "type": "text",
+   "text": "Portal triad",
+   "x": 122,
+   "y": 76,
+   "size": 8,
+   "bold": true,
+   "align": "left",
+   "w": 40
+  },
+  {
+   "type": "ellipse",
+   "x": 125.5,
+   "y": 84,
+   "w": 5,
+   "h": 5,
+   "fill": "#5FAE5A",
+   "stroke": "#3A873E"
+  },
+  {
+   "type": "text",
+   "text": "Bile duct",
+   "x": 132,
+   "y": 84,
+   "size": 7,
+   "bold": false,
+   "align": "left",
+   "w": 40
+  },
+  {
+   "type": "ellipse",
+   "x": 125.5,
+   "y": 92,
+   "w": 5,
+   "h": 5,
+   "fill": "#D9534F",
+   "stroke": "#98231D"
+  },
+  {
+   "type": "text",
+   "text": "Hepatic arteriole",
+   "x": 132,
+   "y": 92,
+   "size": 7,
+   "bold": false,
+   "align": "left",
+   "w": 40
+  },
+  {
+   "type": "ellipse",
+   "x": 125.5,
+   "y": 100,
+   "w": 5,
+   "h": 5,
+   "fill": "#4F7FCF",
+   "stroke": "#2C5AA8"
+  },
+  {
+   "type": "text",
+   "text": "Portal vein",
+   "x": 132,
+   "y": 100,
+   "size": 7,
+   "bold": false,
+   "align": "left",
+   "w": 40
+  }
+ ]
+}

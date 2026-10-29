@@ -1,0 +1,218 @@
+{
+ "name": "Pregnancy treatment timeline",
+ "group": "Study design",
+ "description": "Two groups of dams with their treatment, and a gestation timeline with events and time points.",
+ "size": {
+  "w": 174,
+  "h": 82
+ },
+ "elements": [
+  {
+   "type": "text",
+   "text": "Group 1",
+   "x": 46,
+   "y": 5,
+   "size": 8,
+   "bold": true,
+   "align": "center"
+  },
+  {
+   "type": "icon",
+   "ref": "lab/water-bottle",
+   "x": 12,
+   "y": 22,
+   "w": 13
+  },
+  {
+   "type": "text",
+   "text": "Vehicle",
+   "x": 12,
+   "y": 33,
+   "size": 6.5,
+   "bold": false,
+   "align": "center",
+   "color": "#2C75AE"
+  },
+  {
+   "type": "icon",
+   "ref": "animals/mouse-black-side",
+   "x": 46,
+   "y": 22,
+   "w": 30
+  },
+  {
+   "type": "text",
+   "text": "Group 2",
+   "x": 46,
+   "y": 43,
+   "size": 8,
+   "bold": true,
+   "align": "center",
+   "color": "#D9822B"
+  },
+  {
+   "type": "icon",
+   "ref": "lab/water-bottle",
+   "x": 12,
+   "y": 60,
+   "w": 13
+  },
+  {
+   "type": "text",
+   "text": "Treatment",
+   "x": 12,
+   "y": 71,
+   "size": 6.5,
+   "bold": false,
+   "align": "center",
+   "w": 20,
+   "color": "#D9822B"
+  },
+  {
+   "type": "icon",
+   "ref": "animals/mouse-black-side",
+   "x": 46,
+   "y": 60,
+   "w": 30
+  },
+  {
+   "type": "arrow",
+   "from": [
+    84,
+    46
+   ],
+   "to": [
+    170,
+    46
+   ],
+   "head": "none",
+   "dashed": false
+  },
+  {
+   "type": "arrow",
+   "from": [
+    90,
+    46
+   ],
+   "to": [
+    90,
+    38
+   ],
+   "head": "none",
+   "dashed": false
+  },
+  {
+   "type": "text",
+   "text": "Event 1",
+   "x": 90,
+   "y": 34,
+   "size": 7,
+   "bold": true,
+   "align": "center",
+   "color": "#4A9AB0"
+  },
+  {
+   "type": "arrow",
+   "from": [
+    106,
+    46
+   ],
+   "to": [
+    106,
+    38
+   ],
+   "head": "none",
+   "dashed": false
+  },
+  {
+   "type": "text",
+   "text": "Event 2",
+   "x": 106,
+   "y": 34,
+   "size": 7,
+   "bold": true,
+   "align": "center",
+   "color": "#D9822B"
+  },
+  {
+   "type": "text",
+   "text": "Day 0",
+   "x": 106,
+   "y": 51,
+   "size": 7,
+   "bold": true,
+   "align": "center"
+  },
+  {
+   "type": "icon",
+   "ref": "lab/ir-camera",
+   "x": 126,
+   "y": 36,
+   "w": 8
+  },
+  {
+   "type": "text",
+   "text": "Day X",
+   "x": 126,
+   "y": 51,
+   "size": 7,
+   "bold": true,
+   "align": "center"
+  },
+  {
+   "type": "icon",
+   "ref": "lab/ir-camera",
+   "x": 146,
+   "y": 36,
+   "w": 8
+  },
+  {
+   "type": "text",
+   "text": "Day Y",
+   "x": 146,
+   "y": 51,
+   "size": 7,
+   "bold": true,
+   "align": "center"
+  },
+  {
+   "type": "icon",
+   "ref": "lab/ir-camera",
+   "x": 164,
+   "y": 36,
+   "w": 8
+  },
+  {
+   "type": "text",
+   "text": "Day Z",
+   "x": 164,
+   "y": 51,
+   "size": 7,
+   "bold": true,
+   "align": "center"
+  },
+  {
+   "type": "arrow",
+   "from": [
+    164,
+    55
+   ],
+   "to": [
+    164,
+    64
+   ],
+   "head": "arrow",
+   "dashed": false
+  },
+  {
+   "type": "text",
+   "text": "Endpoint",
+   "x": 164,
+   "y": 68,
+   "size": 7,
+   "bold": true,
+   "align": "center",
+   "color": "#5A6A9A"
+  }
+ ]
+}

@@ -1,0 +1,301 @@
+{
+ "name": "Hepatocyte signalling pathway",
+ "group": "Mechanism",
+ "description": "Receptor → nucleus → genes → metabolite pool → outcomes.",
+ "size": {
+  "w": 174,
+  "h": 112
+ },
+ "elements": [
+  {
+   "type": "ellipse",
+   "x": 87,
+   "y": 50,
+   "w": 164,
+   "h": 80,
+   "fill": "#F6E9E4",
+   "stroke": "#C9A08A"
+  },
+  {
+   "type": "icon",
+   "ref": "molecules/receptor",
+   "x": 34,
+   "y": 14,
+   "w": 22
+  },
+  {
+   "type": "text",
+   "text": "Ligand / receptor",
+   "x": 56,
+   "y": 12,
+   "size": 7.5,
+   "bold": true,
+   "align": "left",
+   "w": 40
+  },
+  {
+   "type": "arrow",
+   "from": [
+    34,
+    26
+   ],
+   "to": [
+    34,
+    36
+   ],
+   "head": "arrow",
+   "dashed": false
+  },
+  {
+   "type": "icon",
+   "ref": "molecules/protein",
+   "x": 34,
+   "y": 42,
+   "w": 10
+  },
+  {
+   "type": "text",
+   "text": "Kinase",
+   "x": 44,
+   "y": 42,
+   "size": 7,
+   "bold": false,
+   "align": "left",
+   "w": 20
+  },
+  {
+   "type": "arrow",
+   "from": [
+    34,
+    48
+   ],
+   "to": [
+    40,
+    58
+   ],
+   "head": "arrow",
+   "dashed": false
+  },
+  {
+   "type": "ellipse",
+   "x": 66,
+   "y": 62,
+   "w": 64,
+   "h": 32,
+   "fill": "#ECE4F6",
+   "stroke": "#9B7FE0"
+  },
+  {
+   "type": "text",
+   "text": "Nucleus",
+   "x": 46,
+   "y": 52,
+   "size": 7,
+   "bold": false,
+   "align": "left",
+   "w": 20,
+   "color": "#5B43A6"
+  },
+  {
+   "type": "icon",
+   "ref": "molecules/tr-rxr",
+   "x": 52,
+   "y": 66,
+   "w": 18
+  },
+  {
+   "type": "box",
+   "x": 70,
+   "y": 53,
+   "w": 26,
+   "h": 6,
+   "fill": "#F9D9D9",
+   "stroke": "#D9534F",
+   "dashed": false
+  },
+  {
+   "type": "text",
+   "text": "Gene A ↓",
+   "x": 83,
+   "y": 56,
+   "size": 7,
+   "bold": false,
+   "align": "center"
+  },
+  {
+   "type": "box",
+   "x": 70,
+   "y": 61,
+   "w": 26,
+   "h": 6,
+   "fill": "#F9D9D9",
+   "stroke": "#D9534F",
+   "dashed": false
+  },
+  {
+   "type": "text",
+   "text": "Gene B ↓",
+   "x": 83,
+   "y": 64,
+   "size": 7,
+   "bold": false,
+   "align": "center"
+  },
+  {
+   "type": "box",
+   "x": 70,
+   "y": 69,
+   "w": 26,
+   "h": 6,
+   "fill": "#DDF2DA",
+   "stroke": "#5FAE5A",
+   "dashed": false
+  },
+  {
+   "type": "text",
+   "text": "Gene C ↑",
+   "x": 83,
+   "y": 72,
+   "size": 7,
+   "bold": false,
+   "align": "center"
+  },
+  {
+   "type": "arrow",
+   "from": [
+    98,
+    63
+   ],
+   "to": [
+    114,
+    58
+   ],
+   "head": "arrow",
+   "dashed": false
+  },
+  {
+   "type": "ellipse",
+   "x": 130,
+   "y": 56,
+   "w": 28,
+   "h": 28,
+   "fill": "#FCEBC4",
+   "stroke": "#C9A04A"
+  },
+  {
+   "type": "text",
+   "text": "Metabolite pool",
+   "x": 130,
+   "y": 54,
+   "size": 7,
+   "bold": true,
+   "align": "center"
+  },
+  {
+   "type": "text",
+   "text": "↑",
+   "x": 130,
+   "y": 61,
+   "size": 10,
+   "bold": true,
+   "align": "center",
+   "color": "#C0392B"
+  },
+  {
+   "type": "arrow",
+   "from": [
+    30,
+    90
+   ],
+   "to": [
+    30,
+    98
+   ],
+   "head": "arrow",
+   "dashed": false
+  },
+  {
+   "type": "arrow",
+   "from": [
+    87,
+    90
+   ],
+   "to": [
+    87,
+    98
+   ],
+   "head": "arrow",
+   "dashed": false
+  },
+  {
+   "type": "arrow",
+   "from": [
+    140,
+    90
+   ],
+   "to": [
+    140,
+    98
+   ],
+   "head": "arrow",
+   "dashed": false
+  },
+  {
+   "type": "box",
+   "x": 6,
+   "y": 99,
+   "w": 50,
+   "h": 11,
+   "fill": "#FBE3E3",
+   "stroke": "#D9534F",
+   "dashed": false
+  },
+  {
+   "type": "text",
+   "text": "Outcome 1",
+   "x": 31,
+   "y": 104.5,
+   "size": 7.5,
+   "bold": false,
+   "align": "center"
+  },
+  {
+   "type": "box",
+   "x": 62,
+   "y": 99,
+   "w": 50,
+   "h": 11,
+   "fill": "#FBE3E3",
+   "stroke": "#D9534F",
+   "dashed": false
+  },
+  {
+   "type": "text",
+   "text": "Outcome 2",
+   "x": 87,
+   "y": 104.5,
+   "size": 7.5,
+   "bold": false,
+   "align": "center"
+  },
+  {
+   "type": "box",
+   "x": 118,
+   "y": 99,
+   "w": 50,
+   "h": 11,
+   "fill": "#E3F4E1",
+   "stroke": "#5FAE5A",
+   "dashed": false
+  },
+  {
+   "type": "text",
+   "text": "Outcome 3",
+   "x": 143,
+   "y": 104.5,
+   "size": 7.5,
+   "bold": false,
+   "align": "center"
+  }
+ ]
+}

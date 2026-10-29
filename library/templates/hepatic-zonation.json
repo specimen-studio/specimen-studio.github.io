@@ -1,0 +1,133 @@
+{
+ "name": "Hepatic zonation workflow",
+ "group": "Study design",
+ "description": "Model → tissue → region → two readouts.",
+ "size": {
+  "w": 174,
+  "h": 110
+ },
+ "elements": [
+  {
+   "type": "box",
+   "x": 123,
+   "y": 14,
+   "w": 46,
+   "h": 86,
+   "fill": "#F6F1F8",
+   "stroke": "#E1D6E6",
+   "dashed": false
+  },
+  {
+   "type": "text",
+   "text": "A",
+   "x": 6,
+   "y": 6,
+   "size": 12,
+   "bold": true,
+   "align": "left",
+   "w": 6
+  },
+  {
+   "type": "text",
+   "text": "Title",
+   "x": 13,
+   "y": 6.4,
+   "size": 10,
+   "bold": true,
+   "align": "left",
+   "w": 120
+  },
+  {
+   "type": "icon",
+   "ref": "animals/mouse-black-side",
+   "x": 20,
+   "y": 52,
+   "w": 28,
+   "label": "Model\n(details)"
+  },
+  {
+   "type": "arrow",
+   "from": [
+    36,
+    52
+   ],
+   "to": [
+    47,
+    52
+   ],
+   "head": "arrow",
+   "dashed": false
+  },
+  {
+   "type": "icon",
+   "ref": "organs/liver-mouse",
+   "x": 61,
+   "y": 52,
+   "w": 24,
+   "label": "Tissue"
+  },
+  {
+   "type": "arrow",
+   "from": [
+    75,
+    52
+   ],
+   "to": [
+    89,
+    52
+   ],
+   "head": "arrow",
+   "dashed": false
+  },
+  {
+   "type": "icon",
+   "ref": "organs/lobule-zonated",
+   "x": 104,
+   "y": 52,
+   "w": 30,
+   "label": "Region or\ncell type"
+  },
+  {
+   "type": "arrow",
+   "from": [
+    118,
+    47
+   ],
+   "to": [
+    129,
+    33
+   ],
+   "head": "arrow",
+   "dashed": false
+  },
+  {
+   "type": "arrow",
+   "from": [
+    118,
+    57
+   ],
+   "to": [
+    129,
+    71
+   ],
+   "head": "arrow",
+   "dashed": false
+  },
+  {
+   "type": "icon",
+   "ref": "lab/sequencer",
+   "x": 146,
+   "y": 30,
+   "w": 22,
+   "label": "Readout 1"
+  },
+  {
+   "type": "icon",
+   "ref": "molecules/methylation",
+   "x": 146,
+   "y": 74,
+   "w": 22,
+   "label": "Readout 2"
+  }
+ ]
+}

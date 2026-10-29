@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1254 1254" width="1254" height="1254"><title>Box plot</title><desc>keywords: box plot, boxplot, whiskers, median, quartiles, distribution
+author: Nuria López-Alcántara (Specimen Studio icon library)
+license: own</desc>
+
+
+<g id="whiskers" fill="none" stroke="#3A3F4A" stroke-width="24" stroke-linecap="round"><path d="M300 470V620M300 820V960M245 470H355M245 960H355"/><path d="M620 200V380M620 600V760M565 200H675M565 760H675"/><path d="M940 650V780M940 960V1060M885 650H995M885 1060H995"/></g>
+<g id="boxes" stroke-width="24" stroke-linejoin="round"><rect x="200" y="620" width="200" height="200" rx="8" fill="#E58FA8" stroke="#B05A76"/><rect x="520" y="380" width="200" height="220" rx="8" fill="#9C86D9" stroke="#6A55A8"/><rect x="840" y="780" width="200" height="180" rx="8" fill="#6FA8DC" stroke="#3D74A8"/></g>
+<g id="medians" fill="none" stroke="#3A3F4A" stroke-width="30" stroke-linecap="round"><path d="M200 720H400"/><path d="M520 470H720"/><path d="M840 880H1040"/></g>
+<g id="axes" fill="none" stroke="#3A3F4A" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"><path d="M110 70V1144H1184"/></g>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1254 1254" width="1254" height="1254"><title>Histogram</title><desc>keywords: histogram, distribution, frequency, bins
+author: Nuria López-Alcántara (Specimen Studio icon library)
+license: own</desc>
+
+
+<g id="bars" fill="#6FA8DC" stroke="#3D74A8" stroke-width="20" stroke-linejoin="round"><rect x="137" y="1048" width="109" height="96"/><rect x="246" y="914" width="109" height="230"/><rect x="355" y="693" width="109" height="451"/><rect x="464" y="414" width="109" height="730"/><rect x="573" y="184" width="109" height="960"/><rect x="682" y="357" width="109" height="787"/><rect x="791" y="645" width="109" height="499"/><rect x="900" y="885" width="109" height="259"/><rect x="1009" y="1038" width="109" height="106"/></g>
+<g id="axes" fill="none" stroke="#3A3F4A" stroke-width="26" stroke-linecap="round"><path d="M70 1144H1184"/></g>
+</svg>

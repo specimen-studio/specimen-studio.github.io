@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1254 1254" width="1254" height="1254"><title>Bar graph</title><desc>keywords: bar graph, bar chart, columns, comparison, groups, mean, error bars
+author: Nuria López-Alcántara (Specimen Studio icon library)
+license: own</desc>
+
+
+<g id="bars" stroke-width="24" stroke-linejoin="round"><rect x="205" y="640" width="170" height="504" fill="#E58FA8" stroke="#B05A76"/><rect x="445" y="380" width="170" height="764" fill="#9C86D9" stroke="#6A55A8"/><rect x="685" y="800" width="170" height="344" fill="#6FA8DC" stroke="#3D74A8"/><rect x="925" y="520" width="170" height="624" fill="#7CC08A" stroke="#4A8C58"/></g>
+<g id="error_bars" fill="none" stroke="#3A3F4A" stroke-width="24" stroke-linecap="round"><path d="M290 640V550M250 550H330"/><path d="M530 380V270M490 270H570"/><path d="M770 800V730M730 730H810"/><path d="M1010 520V420M970 420H1050"/></g>
+<g id="axes" fill="none" stroke="#3A3F4A" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"><path d="M110 70V1144H1184"/></g>
+</svg>

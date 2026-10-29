@@ -1,0 +1,4677 @@
+{
+ "version": 1,
+ "categories": [
+  {
+   "id": "cells",
+   "label": "Cells"
+  },
+  {
+   "id": "organelles",
+   "label": "Organelles"
+  },
+  {
+   "id": "molecules",
+   "label": "Molecules & proteins"
+  },
+  {
+   "id": "organs",
+   "label": "Organs & tissue"
+  },
+  {
+   "id": "animals",
+   "label": "Organisms"
+  },
+  {
+   "id": "lab",
+   "label": "Lab & methods"
+  },
+  {
+   "id": "data",
+   "label": "Charts & data"
+  },
+  {
+   "id": "symbols",
+   "label": "Symbols"
+  }
+ ],
+ "icons": [
+  {
+   "id": "cells/adipocyte",
+   "name": "Adipocyte",
+   "cat": "cells",
+   "tags": [
+    "fat cell",
+    "lipid droplet",
+    "white adipose"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/cells/adipocyte.svg",
+   "aliases": [
+    "fat cell",
+    "adipose cell",
+    "white adipocyte",
+    "white fat",
+    "WAT",
+    "adipose tissue",
+    "lipocyte",
+    "unilocular",
+    "obesity",
+    "Fettzelle",
+    "Adipozyt"
+   ]
+  },
+  {
+   "id": "cells/bacterium",
+   "name": "Bacterium",
+   "cat": "cells",
+   "tags": [
+    "bacteria",
+    "microbe",
+    "E. coli",
+    "flagellum",
+    "rod"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/cells/bacterium.svg",
+   "aliases": [
+    "bacteria",
+    "microbe",
+    "microbiota",
+    "gut bacteria",
+    "microbiome",
+    "pathogen",
+    "infection",
+    "prokaryote",
+    "bacillus",
+    "Bakterium",
+    "Bakterien"
+   ]
+  },
+  {
+   "id": "cells/beta-cell",
+   "name": "Pancreatic β-cell",
+   "cat": "cells",
+   "tags": [
+    "beta cell",
+    "insulin",
+    "islet",
+    "pancreas",
+    "secretory granules"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/cells/beta-cell.svg",
+   "aliases": [
+    "beta cell",
+    "β cell",
+    "islet cell",
+    "insulin-producing cell",
+    "pancreatic islet",
+    "islets of Langerhans",
+    "endocrine pancreas",
+    "diabetes",
+    "Betazelle"
+   ]
+  },
+  {
+   "id": "cells/cardiomyocyte",
+   "name": "Cardiomyocyte",
+   "cat": "cells",
+   "tags": [
+    "heart muscle",
+    "cardiomyocyte",
+    "sarcomere",
+    "intercalated disc"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/cells/cardiomyocyte.svg",
+   "aliases": [
+    "heart cell",
+    "cardiac muscle cell",
+    "cardiac myocyte",
+    "heart muscle cell",
+    "myocardium",
+    "Herzmuskelzelle"
+   ]
+  },
+  {
+   "id": "cells/cell-mix",
+   "name": "Liver cell suspension",
+   "cat": "cells",
+   "tags": [
+    "single cell",
+    "scRNA-seq",
+    "cell suspension",
+    "liver cells",
+    "digestion"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/cells/cell-mix.svg",
+   "aliases": [
+    "cell suspension",
+    "single-cell suspension",
+    "dissociated cells",
+    "digested liver",
+    "liver digest",
+    "cell isolation",
+    "scRNA-seq",
+    "single cell",
+    "primary cells",
+    "Zellsuspension"
+   ]
+  },
+  {
+   "id": "cells/cell",
+   "name": "Cell (generic)",
+   "cat": "cells",
+   "tags": [
+    "eukaryotic",
+    "animal cell",
+    "cytoplasm"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/cells/cell.svg",
+   "aliases": [
+    "cell",
+    "generic cell",
+    "mammalian cell",
+    "eukaryotic cell",
+    "cultured cell",
+    "cell line",
+    "HEK293",
+    "HeLa",
+    "Zelle"
+   ]
+  },
+  {
+   "id": "cells/cholangiocyte",
+   "name": "Cholangiocyte",
+   "cat": "cells",
+   "tags": [
+    "bile duct",
+    "biliary epithelium",
+    "cholangiocyte",
+    "cilium"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/cells/cholangiocyte.svg",
+   "aliases": [
+    "bile duct cell",
+    "biliary cell",
+    "ductal cell",
+    "cholangiocyte",
+    "Gallengangszelle"
+   ]
+  },
+  {
+   "id": "cells/epithelium",
+   "name": "Epithelial layer",
+   "cat": "cells",
+   "tags": [
+    "epithelium",
+    "tight junction",
+    "monolayer",
+    "polarised",
+    "brush border",
+    "enterocyte",
+    "goblet cell",
+    "columnar",
+    "basement membrane",
+    "microvilli"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/cells/epithelium.svg",
+   "aliases": [
+    "epithelial cells",
+    "epithelial layer",
+    "intestinal epithelium",
+    "gut epithelium",
+    "enterocytes",
+    "barrier",
+    "Epithel"
+   ]
+  },
+  {
+   "id": "cells/fibroblast",
+   "name": "Fibroblast",
+   "cat": "cells",
+   "tags": [
+    "fibroblast",
+    "collagen",
+    "ECM",
+    "stromal",
+    "spindle"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/cells/fibroblast.svg",
+   "aliases": [
+    "fibroblast",
+    "stromal cell",
+    "mesenchymal cell",
+    "connective tissue cell",
+    "NIH3T3"
+   ]
+  },
+  {
+   "id": "cells/hepatocyte-polygonal",
+   "name": "Hepatocyte, polygonal (single cell)",
+   "cat": "cells",
+   "tags": [
+    "hepatocyte",
+    "liver cell",
+    "polygonal",
+    "single cell",
+    "nucleus"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/cells/hepatocyte-polygonal.svg",
+   "aliases": [
+    "hepatocyte",
+    "liver cell",
+    "parenchymal cell",
+    "single hepatocyte",
+    "polygonal cell",
+    "Leberzelle",
+    "Hepatozyt"
+   ]
+  },
+  {
+   "id": "cells/hepatocyte-steatotic",
+   "name": "Steatotic hepatocyte",
+   "cat": "cells",
+   "tags": [
+    "steatosis",
+    "lipid droplets",
+    "MASLD",
+    "fatty hepatocyte",
+    "hepatocyte"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/cells/hepatocyte-steatotic.svg",
+   "aliases": [
+    "fatty hepatocyte",
+    "lipid-laden hepatocyte",
+    "steatotic liver cell",
+    "MASLD hepatocyte",
+    "NAFLD hepatocyte",
+    "MAFLD",
+    "fatty liver cell",
+    "steatosis",
+    "verfettete Leberzelle"
+   ]
+  },
+  {
+   "id": "cells/hepatocyte",
+   "name": "Hepatocyte",
+   "cat": "cells",
+   "tags": [
+    "liver cell",
+    "binucleate",
+    "parenchymal",
+    "polygonal"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/cells/hepatocyte.svg",
+   "aliases": [
+    "hepatocyte",
+    "liver cell",
+    "primary hepatocyte",
+    "parenchymal cell",
+    "periportal hepatocyte",
+    "pericentral hepatocyte",
+    "zonation",
+    "HepG2",
+    "Huh7",
+    "AML12",
+    "Leberzelle",
+    "Hepatozyt"
+   ]
+  },
+  {
+   "id": "cells/kupffer-cell",
+   "name": "Kupffer cell (liver macrophage)",
+   "cat": "cells",
+   "tags": [
+    "Kupffer cell",
+    "macrophage",
+    "liver macrophage",
+    "immune cell",
+    "amoeboid"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/cells/kupffer-cell.svg",
+   "aliases": [
+    "Kupffer cell",
+    "liver macrophage",
+    "resident macrophage",
+    "macrophage",
+    "KC",
+    "myeloid cell",
+    "monocyte",
+    "immune cell",
+    "phagocyte",
+    "inflammation",
+    "Kupffer-Zelle",
+    "Makrophage"
+   ]
+  },
+  {
+   "id": "cells/lsec",
+   "name": "Sinusoidal endothelial cell",
+   "cat": "cells",
+   "tags": [
+    "LSEC",
+    "endothelium",
+    "fenestrae",
+    "sieve plate",
+    "sinusoid"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/cells/lsec.svg",
+   "aliases": [
+    "liver sinusoidal endothelial cell",
+    "LSEC",
+    "endothelial cell",
+    "endothelium",
+    "sinusoid",
+    "Endothelzelle"
+   ]
+  },
+  {
+   "id": "cells/neuron",
+   "name": "Neuron",
+   "cat": "cells",
+   "tags": [
+    "nerve cell",
+    "axon",
+    "dendrite",
+    "myelin",
+    "synapse"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/cells/neuron.svg",
+   "aliases": [
+    "neuron",
+    "nerve cell",
+    "neurone",
+    "brain cell",
+    "hypothalamic neuron",
+    "Nervenzelle"
+   ]
+  },
+  {
+   "id": "cells/neutrophil",
+   "name": "Neutrophil",
+   "cat": "cells",
+   "tags": [
+    "granulocyte",
+    "PMN",
+    "immune",
+    "multilobed nucleus"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/cells/neutrophil.svg",
+   "aliases": [
+    "neutrophil",
+    "granulocyte",
+    "PMN",
+    "white blood cell",
+    "leukocyte",
+    "immune cell",
+    "inflammation",
+    "Neutrophiler"
+   ]
+  },
+  {
+   "id": "cells/platelet",
+   "name": "Platelets",
+   "cat": "cells",
+   "tags": [
+    "thrombocyte",
+    "platelet",
+    "coagulation",
+    "clot"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/cells/platelet.svg",
+   "aliases": [
+    "platelet",
+    "thrombocyte",
+    "blood clotting",
+    "coagulation",
+    "Thrombozyt",
+    "Blutplättchen"
+   ]
+  },
+  {
+   "id": "cells/rbc",
+   "name": "Red blood cell",
+   "cat": "cells",
+   "tags": [
+    "erythrocyte",
+    "blood",
+    "biconcave"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/cells/rbc.svg",
+   "aliases": [
+    "red blood cell",
+    "RBC",
+    "erythrocyte",
+    "blood",
+    "haemoglobin",
+    "hemoglobin",
+    "Erythrozyt",
+    "rotes Blutkörperchen"
+   ]
+  },
+  {
+   "id": "cells/smooth-muscle",
+   "name": "Smooth muscle cell",
+   "cat": "cells",
+   "tags": [
+    "smooth muscle",
+    "SMC",
+    "myocyte",
+    "contractile"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/cells/smooth-muscle.svg",
+   "aliases": [
+    "smooth muscle cell",
+    "SMC",
+    "vascular smooth muscle",
+    "myocyte",
+    "glatte Muskelzelle"
+   ]
+  },
+  {
+   "id": "cells/sperm",
+   "name": "Sperm cell",
+   "cat": "cells",
+   "tags": [
+    "spermatozoon",
+    "sperm",
+    "flagellum",
+    "acrosome",
+    "male germ cell"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/cells/sperm.svg",
+   "aliases": [
+    "sperm",
+    "spermatozoon",
+    "spermatozoa",
+    "male germ cell",
+    "fertility",
+    "Spermium"
+   ]
+  },
+  {
+   "id": "cells/stellate-quiescent",
+   "name": "Hepatic stellate cell, quiescent (lipid droplets)",
+   "cat": "cells",
+   "tags": [
+    "hepatic stellate cell",
+    "HSC",
+    "quiescent",
+    "vitamin A",
+    "lipid droplets"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/cells/stellate-quiescent.svg",
+   "aliases": [
+    "hepatic stellate cell",
+    "HSC",
+    "quiescent stellate cell",
+    "Ito cell",
+    "vitamin A storing cell",
+    "retinoid",
+    "lipid droplets",
+    "fibrosis",
+    "Sternzelle"
+   ]
+  },
+  {
+   "id": "cells/stem-cell",
+   "name": "Stem cell",
+   "cat": "cells",
+   "tags": [
+    "stem cell",
+    "progenitor",
+    "pluripotent",
+    "iPSC"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/cells/stem-cell.svg",
+   "aliases": [
+    "stem cell",
+    "progenitor cell",
+    "iPSC",
+    "ESC",
+    "embryonic stem cell",
+    "organoid",
+    "Stammzelle"
+   ]
+  },
+  {
+   "id": "cells/tcell",
+   "name": "T cell",
+   "cat": "cells",
+   "tags": [
+    "lymphocyte",
+    "immune",
+    "TCR",
+    "microvilli"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/cells/tcell.svg",
+   "aliases": [
+    "T cell",
+    "T lymphocyte",
+    "lymphocyte",
+    "CD4",
+    "CD8",
+    "immune cell",
+    "adaptive immunity",
+    "T-Zelle"
+   ]
+  },
+  {
+   "id": "cells/thyroid-follicle",
+   "name": "Thyroid follicle",
+   "cat": "cells",
+   "tags": [
+    "follicle",
+    "thyrocyte",
+    "colloid",
+    "thyroglobulin",
+    "thyroid",
+    "follicular epithelium",
+    "C cell",
+    "capillary"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/cells/thyroid-follicle.svg",
+   "aliases": [
+    "thyroid follicle",
+    "thyroid",
+    "thyrocyte",
+    "thyroid gland tissue",
+    "colloid",
+    "Schilddrüse",
+    "Schilddrüsenfollikel"
+   ]
+  },
+  {
+   "id": "cells/virus-capsid",
+   "name": "Virus (icosahedral capsid with spikes)",
+   "cat": "cells",
+   "tags": [
+    "virus",
+    "virion",
+    "capsid",
+    "icosahedral",
+    "spike protein",
+    "infection",
+    "viral vector"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/cells/virus-capsid.svg",
+   "aliases": [
+    "virus",
+    "viral particle",
+    "virion",
+    "capsid",
+    "adenovirus",
+    "viral vector",
+    "infection"
+   ]
+  },
+  {
+   "id": "cells/virus",
+   "name": "Virus (enveloped)",
+   "cat": "cells",
+   "tags": [
+    "virion",
+    "coronavirus",
+    "spike"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/cells/virus.svg",
+   "aliases": [
+    "virus",
+    "enveloped virus",
+    "coronavirus",
+    "SARS-CoV-2",
+    "influenza",
+    "lentivirus",
+    "viral particle",
+    "infection"
+   ]
+  },
+  {
+   "id": "organelles/centrosome",
+   "name": "Centrosome",
+   "cat": "organelles",
+   "tags": [
+    "centriole",
+    "centrosome",
+    "mitosis",
+    "MTOC"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/organelles/centrosome.svg",
+   "aliases": [
+    "centrosome",
+    "centriole",
+    "MTOC",
+    "spindle pole",
+    "Zentrosom"
+   ]
+  },
+  {
+   "id": "organelles/er",
+   "name": "Endoplasmic reticulum",
+   "cat": "organelles",
+   "tags": [
+    "ER",
+    "rough ER",
+    "ribosomes",
+    "cisternae"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/organelles/er.svg",
+   "aliases": [
+    "endoplasmic reticulum",
+    "ER",
+    "rough ER",
+    "smooth ER",
+    "ER stress",
+    "UPR",
+    "endoplasmatisches Retikulum"
+   ]
+  },
+  {
+   "id": "organelles/golgi",
+   "name": "Golgi apparatus",
+   "cat": "organelles",
+   "tags": [
+    "Golgi",
+    "cisternae",
+    "secretion",
+    "vesicles",
+    "trans-Golgi"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/organelles/golgi.svg",
+   "aliases": [
+    "Golgi",
+    "Golgi apparatus",
+    "Golgi complex",
+    "secretion",
+    "Golgi-Apparat"
+   ]
+  },
+  {
+   "id": "organelles/lipid-droplet-cluster",
+   "name": "Lipid droplets (cluster)",
+   "cat": "organelles",
+   "tags": [
+    "lipid droplets",
+    "fat droplets",
+    "triglycerides",
+    "lipids",
+    "steatosis",
+    "lipid accumulation"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/organelles/lipid-droplet-cluster.svg",
+   "aliases": [
+    "lipid droplets",
+    "fat droplets",
+    "lipid accumulation",
+    "triglycerides",
+    "steatosis",
+    "Oil Red O",
+    "BODIPY",
+    "Lipidtropfen"
+   ]
+  },
+  {
+   "id": "organelles/lipid-droplet",
+   "name": "Lipid droplet",
+   "cat": "organelles",
+   "tags": [
+    "lipid droplet",
+    "triglyceride",
+    "steatosis",
+    "PLIN"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/organelles/lipid-droplet.svg",
+   "aliases": [
+    "lipid droplet",
+    "fat droplet",
+    "triglyceride",
+    "lipid storage",
+    "Oil Red O",
+    "BODIPY",
+    "steatosis",
+    "Lipidtropfen",
+    "Fetttropfen"
+   ]
+  },
+  {
+   "id": "organelles/lysosome",
+   "name": "Lysosome",
+   "cat": "organelles",
+   "tags": [
+    "lysosome",
+    "autophagy",
+    "degradation",
+    "acidic"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/organelles/lysosome.svg",
+   "aliases": [
+    "lysosome",
+    "autophagy",
+    "autophagosome",
+    "endosome",
+    "Lysosom"
+   ]
+  },
+  {
+   "id": "organelles/mitochondrion",
+   "name": "Mitochondrion",
+   "cat": "organelles",
+   "tags": [
+    "organelle",
+    "cristae",
+    "OXPHOS",
+    "mitochondria"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/organelles/mitochondrion.svg",
+   "aliases": [
+    "mitochondrion",
+    "mitochondria",
+    "mitochondrial",
+    "respiration",
+    "OXPHOS",
+    "Seahorse",
+    "Mitochondrium",
+    "Mitochondrien"
+   ]
+  },
+  {
+   "id": "organelles/nucleus",
+   "name": "Nucleus",
+   "cat": "organelles",
+   "tags": [
+    "organelle",
+    "chromatin",
+    "nucleolus",
+    "nuclear pore",
+    "nuclear envelope"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/organelles/nucleus.svg",
+   "aliases": [
+    "nucleus",
+    "cell nucleus",
+    "nuclei",
+    "chromatin",
+    "Zellkern",
+    "Kern"
+   ]
+  },
+  {
+   "id": "organelles/peroxisome",
+   "name": "Peroxisome",
+   "cat": "organelles",
+   "tags": [
+    "peroxisome",
+    "beta-oxidation",
+    "catalase"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/organelles/peroxisome.svg",
+   "aliases": [
+    "peroxisome",
+    "beta oxidation",
+    "Peroxisom"
+   ]
+  },
+  {
+   "id": "organelles/ribosome",
+   "name": "Ribosome",
+   "cat": "organelles",
+   "tags": [
+    "ribosome",
+    "translation",
+    "80S",
+    "protein synthesis"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/organelles/ribosome.svg",
+   "aliases": [
+    "ribosome",
+    "translation",
+    "protein synthesis",
+    "Ribosom"
+   ]
+  },
+  {
+   "id": "organelles/vesicle",
+   "name": "Vesicle / exosome",
+   "cat": "organelles",
+   "tags": [
+    "vesicle",
+    "exosome",
+    "EV",
+    "transport",
+    "secretory"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/organelles/vesicle.svg",
+   "aliases": [
+    "vesicle",
+    "exosome",
+    "extracellular vesicle",
+    "EV",
+    "secretion",
+    "endocytosis",
+    "Vesikel"
+   ]
+  },
+  {
+   "id": "molecules/aav",
+   "name": "AAV vector",
+   "cat": "molecules",
+   "tags": [
+    "AAV",
+    "AAV8",
+    "viral vector",
+    "capsid",
+    "gene therapy",
+    "TBG"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/molecules/aav.svg",
+   "aliases": [
+    "AAV",
+    "adeno-associated virus",
+    "AAV8",
+    "AAV9",
+    "viral vector",
+    "gene therapy",
+    "gene delivery",
+    "overexpression",
+    "knockdown",
+    "transduction",
+    "tail vein injection",
+    "Vektor"
+   ]
+  },
+  {
+   "id": "molecules/antibody",
+   "name": "Antibody (IgG)",
+   "cat": "molecules",
+   "tags": [
+    "immunoglobulin",
+    "IgG",
+    "Y-shaped",
+    "Fab",
+    "Fc"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/molecules/antibody.svg",
+   "aliases": [
+    "antibody",
+    "IgG",
+    "immunoglobulin",
+    "antibodies",
+    "immunostaining",
+    "ELISA",
+    "Western blot antibody",
+    "Antikörper"
+   ]
+  },
+  {
+   "id": "molecules/atp",
+   "name": "ATP",
+   "cat": "molecules",
+   "tags": [
+    "ATP",
+    "energy",
+    "nucleotide",
+    "phosphate",
+    "adenosine"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/molecules/atp.svg",
+   "aliases": [
+    "ATP",
+    "energy",
+    "adenosine triphosphate",
+    "ATP production",
+    "Energie"
+   ]
+  },
+  {
+   "id": "molecules/bilayer",
+   "name": "Membrane segment",
+   "cat": "molecules",
+   "tags": [
+    "lipid bilayer",
+    "phospholipid",
+    "plasma membrane"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/molecules/bilayer.svg",
+   "aliases": [
+    "membrane",
+    "cell membrane",
+    "plasma membrane",
+    "lipid bilayer",
+    "phospholipid",
+    "Membran",
+    "Zellmembran"
+   ]
+  },
+  {
+   "id": "molecules/channel-side",
+   "name": "Membrane channel (two halves, side view)",
+   "cat": "molecules",
+   "tags": [
+    "channel",
+    "ion channel",
+    "pore",
+    "membrane channel",
+    "transporter",
+    "side view"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/molecules/channel-side.svg",
+   "aliases": [
+    "channel",
+    "ion channel",
+    "pore",
+    "membrane channel",
+    "transporter",
+    "side view",
+    "Kanal"
+   ]
+  },
+  {
+   "id": "molecules/channel-tetramer",
+   "name": "Channel with four subunits (side view)",
+   "cat": "molecules",
+   "tags": [
+    "channel",
+    "tetramer",
+    "ion channel",
+    "potassium channel",
+    "aquaporin",
+    "four subunits",
+    "side view"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/molecules/channel-tetramer.svg",
+   "aliases": [
+    "channel",
+    "tetramer",
+    "ion channel",
+    "potassium channel",
+    "aquaporin",
+    "four subunits",
+    "side view"
+   ]
+  },
+  {
+   "id": "molecules/channel",
+   "name": "Ion channel",
+   "cat": "molecules",
+   "tags": [
+    "channel",
+    "transporter",
+    "pore",
+    "membrane protein"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/molecules/channel.svg",
+   "aliases": [
+    "ion channel",
+    "channel",
+    "pore",
+    "membrane channel",
+    "Ionenkanal"
+   ]
+  },
+  {
+   "id": "molecules/cholesterol",
+   "name": "Cholesterol",
+   "cat": "molecules",
+   "tags": [
+    "cholesterol",
+    "sterol",
+    "steroid",
+    "LDL",
+    "lipid",
+    "ball and stick"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/molecules/cholesterol.svg",
+   "aliases": [
+    "cholesterol",
+    "sterol",
+    "LDL",
+    "HDL",
+    "Cholesterin"
+   ]
+  },
+  {
+   "id": "molecules/chromatin-beads",
+   "name": "Chromatin, beads on a string (two nucleosomes)",
+   "cat": "molecules",
+   "tags": [
+    "chromatin",
+    "nucleosomes",
+    "beads on a string",
+    "histones",
+    "DNA",
+    "linker DNA",
+    "epigenetics",
+    "ChIP"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/molecules/chromatin-beads.svg",
+   "aliases": [
+    "chromatin",
+    "beads on a string",
+    "nucleosomes",
+    "linker DNA",
+    "histones",
+    "open chromatin",
+    "ChIP"
+   ]
+  },
+  {
+   "id": "molecules/chromosome",
+   "name": "Chromosome",
+   "cat": "molecules",
+   "tags": [
+    "chromosome",
+    "chromatid",
+    "centromere",
+    "karyotype",
+    "metaphase"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/molecules/chromosome.svg",
+   "aliases": [
+    "chromosome",
+    "chromosomes",
+    "karyotype",
+    "Chromosom"
+   ]
+  },
+  {
+   "id": "molecules/dna",
+   "name": "DNA double helix",
+   "cat": "molecules",
+   "tags": [
+    "genome",
+    "chromosome",
+    "helix",
+    "DNA",
+    "double strand"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/molecules/dna.svg",
+   "aliases": [
+    "DNA",
+    "genomic DNA",
+    "gDNA",
+    "double helix",
+    "genome",
+    "DNA isolation",
+    "DNA extraction",
+    "genotyping",
+    "Erbgut"
+   ]
+  },
+  {
+   "id": "molecules/enzyme-bilobed",
+   "name": "Two-lobed enzyme (generic)",
+   "cat": "molecules",
+   "tags": [
+    "enzyme",
+    "two domains",
+    "bilobed",
+    "cleft",
+    "kinase",
+    "protein"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/molecules/enzyme-bilobed.svg",
+   "aliases": [
+    "enzyme",
+    "two-domain protein",
+    "bilobed",
+    "cleft",
+    "kinase",
+    "generic protein"
+   ]
+  },
+  {
+   "id": "molecules/enzyme-pocket",
+   "name": "Enzyme with active site (generic)",
+   "cat": "molecules",
+   "tags": [
+    "enzyme",
+    "active site",
+    "catalytic pocket",
+    "protein",
+    "generic enzyme"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/molecules/enzyme-pocket.svg",
+   "aliases": [
+    "enzyme",
+    "generic enzyme",
+    "active site",
+    "catalytic site",
+    "binding pocket",
+    "protein",
+    "Enzym"
+   ]
+  },
+  {
+   "id": "molecules/enzyme-substrate",
+   "name": "Enzyme with substrate in the active site",
+   "cat": "molecules",
+   "tags": [
+    "enzyme",
+    "substrate",
+    "enzyme-substrate complex",
+    "active site",
+    "catalysis",
+    "binding"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/molecules/enzyme-substrate.svg",
+   "aliases": [
+    "enzyme-substrate complex",
+    "enzyme",
+    "substrate",
+    "catalysis",
+    "reaction",
+    "active site",
+    "binding",
+    "Enzym",
+    "Substrat"
+   ]
+  },
+  {
+   "id": "molecules/enzyme",
+   "name": "Enzyme + substrate",
+   "cat": "molecules",
+   "tags": [
+    "enzyme",
+    "catalysis",
+    "active site",
+    "substrate",
+    "kinase"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/molecules/enzyme.svg",
+   "aliases": [
+    "enzyme",
+    "enzymatic reaction",
+    "catalysis",
+    "substrate",
+    "kinase",
+    "Enzym"
+   ]
+  },
+  {
+   "id": "molecules/epitope-tag",
+   "name": "Epitope tag label (FLAG, HA, Myc…)",
+   "cat": "molecules",
+   "tags": [
+    "tag",
+    "epitope tag",
+    "FLAG tag",
+    "HA tag",
+    "Myc tag",
+    "His tag",
+    "label",
+    "fusion tag"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/molecules/epitope-tag.svg",
+   "aliases": [
+    "FLAG tag",
+    "epitope tag",
+    "HA tag",
+    "Myc tag",
+    "His tag",
+    "V5 tag",
+    "GFP tag",
+    "fusion tag",
+    "tagged protein",
+    "label",
+    "Tag"
+   ]
+  },
+  {
+   "id": "molecules/fatty-acid",
+   "name": "Fatty acid",
+   "cat": "molecules",
+   "tags": [
+    "fatty acid",
+    "palmitate",
+    "lipid",
+    "FFA",
+    "acyl chain",
+    "palmitic acid",
+    "C16:0",
+    "ball and stick"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/molecules/fatty-acid.svg",
+   "aliases": [
+    "fatty acid",
+    "free fatty acid",
+    "FFA",
+    "palmitate",
+    "palmitic acid",
+    "oleate",
+    "lipid",
+    "NEFA",
+    "Fettsäure"
+   ]
+  },
+  {
+   "id": "molecules/gene",
+   "name": "Gene (exons)",
+   "cat": "molecules",
+   "tags": [
+    "promoter",
+    "locus",
+    "transcription",
+    "exon",
+    "intron",
+    "gene"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/molecules/gene.svg",
+   "aliases": [
+    "gene",
+    "promoter",
+    "gene expression",
+    "transcription",
+    "locus",
+    "exon",
+    "Gen"
+   ]
+  },
+  {
+   "id": "molecules/glucose",
+   "name": "Glucose",
+   "cat": "molecules",
+   "tags": [
+    "glucose",
+    "sugar",
+    "hexose",
+    "carbohydrate",
+    "metabolite",
+    "beta-D-glucopyranose",
+    "Haworth",
+    "ball and stick"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/molecules/glucose.svg",
+   "aliases": [
+    "glucose",
+    "sugar",
+    "blood glucose",
+    "carbohydrate",
+    "GTT",
+    "glucose tolerance",
+    "Zucker",
+    "Glukose"
+   ]
+  },
+  {
+   "id": "molecules/heterodimer",
+   "name": "Heterodimer (two different subunits)",
+   "cat": "molecules",
+   "tags": [
+    "heterodimer",
+    "dimer",
+    "two subunits",
+    "protein complex",
+    "partner proteins"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/molecules/heterodimer.svg",
+   "aliases": [
+    "heterodimer",
+    "dimer",
+    "two subunits",
+    "protein partners",
+    "protein complex",
+    "RXR heterodimer"
+   ]
+  },
+  {
+   "id": "molecules/histone",
+   "name": "Nucleosome",
+   "cat": "molecules",
+   "tags": [
+    "nucleosome",
+    "histone",
+    "chromatin",
+    "epigenetics",
+    "H3K27ac",
+    "octamer"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/molecules/histone.svg",
+   "aliases": [
+    "histone",
+    "nucleosome",
+    "chromatin",
+    "histone modification",
+    "ChIP",
+    "epigenetics",
+    "Histon"
+   ]
+  },
+  {
+   "id": "molecules/homodimer",
+   "name": "Homodimer (two identical subunits)",
+   "cat": "molecules",
+   "tags": [
+    "homodimer",
+    "dimer",
+    "dimerisation",
+    "identical subunits",
+    "protein complex"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/molecules/homodimer.svg",
+   "aliases": [
+    "homodimer",
+    "dimer",
+    "dimerization",
+    "dimerisation",
+    "identical subunits",
+    "protein complex"
+   ]
+  },
+  {
+   "id": "molecules/insulin",
+   "name": "Insulin",
+   "cat": "molecules",
+   "tags": [
+    "insulin",
+    "hormone",
+    "peptide",
+    "A chain",
+    "B chain"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/molecules/insulin.svg",
+   "aliases": [
+    "insulin",
+    "insulin signalling",
+    "insulin signaling",
+    "ITT",
+    "hormone"
+   ]
+  },
+  {
+   "id": "molecules/ions",
+   "name": "Ions",
+   "cat": "molecules",
+   "tags": [
+    "ions",
+    "calcium",
+    "sodium",
+    "potassium",
+    "chloride",
+    "Ca2+",
+    "Na+",
+    "K+"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/molecules/ions.svg",
+   "aliases": [
+    "ions",
+    "ion",
+    "calcium",
+    "sodium",
+    "potassium",
+    "chloride",
+    "electrolytes",
+    "Ionen"
+   ]
+  },
+  {
+   "id": "molecules/ligand-blob",
+   "name": "Ligand (small, generic)",
+   "cat": "molecules",
+   "tags": [
+    "ligand",
+    "small molecule",
+    "hormone",
+    "agonist",
+    "signalling molecule",
+    "factor"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/molecules/ligand-blob.svg",
+   "aliases": [
+    "ligand",
+    "generic ligand",
+    "hormone",
+    "agonist",
+    "antagonist",
+    "small molecule",
+    "signalling molecule"
+   ]
+  },
+  {
+   "id": "molecules/membrane-curved",
+   "name": "Membrane segment, curved",
+   "cat": "molecules",
+   "tags": [
+    "membrane",
+    "plasma membrane",
+    "lipid bilayer",
+    "cell membrane",
+    "curved membrane",
+    "bilayer"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/molecules/membrane-curved.svg",
+   "aliases": [
+    "membrane",
+    "curved membrane",
+    "plasma membrane",
+    "lipid bilayer",
+    "cell membrane",
+    "cell surface",
+    "Membran"
+   ]
+  },
+  {
+   "id": "molecules/methylation",
+   "name": "DNA methylation",
+   "cat": "molecules",
+   "tags": [
+    "CpG",
+    "5mC",
+    "epigenetics",
+    "methyl",
+    "methylation"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/molecules/methylation.svg",
+   "aliases": [
+    "DNA methylation",
+    "methylation",
+    "CpG",
+    "5mC",
+    "bisulfite",
+    "epigenetics",
+    "methylome",
+    "Methylierung"
+   ]
+  },
+  {
+   "id": "molecules/molecule",
+   "name": "Small molecule / drug",
+   "cat": "molecules",
+   "tags": [
+    "compound",
+    "ligand",
+    "drug",
+    "metabolite",
+    "small molecule",
+    "paracetamol",
+    "ball and stick"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/molecules/molecule.svg",
+   "aliases": [
+    "small molecule",
+    "drug",
+    "compound",
+    "ligand",
+    "inhibitor",
+    "agonist",
+    "treatment",
+    "metabolite",
+    "Wirkstoff",
+    "Medikament"
+   ]
+  },
+  {
+   "id": "molecules/mrna",
+   "name": "mRNA",
+   "cat": "molecules",
+   "tags": [
+    "transcript",
+    "RNA",
+    "poly-A",
+    "cap",
+    "mRNA"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/molecules/mrna.svg",
+   "aliases": [
+    "mRNA",
+    "RNA",
+    "transcript",
+    "RNA isolation",
+    "RNA extraction",
+    "gene expression",
+    "RNA-seq",
+    "transcriptome",
+    "Boten-RNA"
+   ]
+  },
+  {
+   "id": "molecules/nucleosome-dna",
+   "name": "Nucleosome (histone octamer with DNA)",
+   "cat": "molecules",
+   "tags": [
+    "nucleosome",
+    "histone",
+    "histone octamer",
+    "chromatin",
+    "DNA",
+    "epigenetics"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/molecules/nucleosome-dna.svg",
+   "aliases": [
+    "nucleosome",
+    "histones",
+    "histone octamer",
+    "chromatin",
+    "DNA wrapped",
+    "H3",
+    "H4",
+    "epigenetics",
+    "Nukleosom",
+    "Histone"
+   ]
+  },
+  {
+   "id": "molecules/phosphate",
+   "name": "Phosphorylation",
+   "cat": "molecules",
+   "tags": [
+    "phosphate",
+    "phosphorylation",
+    "P",
+    "kinase",
+    "post-translational",
+    "PO4"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/molecules/phosphate.svg",
+   "aliases": [
+    "phosphorylation",
+    "phosphate",
+    "phospho",
+    "kinase signalling",
+    "Phosphorylierung"
+   ]
+  },
+  {
+   "id": "molecules/plasmid",
+   "name": "Plasmid",
+   "cat": "molecules",
+   "tags": [
+    "vector",
+    "construct",
+    "cloning",
+    "plasmid",
+    "AmpR",
+    "ori"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/molecules/plasmid.svg",
+   "aliases": [
+    "plasmid",
+    "vector",
+    "construct",
+    "cloning",
+    "transfection"
+   ]
+  },
+  {
+   "id": "molecules/protein-elongated",
+   "name": "Elongated protein (generic)",
+   "cat": "molecules",
+   "tags": [
+    "protein",
+    "elongated protein",
+    "fibrous",
+    "bean shaped",
+    "generic protein"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/molecules/protein-elongated.svg",
+   "aliases": [
+    "protein",
+    "elongated protein",
+    "fibrous protein",
+    "structural protein",
+    "generic protein"
+   ]
+  },
+  {
+   "id": "molecules/protein-globular",
+   "name": "Globular protein (generic)",
+   "cat": "molecules",
+   "tags": [
+    "protein",
+    "globular protein",
+    "generic protein",
+    "polypeptide",
+    "factor"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/molecules/protein-globular.svg",
+   "aliases": [
+    "protein",
+    "globular protein",
+    "generic protein",
+    "factor",
+    "cytokine",
+    "polypeptide"
+   ]
+  },
+  {
+   "id": "molecules/protein",
+   "name": "Protein complex",
+   "cat": "molecules",
+   "tags": [
+    "enzyme",
+    "protein",
+    "complex",
+    "subunit"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/molecules/protein.svg",
+   "aliases": [
+    "protein",
+    "protein complex",
+    "proteins",
+    "proteomics"
+   ]
+  },
+  {
+   "id": "molecules/receptor-dimer",
+   "name": "Receptor dimer in the membrane, with ligand",
+   "cat": "molecules",
+   "tags": [
+    "receptor",
+    "receptor dimer",
+    "transmembrane receptor",
+    "receptor tyrosine kinase",
+    "RTK",
+    "cytokine receptor",
+    "ligand binding",
+    "membrane"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/molecules/receptor-dimer.svg",
+   "aliases": [
+    "receptor dimer",
+    "transmembrane receptor",
+    "receptor tyrosine kinase",
+    "RTK",
+    "insulin receptor",
+    "cytokine receptor",
+    "ligand",
+    "membrane",
+    "Rezeptor"
+   ]
+  },
+  {
+   "id": "molecules/receptor-pocket",
+   "name": "Membrane receptor with ligand in its pocket",
+   "cat": "molecules",
+   "tags": [
+    "receptor",
+    "membrane receptor",
+    "transmembrane",
+    "binding pocket",
+    "ligand",
+    "GPCR",
+    "signalling"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/molecules/receptor-pocket.svg",
+   "aliases": [
+    "membrane receptor",
+    "receptor with ligand",
+    "binding pocket",
+    "GPCR",
+    "transmembrane receptor",
+    "ligand binding",
+    "Rezeptor"
+   ]
+  },
+  {
+   "id": "molecules/receptor",
+   "name": "Receptor (GPCR)",
+   "cat": "molecules",
+   "tags": [
+    "membrane protein",
+    "transmembrane",
+    "ligand",
+    "signalling",
+    "GPCR"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/molecules/receptor.svg",
+   "aliases": [
+    "receptor",
+    "GPCR",
+    "membrane receptor",
+    "cell surface receptor",
+    "Rezeptor"
+   ]
+  },
+  {
+   "id": "molecules/t3",
+   "name": "T3 (triiodothyronine)",
+   "cat": "molecules",
+   "tags": [
+    "T3",
+    "thyroid hormone",
+    "triiodothyronine",
+    "hormone"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/molecules/t3.svg",
+   "aliases": [
+    "T3",
+    "triiodothyronine",
+    "thyroid hormone",
+    "TH",
+    "Schilddrüsenhormon"
+   ]
+  },
+  {
+   "id": "molecules/t4",
+   "name": "T4 (thyroxine)",
+   "cat": "molecules",
+   "tags": [
+    "T4",
+    "thyroid hormone",
+    "thyroxine",
+    "hormone"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/molecules/t4.svg",
+   "aliases": [
+    "T4",
+    "thyroxine",
+    "levothyroxine",
+    "thyroid hormone",
+    "TH",
+    "Schilddrüsenhormon"
+   ]
+  },
+  {
+   "id": "molecules/thyroglobulin",
+   "name": "Thyroglobulin",
+   "cat": "molecules",
+   "tags": [
+    "thyroglobulin",
+    "TG",
+    "colloid",
+    "protein"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/molecules/thyroglobulin.svg",
+   "aliases": [
+    "thyroglobulin",
+    "Tg",
+    "Thyreoglobulin"
+   ]
+  },
+  {
+   "id": "molecules/tr-rxr",
+   "name": "TR/RXR on TRE",
+   "cat": "molecules",
+   "tags": [
+    "thyroid hormone receptor",
+    "TRβ",
+    "TRα",
+    "RXR",
+    "TRE",
+    "nuclear receptor",
+    "transcription"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/molecules/tr-rxr.svg",
+   "aliases": [
+    "thyroid hormone receptor",
+    "TR",
+    "TRα",
+    "TRβ",
+    "THR",
+    "THRB",
+    "RXR",
+    "heterodimer",
+    "TRE",
+    "thyroid hormone response element",
+    "nuclear receptor",
+    "Schilddrüsenhormonrezeptor"
+   ]
+  },
+  {
+   "id": "molecules/transporter-hourglass",
+   "name": "Transporter, hourglass (two halves, side view)",
+   "cat": "molecules",
+   "tags": [
+    "transporter",
+    "carrier",
+    "hourglass",
+    "solute carrier",
+    "SLC",
+    "ABC transporter",
+    "efflux",
+    "uptake",
+    "side view"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/molecules/transporter-hourglass.svg",
+   "aliases": [
+    "transporter",
+    "carrier",
+    "hourglass",
+    "solute carrier",
+    "SLC",
+    "ABC transporter",
+    "MDR",
+    "efflux pump",
+    "uptake",
+    "side view"
+   ]
+  },
+  {
+   "id": "molecules/transporter-membrane",
+   "name": "Membrane transporter with substrate in the pore",
+   "cat": "molecules",
+   "tags": [
+    "transporter",
+    "membrane transporter",
+    "channel",
+    "carrier",
+    "pore",
+    "uptake",
+    "solute",
+    "substrate"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/molecules/transporter-membrane.svg",
+   "aliases": [
+    "transporter",
+    "carrier",
+    "membrane transporter",
+    "channel",
+    "uptake",
+    "efflux",
+    "solute carrier",
+    "SLC"
+   ]
+  },
+  {
+   "id": "molecules/transporter",
+   "name": "Transporter (MCT8)",
+   "cat": "molecules",
+   "tags": [
+    "MCT8",
+    "transporter",
+    "SLC16A2",
+    "membrane",
+    "uptake"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/molecules/transporter.svg",
+   "aliases": [
+    "transporter",
+    "MCT8",
+    "MCT10",
+    "OATP",
+    "thyroid hormone transporter",
+    "membrane transporter"
+   ]
+  },
+  {
+   "id": "molecules/trimer",
+   "name": "Trimer (three subunits)",
+   "cat": "molecules",
+   "tags": [
+    "trimer",
+    "protein complex",
+    "three subunits",
+    "oligomer",
+    "multimer"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/molecules/trimer.svg",
+   "aliases": [
+    "trimer",
+    "oligomer",
+    "multimer",
+    "protein complex",
+    "three subunits"
+   ]
+  },
+  {
+   "id": "molecules/water",
+   "name": "Water",
+   "cat": "molecules",
+   "tags": [
+    "H2O",
+    "water",
+    "solvent",
+    "hydration"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/molecules/water.svg",
+   "aliases": [
+    "water",
+    "H2O",
+    "Wasser"
+   ]
+  },
+  {
+   "id": "organs/brain-sagittal",
+   "name": "Human brain, midsagittal section",
+   "cat": "organs",
+   "tags": [
+    "brain",
+    "sagittal",
+    "midsagittal",
+    "human",
+    "organ",
+    "CNS"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/organs/brain-sagittal.svg",
+   "aliases": [
+    "brain",
+    "human brain",
+    "CNS",
+    "central nervous system",
+    "hypothalamus",
+    "cortex",
+    "Gehirn",
+    "Hirn"
+   ]
+  },
+  {
+   "id": "organs/brown-fat-interscapular",
+   "name": "Interscapular brown adipose tissue (iBAT)",
+   "cat": "organs",
+   "tags": [
+    "iBAT",
+    "interscapular",
+    "brown adipose tissue",
+    "BAT",
+    "brown fat",
+    "thermogenesis",
+    "mouse",
+    "tissue"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/organs/brown-fat-interscapular.svg",
+   "aliases": [
+    "iBAT",
+    "interscapular BAT",
+    "brown fat",
+    "brown adipose tissue",
+    "thermogenesis",
+    "UCP1",
+    "braunes Fett"
+   ]
+  },
+  {
+   "id": "organs/brown-fat",
+   "name": "Brown adipose tissue (lobulated)",
+   "cat": "organs",
+   "tags": [
+    "brown adipose tissue",
+    "BAT",
+    "brown fat",
+    "thermogenesis",
+    "adipose",
+    "tissue"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/organs/brown-fat.svg",
+   "aliases": [
+    "BAT",
+    "brown fat",
+    "brown adipose tissue",
+    "thermogenesis",
+    "UCP1",
+    "braunes Fettgewebe"
+   ]
+  },
+  {
+   "id": "organs/kidney",
+   "name": "Human kidney, coronal section",
+   "cat": "organs",
+   "tags": [
+    "kidney",
+    "renal",
+    "nephron",
+    "cortex",
+    "medulla",
+    "human",
+    "organ"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/organs/kidney.svg",
+   "aliases": [
+    "kidney",
+    "kidneys",
+    "renal",
+    "nephron",
+    "Niere"
+   ]
+  },
+  {
+   "id": "organs/liver-human-cirrhosis",
+   "name": "Human liver, cirrhosis",
+   "cat": "organs",
+   "tags": [
+    "cirrhosis",
+    "liver cirrhosis",
+    "fibrosis",
+    "nodules",
+    "human liver",
+    "gallbladder"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/organs/liver-human-cirrhosis.svg",
+   "aliases": [
+    "cirrhosis",
+    "liver cirrhosis",
+    "cirrhotic liver",
+    "fibrosis",
+    "advanced fibrosis",
+    "end-stage liver",
+    "nodular liver",
+    "Zirrhose",
+    "Leberzirrhose"
+   ]
+  },
+  {
+   "id": "organs/liver-human-healthy",
+   "name": "Human liver with gallbladder",
+   "cat": "organs",
+   "tags": [
+    "liver",
+    "human liver",
+    "healthy liver",
+    "gallbladder",
+    "hepatic",
+    "organ"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/organs/liver-human-healthy.svg",
+   "aliases": [
+    "human liver",
+    "liver",
+    "healthy liver",
+    "gallbladder",
+    "hepatic",
+    "anterior view",
+    "organ",
+    "Leber",
+    "Gallenblase"
+   ]
+  },
+  {
+   "id": "organs/liver-human-mash",
+   "name": "Human liver, MASH (steatohepatitis)",
+   "cat": "organs",
+   "tags": [
+    "MASH",
+    "NASH",
+    "steatohepatitis",
+    "inflammation",
+    "fatty liver",
+    "human liver",
+    "gallbladder"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/organs/liver-human-mash.svg",
+   "aliases": [
+    "MASH",
+    "NASH",
+    "steatohepatitis",
+    "liver inflammation",
+    "inflamed fatty liver"
+   ]
+  },
+  {
+   "id": "organs/liver-human-steatotic",
+   "name": "Human liver, steatotic (fatty)",
+   "cat": "organs",
+   "tags": [
+    "fatty liver",
+    "steatosis",
+    "MASLD",
+    "NAFLD",
+    "human liver",
+    "gallbladder"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/organs/liver-human-steatotic.svg",
+   "aliases": [
+    "fatty liver",
+    "steatosis",
+    "MASLD",
+    "NAFLD",
+    "MAFLD",
+    "human fatty liver",
+    "Fettleber"
+   ]
+  },
+  {
+   "id": "organs/liver-human-tumour",
+   "name": "Human liver with tumour (HCC)",
+   "cat": "organs",
+   "tags": [
+    "HCC",
+    "hepatocellular carcinoma",
+    "liver cancer",
+    "tumour",
+    "tumor",
+    "human liver",
+    "gallbladder"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/organs/liver-human-tumour.svg",
+   "aliases": [
+    "HCC",
+    "hepatocellular carcinoma",
+    "liver cancer",
+    "liver tumour",
+    "liver tumor",
+    "nodules",
+    "Leberkrebs",
+    "Lebertumor"
+   ]
+  },
+  {
+   "id": "organs/liver-mouse-steatotic",
+   "name": "Steatotic mouse liver",
+   "cat": "organs",
+   "tags": [
+    "liver",
+    "steatosis",
+    "MASLD",
+    "fatty liver",
+    "mouse",
+    "organ"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/organs/liver-mouse-steatotic.svg",
+   "aliases": [
+    "fatty liver",
+    "steatotic liver",
+    "MASLD",
+    "NAFLD",
+    "MAFLD",
+    "MASH",
+    "NASH",
+    "steatosis",
+    "liver disease",
+    "HFD liver",
+    "Fettleber"
+   ]
+  },
+  {
+   "id": "organs/liver-mouse",
+   "name": "Mouse liver",
+   "cat": "organs",
+   "tags": [
+    "liver",
+    "healthy liver",
+    "mouse",
+    "organ",
+    "hepatic"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/organs/liver-mouse.svg",
+   "aliases": [
+    "liver",
+    "mouse liver",
+    "healthy liver",
+    "hepatic",
+    "liver tissue",
+    "organ harvest",
+    "Leber"
+   ]
+  },
+  {
+   "id": "organs/liver-tissue",
+   "name": "Liver lobule histology",
+   "cat": "organs",
+   "tags": [
+    "liver",
+    "histology",
+    "H&E",
+    "hepatocytes",
+    "sinusoids",
+    "central vein",
+    "portal triad"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/organs/liver-tissue.svg",
+   "aliases": [
+    "liver tissue",
+    "liver section",
+    "histology",
+    "H&E",
+    "hepatic tissue",
+    "liver histology",
+    "Lebergewebe"
+   ]
+  },
+  {
+   "id": "organs/lobule-zonated",
+   "name": "Liver lobule with hepatocytes (zonation)",
+   "cat": "organs",
+   "tags": [
+    "zonation",
+    "pericentral",
+    "periportal",
+    "hepatocytes",
+    "central vein",
+    "portal triad",
+    "lobule",
+    "zone 1",
+    "zone 3",
+    "metabolic zonation"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/organs/lobule-zonated.svg",
+   "aliases": [
+    "zonation",
+    "liver zonation",
+    "zonated lobule",
+    "periportal",
+    "pericentral",
+    "midlobular",
+    "metabolic zonation",
+    "Zonierung"
+   ]
+  },
+  {
+   "id": "organs/lobule",
+   "name": "Liver lobule (zonation)",
+   "cat": "organs",
+   "tags": [
+    "zonation",
+    "portal triad",
+    "central vein",
+    "periportal",
+    "pericentral",
+    "sinusoid",
+    "hepatic plates",
+    "liver lobule"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/organs/lobule.svg",
+   "aliases": [
+    "liver lobule",
+    "lobule",
+    "hepatic lobule",
+    "central vein",
+    "portal triad",
+    "sinusoid",
+    "Leberläppchen"
+   ]
+  },
+  {
+   "id": "organs/organ-blob",
+   "name": "Generic organ",
+   "cat": "organs",
+   "tags": [
+    "organ",
+    "tissue",
+    "generic",
+    "placeholder"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/organs/organ-blob.svg",
+   "aliases": [
+    "organ",
+    "tissue",
+    "generic organ",
+    "Gewebe"
+   ]
+  },
+  {
+   "id": "organs/white-adipose-section",
+   "name": "White adipose tissue section with immune cells",
+   "cat": "organs",
+   "tags": [
+    "white adipose tissue",
+    "WAT",
+    "adipocytes",
+    "adipose",
+    "immune cells",
+    "macrophages",
+    "inflammation",
+    "section",
+    "histology"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/organs/white-adipose-section.svg",
+   "aliases": [
+    "white adipose tissue",
+    "WAT",
+    "eWAT",
+    "epididymal fat",
+    "inguinal fat",
+    "iWAT",
+    "adipose inflammation",
+    "crown-like structure",
+    "weißes Fettgewebe"
+   ]
+  },
+  {
+   "id": "animals/drosophila",
+   "name": "Fruit fly",
+   "cat": "animals",
+   "tags": [
+    "Drosophila",
+    "fly",
+    "insect",
+    "model organism",
+    "Drosophila melanogaster",
+    "dorsal view",
+    "wing veins"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/animals/drosophila.svg",
+   "aliases": [
+    "Drosophila",
+    "fruit fly",
+    "fly",
+    "Drosophila melanogaster",
+    "insect",
+    "model organism",
+    "Fruchtfliege",
+    "Taufliege"
+   ]
+  },
+  {
+   "id": "animals/mouse-black-side",
+   "name": "Black lab mouse (C57BL/6), side view",
+   "cat": "animals",
+   "tags": [
+    "mouse",
+    "C57BL/6",
+    "black mouse",
+    "in vivo",
+    "rodent",
+    "side view"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/animals/mouse-black-side.svg",
+   "aliases": [
+    "mouse",
+    "mice",
+    "C57BL/6",
+    "C57BL/6J",
+    "B6",
+    "black mouse",
+    "lab mouse",
+    "laboratory mouse",
+    "rodent",
+    "animal",
+    "wild type",
+    "WT",
+    "knockout mouse",
+    "KO mouse",
+    "transgenic mouse",
+    "in vivo",
+    "animal model",
+    "cohort",
+    "Maus",
+    "Mäuse"
+   ]
+  },
+  {
+   "id": "lab/analytical-balance",
+   "name": "Analytical balance",
+   "cat": "lab",
+   "tags": [
+    "balance",
+    "scale",
+    "weighing",
+    "analytical balance",
+    "lab equipment"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/lab/analytical-balance.svg",
+   "aliases": [
+    "balance",
+    "scale",
+    "weighing",
+    "body weight",
+    "analytical balance",
+    "Waage"
+   ]
+  },
+  {
+   "id": "lab/beaker",
+   "name": "Beaker with liquid",
+   "cat": "lab",
+   "tags": [
+    "beaker",
+    "glassware",
+    "solution",
+    "liquid",
+    "buffer"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/lab/beaker.svg",
+   "aliases": [
+    "beaker",
+    "glassware",
+    "solution",
+    "buffer",
+    "reagent",
+    "medium",
+    "Becherglas"
+   ]
+  },
+  {
+   "id": "lab/biohazard-bin",
+   "name": "Biohazard waste bin",
+   "cat": "lab",
+   "tags": [
+    "biohazard",
+    "waste",
+    "bin",
+    "disposal",
+    "safety"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/lab/biohazard-bin.svg",
+   "aliases": [
+    "biohazard",
+    "biological waste",
+    "waste bin",
+    "S2",
+    "BSL-2",
+    "biosafety",
+    "Abfall"
+   ]
+  },
+  {
+   "id": "lab/biosafety-cabinet",
+   "name": "Biosafety cabinet (laminar flow hood)",
+   "cat": "lab",
+   "tags": [
+    "biosafety cabinet",
+    "laminar flow",
+    "hood",
+    "sterile",
+    "cell culture",
+    "lab equipment"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/lab/biosafety-cabinet.svg",
+   "aliases": [
+    "biosafety cabinet",
+    "laminar flow hood",
+    "cell culture hood",
+    "sterile bench",
+    "BSC",
+    "clean bench",
+    "Sterilbank",
+    "Werkbank"
+   ]
+  },
+  {
+   "id": "lab/cell-culture-flask",
+   "name": "Cell culture flask with medium",
+   "cat": "lab",
+   "tags": [
+    "cell culture",
+    "flask",
+    "T75",
+    "medium",
+    "in vitro"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/lab/cell-culture-flask.svg",
+   "aliases": [
+    "cell culture flask",
+    "culture flask",
+    "T75",
+    "T25",
+    "cell culture",
+    "cultured cells",
+    "in vitro",
+    "Zellkulturflasche"
+   ]
+  },
+  {
+   "id": "lab/centrifuge-open",
+   "name": "Benchtop centrifuge, lid open",
+   "cat": "lab",
+   "tags": [
+    "centrifuge",
+    "microcentrifuge",
+    "rotor",
+    "tubes",
+    "spin",
+    "lab equipment"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/lab/centrifuge-open.svg",
+   "aliases": [
+    "centrifuge",
+    "centrifugation",
+    "spin down",
+    "microcentrifuge",
+    "pellet",
+    "Zentrifuge"
+   ]
+  },
+  {
+   "id": "lab/chow-pellets",
+   "name": "Rodent chow pellets",
+   "cat": "lab",
+   "tags": [
+    "chow",
+    "pellets",
+    "food",
+    "diet",
+    "rodent diet",
+    "feeding",
+    "husbandry"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/lab/chow-pellets.svg",
+   "aliases": [
+    "chow",
+    "normal chow",
+    "standard diet",
+    "control diet",
+    "NCD",
+    "rodent diet",
+    "food pellets",
+    "Futter"
+   ]
+  },
+  {
+   "id": "lab/digital-timer",
+   "name": "Digital timer",
+   "cat": "lab",
+   "tags": [
+    "timer",
+    "time",
+    "minutes",
+    "incubation time",
+    "countdown"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/lab/digital-timer.svg",
+   "aliases": [
+    "timer",
+    "incubation time",
+    "time",
+    "countdown",
+    "Uhr"
+   ]
+  },
+  {
+   "id": "lab/dish-hepatocyte-monolayer",
+   "name": "Hepatocyte monolayer in a culture dish",
+   "cat": "lab",
+   "tags": [
+    "hepatocyte culture",
+    "monolayer",
+    "primary hepatocytes",
+    "petri dish",
+    "cell culture",
+    "top view"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/lab/dish-hepatocyte-monolayer.svg",
+   "aliases": [
+    "primary hepatocyte culture",
+    "hepatocyte monolayer",
+    "confluent cells",
+    "cultured hepatocytes",
+    "petri dish",
+    "culture dish",
+    "in vitro",
+    "Hepatozytenkultur",
+    "Zellkultur"
+   ]
+  },
+  {
+   "id": "lab/dish-hepatocytes-medium",
+   "name": "Hepatocytes in a culture dish with medium",
+   "cat": "lab",
+   "tags": [
+    "hepatocytes",
+    "culture dish",
+    "medium",
+    "petri dish",
+    "cell culture",
+    "in vitro"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/lab/dish-hepatocytes-medium.svg",
+   "aliases": [
+    "cultured hepatocytes",
+    "cells in medium",
+    "petri dish",
+    "culture dish",
+    "plated cells",
+    "primary cells",
+    "cell culture",
+    "Petrischale",
+    "Zellkultur"
+   ]
+  },
+  {
+   "id": "lab/dish-stack",
+   "name": "Stack of culture dishes",
+   "cat": "lab",
+   "tags": [
+    "petri dish",
+    "culture dish",
+    "cell culture",
+    "plates",
+    "in vitro"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/lab/dish-stack.svg",
+   "aliases": [
+    "petri dish",
+    "culture dish",
+    "cell culture plate",
+    "6-well plate",
+    "cell culture",
+    "plating",
+    "Petrischale"
+   ]
+  },
+  {
+   "id": "lab/droplet-gem",
+   "name": "GEM droplet: gel bead and nucleus",
+   "cat": "lab",
+   "tags": [
+    "GEM",
+    "droplet",
+    "gel bead",
+    "nucleus",
+    "partitioning",
+    "single-nucleus multiome",
+    "10x Genomics",
+    "snRNA-seq",
+    "snATAC-seq",
+    "single-cell"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/lab/droplet-gem.svg",
+   "aliases": [
+    "GEM",
+    "droplet",
+    "gel bead in emulsion",
+    "10x",
+    "single nucleus",
+    "single cell",
+    "Chromium"
+   ]
+  },
+  {
+   "id": "lab/droplet-rt-barcode-red",
+   "name": "Droplet with barcoded RT products (red)",
+   "cat": "lab",
+   "tags": [
+    "droplet",
+    "reverse transcription",
+    "barcodes",
+    "UMI",
+    "GEM",
+    "single-nucleus multiome",
+    "10x Genomics",
+    "snRNA-seq",
+    "snATAC-seq",
+    "single-cell"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/lab/droplet-rt-barcode-red.svg",
+   "aliases": [
+    "droplet",
+    "barcoding",
+    "reverse transcription",
+    "RT",
+    "barcode",
+    "UMI"
+   ]
+  },
+  {
+   "id": "lab/droplet-rt-barcode",
+   "name": "Droplet with barcoded RT products",
+   "cat": "lab",
+   "tags": [
+    "droplet",
+    "reverse transcription",
+    "barcodes",
+    "UMI",
+    "GEM",
+    "single-nucleus multiome",
+    "10x Genomics",
+    "snRNA-seq",
+    "snATAC-seq",
+    "single-cell"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/lab/droplet-rt-barcode.svg",
+   "aliases": [
+    "droplet",
+    "barcoding",
+    "reverse transcription",
+    "RT",
+    "barcode",
+    "UMI"
+   ]
+  },
+  {
+   "id": "lab/ecg-trace",
+   "name": "ECG trace",
+   "cat": "lab",
+   "tags": [
+    "ECG",
+    "electrocardiogram",
+    "QT",
+    "PR",
+    "heart rate",
+    "cardiac"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/lab/ecg-trace.svg",
+   "aliases": [
+    "ECG",
+    "EKG",
+    "electrocardiogram",
+    "heart rhythm",
+    "ECG trace",
+    "QRS",
+    "heart rate",
+    "EKG-Kurve"
+   ]
+  },
+  {
+   "id": "lab/falcon-50ml",
+   "name": "Falcon tube, 50 mL",
+   "cat": "lab",
+   "tags": [
+    "falcon",
+    "50 mL",
+    "conical tube",
+    "centrifuge tube",
+    "tube"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/lab/falcon-50ml.svg",
+   "aliases": [
+    "Falcon tube",
+    "50 ml tube",
+    "15 ml tube",
+    "conical tube",
+    "centrifuge tube",
+    "tube",
+    "sample tube",
+    "Röhrchen"
+   ]
+  },
+  {
+   "id": "lab/gel",
+   "name": "Agarose gel",
+   "cat": "lab",
+   "tags": [
+    "gel",
+    "electrophoresis",
+    "PCR",
+    "DNA ladder",
+    "agarose"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/lab/gel.svg",
+   "aliases": [
+    "gel",
+    "agarose gel",
+    "gel electrophoresis",
+    "DNA gel",
+    "PCR product",
+    "bands",
+    "Gelelektrophorese"
+   ]
+  },
+  {
+   "id": "lab/glucometer",
+   "name": "Glucometer",
+   "cat": "lab",
+   "tags": [
+    "glucose",
+    "blood glucose",
+    "GTT",
+    "ITT",
+    "glucometer",
+    "mg/dL"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/lab/glucometer.svg",
+   "aliases": [
+    "glucometer",
+    "glucose meter",
+    "blood glucose",
+    "glucose measurement",
+    "GTT",
+    "ITT",
+    "Blutzuckermessgerät"
+   ]
+  },
+  {
+   "id": "lab/heatmap",
+   "name": "Expression heatmap",
+   "cat": "lab",
+   "tags": [
+    "heatmap",
+    "RNA-seq",
+    "gene expression",
+    "clustering",
+    "transcriptomics"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/lab/heatmap.svg",
+   "aliases": [
+    "heatmap",
+    "expression heatmap",
+    "clustering",
+    "RNA-seq",
+    "gene expression",
+    "matrix"
+   ]
+  },
+  {
+   "id": "lab/histology-slide",
+   "name": "Histology slide with tissue section",
+   "cat": "lab",
+   "tags": [
+    "histology",
+    "slide",
+    "section",
+    "H&E",
+    "staining",
+    "microscopy"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/lab/histology-slide.svg",
+   "aliases": [
+    "histology",
+    "slide",
+    "tissue section",
+    "H&E",
+    "HE staining",
+    "Oil Red O",
+    "Sirius Red",
+    "immunohistochemistry",
+    "IHC",
+    "staining",
+    "section",
+    "Schnitt",
+    "Objektträger"
+   ]
+  },
+  {
+   "id": "lab/incubator-open",
+   "name": "Cell culture incubator, door open",
+   "cat": "lab",
+   "tags": [
+    "incubator",
+    "cell culture",
+    "culture flask",
+    "37 °C",
+    "CO2",
+    "lab equipment"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/lab/incubator-open.svg",
+   "aliases": [
+    "incubator",
+    "CO2 incubator",
+    "37 °C",
+    "cell culture incubator",
+    "incubation",
+    "Brutschrank",
+    "Inkubator"
+   ]
+  },
+  {
+   "id": "lab/ir-camera",
+   "name": "Infrared (thermal) camera",
+   "cat": "lab",
+   "tags": [
+    "infrared",
+    "thermal imaging",
+    "IR camera",
+    "thermography",
+    "BAT"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/lab/ir-camera.svg",
+   "aliases": [
+    "infrared camera",
+    "IR camera",
+    "thermal imaging",
+    "thermography",
+    "body temperature",
+    "BAT activity",
+    "Wärmebildkamera"
+   ]
+  },
+  {
+   "id": "lab/microfluidic-channel",
+   "name": "Microfluidic channel forming GEMs",
+   "cat": "lab",
+   "tags": [
+    "microfluidics",
+    "chip",
+    "droplets",
+    "GEM generation",
+    "gel beads",
+    "nuclei",
+    "single-nucleus multiome",
+    "10x Genomics",
+    "snRNA-seq",
+    "snATAC-seq",
+    "single-cell"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/lab/microfluidic-channel.svg",
+   "aliases": [
+    "microfluidics",
+    "microfluidic chip",
+    "10x chip",
+    "Chromium chip",
+    "droplet generation",
+    "emulsion"
+   ]
+  },
+  {
+   "id": "lab/microscope",
+   "name": "Light microscope",
+   "cat": "lab",
+   "tags": [
+    "microscope",
+    "microscopy",
+    "histology",
+    "imaging",
+    "lab equipment"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/lab/microscope.svg",
+   "aliases": [
+    "microscope",
+    "microscopy",
+    "imaging",
+    "light microscopy",
+    "confocal",
+    "fluorescence microscopy",
+    "Mikroskop"
+   ]
+  },
+  {
+   "id": "lab/mouse-cage-top",
+   "name": "Mouse cage with bedding, food and water bottle",
+   "cat": "lab",
+   "tags": [
+    "cage",
+    "mouse cage",
+    "home cage",
+    "housing",
+    "bedding",
+    "husbandry",
+    "in vivo"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/lab/mouse-cage-top.svg",
+   "aliases": [
+    "mouse cage",
+    "cage",
+    "housing",
+    "home cage",
+    "animal facility",
+    "husbandry",
+    "Käfig"
+   ]
+  },
+  {
+   "id": "lab/mouse-imaging-chamber",
+   "name": "Mouse in an imaging or exposure chamber",
+   "cat": "lab",
+   "tags": [
+    "imaging chamber",
+    "exposure chamber",
+    "inhalation",
+    "anaesthesia",
+    "mouse",
+    "in vivo",
+    "pump"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/lab/mouse-imaging-chamber.svg",
+   "aliases": [
+    "imaging chamber",
+    "IVIS",
+    "in vivo imaging",
+    "anaesthesia chamber",
+    "anesthesia",
+    "isoflurane",
+    "inhalation",
+    "exposure chamber",
+    "Narkose"
+   ]
+  },
+  {
+   "id": "lab/pipette-set",
+   "name": "Micropipettes on a stand",
+   "cat": "lab",
+   "tags": [
+    "pipette",
+    "micropipette",
+    "pipetting",
+    "pipette stand"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/lab/pipette-set.svg",
+   "aliases": [
+    "pipette",
+    "pipettes",
+    "micropipette",
+    "pipetting"
+   ]
+  },
+  {
+   "id": "lab/plate-6-well",
+   "name": "6-well culture plate",
+   "cat": "lab",
+   "tags": [
+    "6-well plate",
+    "culture plate",
+    "multiwell plate",
+    "cell culture",
+    "medium"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/lab/plate-6-well.svg",
+   "aliases": [
+    "6-well plate",
+    "six-well plate",
+    "multiwell plate",
+    "well plate",
+    "tissue culture plate",
+    "cell culture",
+    "in vitro",
+    "plating",
+    "6-Well-Platte",
+    "Zellkulturplatte"
+   ]
+  },
+  {
+   "id": "lab/qpcr",
+   "name": "Thermocycler (PCR / qPCR)",
+   "cat": "lab",
+   "tags": [
+    "qPCR",
+    "PCR",
+    "thermocycler",
+    "RT-qPCR",
+    "gene expression",
+    "lab equipment"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/lab/qpcr.svg",
+   "aliases": [
+    "qPCR",
+    "RT-qPCR",
+    "PCR",
+    "real-time PCR",
+    "thermocycler",
+    "cycler",
+    "gene expression analysis"
+   ]
+  },
+  {
+   "id": "lab/refrigerator-open",
+   "name": "Lab refrigerator, door open, with sample boxes",
+   "cat": "lab",
+   "tags": [
+    "refrigerator",
+    "fridge",
+    "freezer",
+    "storage",
+    "samples",
+    "sample boxes",
+    "lab equipment"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/lab/refrigerator-open.svg",
+   "aliases": [
+    "freezer",
+    "-80 °C",
+    "-20 °C",
+    "fridge",
+    "refrigerator",
+    "sample storage",
+    "frozen samples",
+    "biobank",
+    "Gefrierschrank",
+    "Kühlschrank"
+   ]
+  },
+  {
+   "id": "lab/refrigerator",
+   "name": "Lab refrigerator",
+   "cat": "lab",
+   "tags": [
+    "refrigerator",
+    "fridge",
+    "freezer",
+    "storage",
+    "-80",
+    "lab equipment"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/lab/refrigerator.svg",
+   "aliases": [
+    "freezer",
+    "-80 °C",
+    "-20 °C",
+    "fridge",
+    "refrigerator",
+    "sample storage",
+    "Gefrierschrank",
+    "Kühlschrank"
+   ]
+  },
+  {
+   "id": "lab/scalpel",
+   "name": "Scalpel",
+   "cat": "lab",
+   "tags": [
+    "scalpel",
+    "dissection",
+    "surgery",
+    "tissue collection",
+    "blade"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/lab/scalpel.svg",
+   "aliases": [
+    "scalpel",
+    "dissection",
+    "surgery",
+    "organ harvest",
+    "tissue collection",
+    "necropsy",
+    "sacrifice",
+    "Skalpell"
+   ]
+  },
+  {
+   "id": "lab/sequencer",
+   "name": "Sequencer (NGS)",
+   "cat": "lab",
+   "tags": [
+    "sequencer",
+    "NGS",
+    "next-generation sequencing",
+    "Illumina",
+    "sequencing"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/lab/sequencer.svg",
+   "aliases": [
+    "sequencer",
+    "sequencing",
+    "NGS",
+    "next-generation sequencing",
+    "RNA-seq",
+    "DNA-seq",
+    "Illumina",
+    "NovaSeq",
+    "NextSeq",
+    "Sequenzierer",
+    "Sequenzierung"
+   ]
+  },
+  {
+   "id": "lab/syringe-empty",
+   "name": "Syringe, empty",
+   "cat": "lab",
+   "tags": [
+    "syringe",
+    "injection",
+    "needle",
+    "empty syringe"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/lab/syringe-empty.svg",
+   "aliases": [
+    "syringe",
+    "needle",
+    "empty syringe",
+    "blood sampling",
+    "Spritze"
+   ]
+  },
+  {
+   "id": "lab/syringe",
+   "name": "Syringe with liquid",
+   "cat": "lab",
+   "tags": [
+    "syringe",
+    "injection",
+    "i.p.",
+    "treatment",
+    "needle",
+    "dose"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/lab/syringe.svg",
+   "aliases": [
+    "syringe",
+    "injection",
+    "i.p. injection",
+    "intraperitoneal",
+    "i.v.",
+    "intravenous",
+    "tail vein",
+    "s.c.",
+    "subcutaneous",
+    "gavage",
+    "treatment",
+    "dosing",
+    "Spritze",
+    "Injektion"
+   ]
+  },
+  {
+   "id": "lab/test-tube-rack",
+   "name": "Test tubes in a rack",
+   "cat": "lab",
+   "tags": [
+    "test tubes",
+    "rack",
+    "tubes",
+    "samples",
+    "solutions"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/lab/test-tube-rack.svg",
+   "aliases": [
+    "test tubes",
+    "tube rack",
+    "samples",
+    "tubes",
+    "Reagenzglas",
+    "Reagenzgläser"
+   ]
+  },
+  {
+   "id": "lab/thermometer-probe",
+   "name": "Digital thermometer (rectal probe)",
+   "cat": "lab",
+   "tags": [
+    "body temperature",
+    "thermometer",
+    "probe",
+    "core temperature"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/lab/thermometer-probe.svg",
+   "aliases": [
+    "thermometer",
+    "rectal probe",
+    "body temperature",
+    "temperature probe",
+    "core temperature"
+   ]
+  },
+  {
+   "id": "lab/tissue-dish",
+   "name": "Tissue piece in a dish (ex vivo)",
+   "cat": "lab",
+   "tags": [
+    "ex vivo",
+    "tissue",
+    "explant",
+    "petri dish",
+    "culture"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/lab/tissue-dish.svg",
+   "aliases": [
+    "tissue explant",
+    "explant",
+    "ex vivo",
+    "tissue culture",
+    "organ culture",
+    "slice culture",
+    "Gewebe"
+   ]
+  },
+  {
+   "id": "lab/tsne",
+   "name": "t-SNE / UMAP plot",
+   "cat": "lab",
+   "tags": [
+    "t-SNE",
+    "UMAP",
+    "single-cell",
+    "clusters",
+    "scRNA-seq",
+    "dimensionality reduction"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/lab/tsne.svg",
+   "aliases": [
+    "t-SNE",
+    "UMAP",
+    "clusters",
+    "single-cell",
+    "scRNA-seq",
+    "embedding"
+   ]
+  },
+  {
+   "id": "lab/tube-atac-library",
+   "name": "Tube with ATAC library",
+   "cat": "lab",
+   "tags": [
+    "ATAC library",
+    "chromatin accessibility",
+    "transposase",
+    "Tn5",
+    "single-nucleus multiome",
+    "10x Genomics",
+    "snRNA-seq",
+    "snATAC-seq",
+    "single-cell"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/lab/tube-atac-library.svg",
+   "aliases": [
+    "ATAC library",
+    "ATAC-seq",
+    "chromatin accessibility",
+    "Tn5",
+    "library preparation"
+   ]
+  },
+  {
+   "id": "lab/tube-gel-beads",
+   "name": "Tube with barcoded gel beads",
+   "cat": "lab",
+   "tags": [
+    "gel beads",
+    "barcoded beads",
+    "10x",
+    "GEM",
+    "single-nucleus multiome",
+    "10x Genomics",
+    "snRNA-seq",
+    "snATAC-seq",
+    "single-cell"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/lab/tube-gel-beads.svg",
+   "aliases": [
+    "gel beads",
+    "barcoded beads",
+    "10x beads"
+   ]
+  },
+  {
+   "id": "lab/tube-gex-library",
+   "name": "Tube with gene expression (GEX) library",
+   "cat": "lab",
+   "tags": [
+    "GEX library",
+    "gene expression",
+    "cDNA library",
+    "RNA-seq library",
+    "single-nucleus multiome",
+    "10x Genomics",
+    "snRNA-seq",
+    "snATAC-seq",
+    "single-cell"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/lab/tube-gex-library.svg",
+   "aliases": [
+    "GEX library",
+    "gene expression library",
+    "cDNA library",
+    "RNA-seq library",
+    "library preparation"
+   ]
+  },
+  {
+   "id": "lab/tube-nuclei",
+   "name": "Tube with single-nucleus suspension",
+   "cat": "lab",
+   "tags": [
+    "nuclei",
+    "nuclei suspension",
+    "nuclei isolation",
+    "single-nucleus multiome",
+    "10x Genomics",
+    "snRNA-seq",
+    "snATAC-seq",
+    "single-cell"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/lab/tube-nuclei.svg",
+   "aliases": [
+    "nuclei",
+    "nuclei isolation",
+    "nuclei suspension",
+    "snRNA-seq",
+    "single nucleus",
+    "Kerne"
+   ]
+  },
+  {
+   "id": "lab/tube-pooled-gem",
+   "name": "Tube with pooled GEMs (barcoded fragments)",
+   "cat": "lab",
+   "tags": [
+    "GEM",
+    "pooled",
+    "barcoded cDNA",
+    "fragments",
+    "single-nucleus multiome",
+    "10x Genomics",
+    "snRNA-seq",
+    "snATAC-seq",
+    "single-cell"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/lab/tube-pooled-gem.svg",
+   "aliases": [
+    "pooled GEMs",
+    "barcoded cDNA",
+    "pooled droplets"
+   ]
+  },
+  {
+   "id": "lab/tube",
+   "name": "Microcentrifuge tube",
+   "cat": "lab",
+   "tags": [
+    "eppendorf",
+    "sample",
+    "tube",
+    "microcentrifuge",
+    "1.5 mL"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/lab/tube.svg",
+   "aliases": [
+    "Eppendorf tube",
+    "microcentrifuge tube",
+    "1.5 ml tube",
+    "tube",
+    "sample tube",
+    "Reaktionsgefäß",
+    "Eppi"
+   ]
+  },
+  {
+   "id": "lab/tweezers",
+   "name": "Tweezers",
+   "cat": "lab",
+   "tags": [
+    "tweezers",
+    "forceps",
+    "dissection",
+    "tool"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/lab/tweezers.svg",
+   "aliases": [
+    "tweezers",
+    "forceps",
+    "dissection",
+    "Pinzette"
+   ]
+  },
+  {
+   "id": "lab/vortex-mixer-round",
+   "name": "Vortex mixer, rounded",
+   "cat": "lab",
+   "tags": [
+    "vortex",
+    "vortex mixer",
+    "mixing",
+    "shaker",
+    "lab equipment"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/lab/vortex-mixer-round.svg",
+   "aliases": [
+    "vortex",
+    "vortex mixer",
+    "mixing",
+    "Vortexer"
+   ]
+  },
+  {
+   "id": "lab/vortex-mixer",
+   "name": "Vortex mixer",
+   "cat": "lab",
+   "tags": [
+    "vortex",
+    "vortex mixer",
+    "mixing",
+    "shaker",
+    "lab equipment"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/lab/vortex-mixer.svg",
+   "aliases": [
+    "vortex",
+    "vortex mixer",
+    "mixing",
+    "Vortexer"
+   ]
+  },
+  {
+   "id": "lab/wash-bottle",
+   "name": "Wash bottle",
+   "cat": "lab",
+   "tags": [
+    "wash bottle",
+    "water",
+    "squeeze bottle",
+    "rinse",
+    "ethanol"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/lab/wash-bottle.svg",
+   "aliases": [
+    "wash bottle",
+    "squeeze bottle",
+    "ethanol",
+    "PBS",
+    "rinse",
+    "Spritzflasche"
+   ]
+  },
+  {
+   "id": "lab/water-bottle",
+   "name": "Cage water bottle",
+   "cat": "lab",
+   "tags": [
+    "water bottle",
+    "drinking water",
+    "cage",
+    "husbandry",
+    "treatment in drinking water"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/lab/water-bottle.svg",
+   "aliases": [
+    "drinking water",
+    "water bottle",
+    "treatment in drinking water",
+    "ad libitum",
+    "Trinkflasche",
+    "Trinkwasser"
+   ]
+  },
+  {
+   "id": "lab/western-blot",
+   "name": "Western blot",
+   "cat": "lab",
+   "tags": [
+    "western blot",
+    "immunoblot",
+    "protein",
+    "bands",
+    "SDS-PAGE"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/lab/western-blot.svg",
+   "aliases": [
+    "western blot",
+    "immunoblot",
+    "protein bands",
+    "SDS-PAGE",
+    "membrane",
+    "Westernblot"
+   ]
+  },
+  {
+   "id": "data/chart-amplification-curve",
+   "name": "qPCR amplification curves",
+   "cat": "data",
+   "tags": [
+    "qPCR",
+    "amplification curve",
+    "RT-qPCR",
+    "Ct",
+    "threshold",
+    "cycles",
+    "fluorescence"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/data/chart-amplification-curve.svg",
+   "aliases": [
+    "qPCR curve",
+    "amplification plot",
+    "Ct value",
+    "RT-qPCR result",
+    "gene expression"
+   ]
+  },
+  {
+   "id": "data/chart-bar-graph",
+   "name": "Bar graph",
+   "cat": "data",
+   "tags": [
+    "bar graph",
+    "bar chart",
+    "columns",
+    "comparison",
+    "groups",
+    "mean",
+    "error bars"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/data/chart-bar-graph.svg",
+   "aliases": [
+    "bar graph",
+    "bar chart",
+    "column chart",
+    "results",
+    "quantification",
+    "Balkendiagramm"
+   ]
+  },
+  {
+   "id": "data/chart-box-plot",
+   "name": "Box plot",
+   "cat": "data",
+   "tags": [
+    "box plot",
+    "boxplot",
+    "whiskers",
+    "median",
+    "quartiles",
+    "distribution"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/data/chart-box-plot.svg",
+   "aliases": [
+    "box plot",
+    "boxplot",
+    "box and whisker",
+    "distribution"
+   ]
+  },
+  {
+   "id": "data/chart-heatmap",
+   "name": "Heatmap",
+   "cat": "data",
+   "tags": [
+    "heatmap",
+    "expression matrix",
+    "clustering",
+    "z-score",
+    "RNA-seq"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/data/chart-heatmap.svg",
+   "aliases": [
+    "heatmap",
+    "expression heatmap",
+    "clustering",
+    "matrix",
+    "z-score"
+   ]
+  },
+  {
+   "id": "data/chart-histogram",
+   "name": "Histogram",
+   "cat": "data",
+   "tags": [
+    "histogram",
+    "distribution",
+    "frequency",
+    "bins"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/data/chart-histogram.svg",
+   "aliases": [
+    "histogram",
+    "frequency distribution",
+    "Histogramm"
+   ]
+  },
+  {
+   "id": "data/chart-line-plot",
+   "name": "Line plot",
+   "cat": "data",
+   "tags": [
+    "line plot",
+    "line graph",
+    "time course",
+    "trend",
+    "curve"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/data/chart-line-plot.svg",
+   "aliases": [
+    "line plot",
+    "line graph",
+    "time course",
+    "curve",
+    "body weight curve",
+    "Liniendiagramm"
+   ]
+  },
+  {
+   "id": "data/chart-pie",
+   "name": "Pie chart",
+   "cat": "data",
+   "tags": [
+    "pie chart",
+    "proportions",
+    "fractions",
+    "composition"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/data/chart-pie.svg",
+   "aliases": [
+    "pie chart",
+    "proportions",
+    "percentages",
+    "Kreisdiagramm",
+    "Tortendiagramm"
+   ]
+  },
+  {
+   "id": "data/chart-scatter-plot",
+   "name": "Scatter plot",
+   "cat": "data",
+   "tags": [
+    "scatter plot",
+    "correlation",
+    "regression",
+    "dots"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/data/chart-scatter-plot.svg",
+   "aliases": [
+    "scatter plot",
+    "correlation",
+    "regression",
+    "dot plot",
+    "Streudiagramm"
+   ]
+  },
+  {
+   "id": "data/chart-survival-curve",
+   "name": "Survival curve",
+   "cat": "data",
+   "tags": [
+    "survival curve",
+    "Kaplan-Meier",
+    "survival",
+    "time to event"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/data/chart-survival-curve.svg",
+   "aliases": [
+    "survival curve",
+    "Kaplan-Meier",
+    "survival analysis",
+    "Überlebenskurve"
+   ]
+  },
+  {
+   "id": "data/chart-western-blot",
+   "name": "Western blot bands",
+   "cat": "data",
+   "tags": [
+    "western blot",
+    "bands",
+    "protein",
+    "immunoblot",
+    "gel"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/data/chart-western-blot.svg",
+   "aliases": [
+    "western blot",
+    "immunoblot",
+    "bands",
+    "protein expression"
+   ]
+  },
+  {
+   "id": "data/chip-seq-tracks",
+   "name": "ChIP-seq signal tracks",
+   "cat": "data",
+   "tags": [
+    "ChIP-seq",
+    "CUT&RUN",
+    "ATAC-seq",
+    "peaks",
+    "genome browser",
+    "signal track",
+    "coverage",
+    "binding sites"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/data/chip-seq-tracks.svg",
+   "aliases": [
+    "ChIP-seq",
+    "CUT&RUN",
+    "CUT&Tag",
+    "ATAC-seq",
+    "peaks",
+    "signal track",
+    "genome browser",
+    "coverage",
+    "binding sites",
+    "bigwig"
+   ]
+  },
+  {
+   "id": "data/heatmap-clustered",
+   "name": "Clustered heatmap with dendrogram",
+   "cat": "data",
+   "tags": [
+    "heatmap",
+    "clustered heatmap",
+    "dendrogram",
+    "hierarchical clustering",
+    "RNA-seq",
+    "gene expression",
+    "z-score"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/data/heatmap-clustered.svg",
+   "aliases": [
+    "heatmap",
+    "heat map",
+    "clustered heatmap",
+    "dendrogram",
+    "hierarchical clustering",
+    "cluster analysis",
+    "RNA-seq",
+    "gene expression",
+    "z-score",
+    "expression matrix",
+    "Clusteranalyse"
+   ]
+  },
+  {
+   "id": "data/umap-clusters",
+   "name": "UMAP / t-SNE cluster plot",
+   "cat": "data",
+   "tags": [
+    "UMAP",
+    "t-SNE",
+    "clusters",
+    "single-cell",
+    "scRNA-seq",
+    "embedding",
+    "cell types"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/data/umap-clusters.svg",
+   "aliases": [
+    "UMAP",
+    "t-SNE",
+    "clusters",
+    "cell clusters",
+    "single-cell",
+    "scRNA-seq",
+    "snRNA-seq",
+    "embedding",
+    "dimensionality reduction"
+   ]
+  },
+  {
+   "id": "symbols/analog-clock",
+   "name": "Wall clock",
+   "cat": "symbols",
+   "tags": [
+    "clock",
+    "time",
+    "time point",
+    "circadian",
+    "hours"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/symbols/analog-clock.svg",
+   "aliases": [
+    "clock",
+    "time point",
+    "hours",
+    "time course",
+    "Uhr"
+   ]
+  },
+  {
+   "id": "symbols/blocked",
+   "name": "Blocked / knockout",
+   "cat": "symbols",
+   "tags": [
+    "knockout",
+    "KO",
+    "inhibited",
+    "deleted",
+    "cross",
+    "blocked"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/symbols/blocked.svg",
+   "aliases": [
+    "blocked",
+    "inhibited",
+    "knockout",
+    "KO",
+    "loss of function",
+    "deletion",
+    "deficiency",
+    "null",
+    "inhibition"
+   ]
+  },
+  {
+   "id": "symbols/bolt",
+   "name": "Stimulus",
+   "cat": "symbols",
+   "tags": [
+    "lightning",
+    "activation",
+    "stress",
+    "signal",
+    "stimulus"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/symbols/bolt.svg",
+   "aliases": [
+    "stimulus",
+    "activation",
+    "stimulation",
+    "signal",
+    "trigger"
+   ]
+  },
+  {
+   "id": "symbols/capsule",
+   "name": "Drug capsule",
+   "cat": "symbols",
+   "tags": [
+    "treatment",
+    "pill",
+    "compound",
+    "dosing",
+    "capsule",
+    "drug"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/symbols/capsule.svg",
+   "aliases": [
+    "drug",
+    "treatment",
+    "pill",
+    "tablet",
+    "medication",
+    "compound",
+    "oral dosing",
+    "Medikament",
+    "Tablette"
+   ]
+  },
+  {
+   "id": "symbols/chow",
+   "name": "Diet pellets (chow)",
+   "cat": "symbols",
+   "tags": [
+    "chow",
+    "diet",
+    "pellets",
+    "HFD",
+    "food",
+    "feeding"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/symbols/chow.svg",
+   "aliases": [
+    "chow",
+    "diet",
+    "food",
+    "standard diet",
+    "control diet",
+    "Futter"
+   ]
+  },
+  {
+   "id": "symbols/clock",
+   "name": "Circadian clock",
+   "cat": "symbols",
+   "tags": [
+    "time",
+    "ZT",
+    "day night",
+    "rhythm",
+    "circadian"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/symbols/clock.svg",
+   "aliases": [
+    "circadian",
+    "circadian clock",
+    "ZT",
+    "zeitgeber time",
+    "day night",
+    "light dark",
+    "rhythm",
+    "Tageszeit"
+   ]
+  },
+  {
+   "id": "symbols/diet",
+   "name": "High-fat diet",
+   "cat": "symbols",
+   "tags": [
+    "HFD",
+    "diet",
+    "food",
+    "chow",
+    "nutrition",
+    "obesity",
+    "food bowl"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/symbols/diet.svg",
+   "aliases": [
+    "high-fat diet",
+    "HFD",
+    "diet",
+    "feeding",
+    "food",
+    "obesity",
+    "diet-induced obesity",
+    "DIO",
+    "Hochfettdiät",
+    "Diät"
+   ]
+  },
+  {
+   "id": "symbols/fibrosis",
+   "name": "Fibrosis (collagen)",
+   "cat": "symbols",
+   "tags": [
+    "fibrosis",
+    "collagen",
+    "ECM",
+    "scarring",
+    "stellate activation"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/symbols/fibrosis.svg",
+   "aliases": [
+    "fibrosis",
+    "collagen",
+    "scarring",
+    "liver fibrosis",
+    "Sirius Red",
+    "Fibrose"
+   ]
+  },
+  {
+   "id": "symbols/flag-marker",
+   "name": "Flag marker (pennant)",
+   "cat": "symbols",
+   "tags": [
+    "flag",
+    "pennant",
+    "marker",
+    "highlight",
+    "milestone",
+    "label"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/symbols/flag-marker.svg",
+   "aliases": [
+    "flag",
+    "marker",
+    "pennant",
+    "highlight",
+    "milestone",
+    "checkpoint",
+    "important",
+    "Fahne",
+    "Flagge"
+   ]
+  },
+  {
+   "id": "symbols/gene-ko",
+   "name": "Gene knockout",
+   "cat": "symbols",
+   "tags": [
+    "KO",
+    "knockout",
+    "CRISPR",
+    "deletion",
+    "gene",
+    "exon deletion"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/symbols/gene-ko.svg",
+   "aliases": [
+    "gene knockout",
+    "knockout",
+    "KO",
+    "deletion",
+    "null allele",
+    "conditional knockout",
+    "Cre",
+    "floxed",
+    "loss of function"
+   ]
+  },
+  {
+   "id": "symbols/injury",
+   "name": "Injury / stress",
+   "cat": "symbols",
+   "tags": [
+    "injury",
+    "damage",
+    "stress",
+    "lightning",
+    "insult"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/symbols/injury.svg",
+   "aliases": [
+    "injury",
+    "damage",
+    "stress",
+    "toxicity",
+    "insult",
+    "Schädigung"
+   ]
+  },
+  {
+   "id": "symbols/lumi",
+   "name": "Bioluminescence",
+   "cat": "symbols",
+   "tags": [
+    "luciferase",
+    "IVIS",
+    "light",
+    "reporter",
+    "photon",
+    "bioluminescence"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/symbols/lumi.svg",
+   "aliases": [
+    "bioluminescence",
+    "luciferase",
+    "IVIS",
+    "luminescence",
+    "reporter",
+    "imaging",
+    "Biolumineszenz"
+   ]
+  },
+  {
+   "id": "symbols/minus",
+   "name": "Decrease",
+   "cat": "symbols",
+   "tags": [
+    "down",
+    "decrease",
+    "downregulated",
+    "arrow down"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/symbols/minus.svg",
+   "aliases": [
+    "decrease",
+    "reduced",
+    "lower",
+    "down",
+    "downregulation",
+    "Abnahme"
+   ]
+  },
+  {
+   "id": "symbols/plus",
+   "name": "Increase",
+   "cat": "symbols",
+   "tags": [
+    "up",
+    "increase",
+    "upregulated",
+    "arrow up"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/symbols/plus.svg",
+   "aliases": [
+    "increase",
+    "increased",
+    "higher",
+    "up",
+    "upregulation",
+    "Zunahme"
+   ]
+  },
+  {
+   "id": "symbols/ros",
+   "name": "ROS",
+   "cat": "symbols",
+   "tags": [
+    "ROS",
+    "reactive oxygen species",
+    "oxidative stress",
+    "inflammation"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/symbols/ros.svg",
+   "aliases": [
+    "ROS",
+    "reactive oxygen species",
+    "oxidative stress",
+    "free radicals"
+   ]
+  },
+  {
+   "id": "symbols/scissors",
+   "name": "CRISPR / Cas9",
+   "cat": "symbols",
+   "tags": [
+    "CRISPR",
+    "Cas9",
+    "gene editing",
+    "sgRNA",
+    "cut",
+    "scissors"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/symbols/scissors.svg",
+   "aliases": [
+    "CRISPR",
+    "Cas9",
+    "gene editing",
+    "genome editing",
+    "sgRNA",
+    "gRNA"
+   ]
+  },
+  {
+   "id": "symbols/time",
+   "name": "Timeline / weeks",
+   "cat": "symbols",
+   "tags": [
+    "time",
+    "weeks",
+    "duration",
+    "study design",
+    "hourglass"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/symbols/time.svg",
+   "aliases": [
+    "time",
+    "weeks",
+    "duration",
+    "timeline",
+    "study duration",
+    "follow-up",
+    "hourglass",
+    "Zeit",
+    "Wochen"
+   ]
+  },
+  {
+   "id": "symbols/western-diet",
+   "name": "Western diet (burger & pizza)",
+   "cat": "symbols",
+   "tags": [
+    "western diet",
+    "HFD",
+    "high-fat diet",
+    "junk food",
+    "obesity",
+    "burger",
+    "pizza"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/symbols/western-diet.svg",
+   "aliases": [
+    "western diet",
+    "WD",
+    "junk food",
+    "cafeteria diet",
+    "high-fat high-sugar",
+    "HFHS",
+    "fast food"
+   ]
+  }
+ ],
+ "templates": [
+  {
+   "id": "graphical-abstract",
+   "name": "Graphical abstract",
+   "description": "Square layout: question, model, three key findings.",
+   "group": "Layouts",
+   "file": "library/templates/graphical-abstract.json"
+  },
+  {
+   "id": "hepatic-zonation",
+   "name": "Hepatic zonation workflow",
+   "description": "Model → tissue → region → two readouts.",
+   "group": "Study design",
+   "file": "library/templates/hepatic-zonation.json"
+  },
+  {
+   "id": "hepatocyte-pathway",
+   "name": "Hepatocyte signalling pathway",
+   "description": "Receptor → nucleus → genes → metabolite pool → outcomes.",
+   "group": "Mechanism",
+   "file": "library/templates/hepatocyte-pathway.json"
+  },
+  {
+   "id": "in-vitro",
+   "name": "In vitro experiment",
+   "description": "Cells → culture → treatment → two readouts.",
+   "group": "Study design",
+   "file": "library/templates/in-vitro.json"
+  },
+  {
+   "id": "panels-2x2",
+   "name": "4-panel figure",
+   "description": "Panel letters A–D with tidy gutters.",
+   "group": "Layouts",
+   "file": "library/templates/panels-2x2.json"
+  },
+  {
+   "id": "pregnancy-treatment",
+   "name": "Pregnancy treatment timeline",
+   "description": "Two groups of dams with their treatment, and a gestation timeline with events and time points.",
+   "group": "Study design",
+   "file": "library/templates/pregnancy-treatment.json"
+  },
+  {
+   "id": "three-circles",
+   "name": "Graphical abstract (circles)",
+   "description": "Three overlapping circles with space for a title, a short text and an image, linked by dashed arrows.",
+   "group": "Layouts",
+   "file": "library/templates/three-circles.json"
+  },
+  {
+   "id": "timeline-axis",
+   "name": "Study timeline (above & below axis)",
+   "description": "Events above the axis, measurements (M1–M4) below.",
+   "group": "Study design",
+   "file": "library/templates/timeline-axis.json"
+  },
+  {
+   "id": "timeline",
+   "name": "Study timeline",
+   "description": "Time axis with four events and a measurement period.",
+   "group": "Study design",
+   "file": "library/templates/timeline.json"
+  },
+  {
+   "id": "treatment-groups",
+   "name": "Treatment groups",
+   "description": "Control vs treated cohorts converging on shared readouts.",
+   "group": "Study design",
+   "file": "library/templates/treatment-groups.json"
+  },
+  {
+   "id": "workflow-4-steps",
+   "name": "Experimental workflow",
+   "description": "Four steps left to right with captions.",
+   "group": "Study design",
+   "file": "library/templates/workflow-4-steps.json"
+  },
+  {
+   "id": "zonation-legend",
+   "name": "Liver lobule zonation with legend",
+   "description": "Tiled lobule (pericentral vs periportal) with a legend panel.",
+   "group": "Mechanism",
+   "file": "library/templates/zonation-legend.json"
+  }
+ ]
+}

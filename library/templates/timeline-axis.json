@@ -1,0 +1,303 @@
+{
+ "name": "Study timeline (above & below axis)",
+ "group": "Study design",
+ "description": "Events above the axis, measurements (M1–M4) below.",
+ "size": {
+  "w": 174,
+  "h": 82
+ },
+ "elements": [
+  {
+   "type": "arrow",
+   "from": [
+    8,
+    41
+   ],
+   "to": [
+    160,
+    41
+   ],
+   "head": "arrow",
+   "dashed": false
+  },
+  {
+   "type": "text",
+   "text": "Time",
+   "x": 168,
+   "y": 41.5,
+   "size": 8,
+   "bold": true,
+   "align": "center"
+  },
+  {
+   "type": "text",
+   "text": "Event 1",
+   "x": 14,
+   "y": 6,
+   "size": 7.5,
+   "bold": false,
+   "align": "center"
+  },
+  {
+   "type": "icon",
+   "ref": "lab/mouse-cage-top",
+   "x": 14,
+   "y": 20,
+   "w": 12
+  },
+  {
+   "type": "arrow",
+   "from": [
+    14,
+    29
+   ],
+   "to": [
+    14,
+    41
+   ],
+   "head": "none",
+   "dashed": false
+  },
+  {
+   "type": "text",
+   "text": "Event 2",
+   "x": 40,
+   "y": 6,
+   "size": 7.5,
+   "bold": false,
+   "align": "center"
+  },
+  {
+   "type": "icon",
+   "ref": "symbols/chow",
+   "x": 40,
+   "y": 20,
+   "w": 13
+  },
+  {
+   "type": "arrow",
+   "from": [
+    40,
+    28
+   ],
+   "to": [
+    40,
+    41
+   ],
+   "head": "none",
+   "dashed": false
+  },
+  {
+   "type": "text",
+   "text": "Event 3",
+   "x": 72,
+   "y": 6,
+   "size": 7.5,
+   "bold": false,
+   "align": "center"
+  },
+  {
+   "type": "icon",
+   "ref": "molecules/aav",
+   "x": 72,
+   "y": 20,
+   "w": 11
+  },
+  {
+   "type": "arrow",
+   "from": [
+    72,
+    28
+   ],
+   "to": [
+    72,
+    41
+   ],
+   "head": "none",
+   "dashed": false
+  },
+  {
+   "type": "text",
+   "text": "Interval",
+   "x": 76,
+   "y": 36,
+   "size": 6.5,
+   "bold": false,
+   "align": "center"
+  },
+  {
+   "type": "text",
+   "text": "Event 4",
+   "x": 110,
+   "y": 6,
+   "size": 7.5,
+   "bold": false,
+   "align": "center"
+  },
+  {
+   "type": "icon",
+   "ref": "lab/mouse-cage-top",
+   "x": 110,
+   "y": 20,
+   "w": 13
+  },
+  {
+   "type": "arrow",
+   "from": [
+    110,
+    29
+   ],
+   "to": [
+    110,
+    41
+   ],
+   "head": "none",
+   "dashed": false
+  },
+  {
+   "type": "text",
+   "text": "Event 5",
+   "x": 146,
+   "y": 6,
+   "size": 7.5,
+   "bold": false,
+   "align": "center"
+  },
+  {
+   "type": "icon",
+   "ref": "organs/liver-mouse",
+   "x": 146,
+   "y": 20,
+   "w": 13
+  },
+  {
+   "type": "arrow",
+   "from": [
+    146,
+    28
+   ],
+   "to": [
+    146,
+    41
+   ],
+   "head": "none",
+   "dashed": false
+  },
+  {
+   "type": "arrow",
+   "from": [
+    30,
+    41
+   ],
+   "to": [
+    30,
+    50
+   ],
+   "head": "none",
+   "dashed": false
+  },
+  {
+   "type": "icon",
+   "ref": "lab/ir-camera",
+   "x": 30,
+   "y": 58,
+   "w": 11
+  },
+  {
+   "type": "text",
+   "text": "M1",
+   "x": 30,
+   "y": 68,
+   "size": 7.5,
+   "bold": true,
+   "align": "center"
+  },
+  {
+   "type": "arrow",
+   "from": [
+    102,
+    41
+   ],
+   "to": [
+    102,
+    50
+   ],
+   "head": "none",
+   "dashed": false
+  },
+  {
+   "type": "icon",
+   "ref": "lab/ir-camera",
+   "x": 102,
+   "y": 58,
+   "w": 11
+  },
+  {
+   "type": "text",
+   "text": "M2",
+   "x": 102,
+   "y": 68,
+   "size": 7.5,
+   "bold": true,
+   "align": "center"
+  },
+  {
+   "type": "arrow",
+   "from": [
+    126,
+    41
+   ],
+   "to": [
+    126,
+    50
+   ],
+   "head": "none",
+   "dashed": false
+  },
+  {
+   "type": "icon",
+   "ref": "lab/glucometer",
+   "x": 126,
+   "y": 58,
+   "w": 8
+  },
+  {
+   "type": "text",
+   "text": "M3",
+   "x": 126,
+   "y": 68,
+   "size": 7.5,
+   "bold": true,
+   "align": "center"
+  },
+  {
+   "type": "arrow",
+   "from": [
+    140,
+    41
+   ],
+   "to": [
+    140,
+    50
+   ],
+   "head": "none",
+   "dashed": false
+  },
+  {
+   "type": "icon",
+   "ref": "lab/glucometer",
+   "x": 140,
+   "y": 58,
+   "w": 8
+  },
+  {
+   "type": "text",
+   "text": "M4",
+   "x": 140,
+   "y": 68,
+   "size": 7.5,
+   "bold": true,
+   "align": "center"
+  }
+ ]
+}
