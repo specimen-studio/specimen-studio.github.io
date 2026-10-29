@@ -473,7 +473,7 @@ body.resizing{cursor:col-resize;user-select:none}
     <section class="pane" data-pane="ai" hidden>
       <h2>Draw with AI</h2>
       <p class="lede">Describe what you need. Claude draws it as an editable vector icon in the library style.</p>
-      <div id="aiUnavailable" class="warnnote" hidden>AI drawing (beta) is only in the Claude version of Specimen Studio, which opens for invited Claude users (<a href="https://claude.ai/artifact/FbV4uJuBRnNFq2Nyeigy2A" target="_blank" rel="noopener">open in Claude</a>). Can't find an icon? Use <b>Request an icon</b> in the gallery. Everything else works here.</div>
+      <div id="aiUnavailable" class="warnnote" hidden>AI drawing (beta) is in the Claude version of Specimen Studio: <a href="https://claude.ai/artifact/FbV4uJuBRnNFq2Nyeigy2A" target="_blank" rel="noopener">open in Claude</a> (browser or Claude app). Can't find an icon? Use <b>Request an icon</b> in the gallery. Everything else works here.</div>
       <div class="sec">
         <span class="label">Icon</span>
         <textarea id="aiDesc" placeholder="e.g. Hepatocyte with lipid droplets, cross-section">Kupffer cell (liver macrophage) with pseudopods</textarea>
@@ -636,7 +636,7 @@ body.resizing{cursor:col-resize;user-select:none}
     <p class="small muted" style="margin:-6px 0 0">A figure editor for the life sciences: our own icon library, templates, brushes and AI drawing.</p>
     <div class="sec"><span class="label">Concept &amp; design</span><p style="margin:0"><b>Nuria L&oacute;pez-Alc&aacute;ntara</b></p></div>
     <div class="sec"><span class="label">Icon library</span><p class="small" style="margin:0">Specimen Studio icon library by Nuria L&oacute;pez-Alc&aacute;ntara, licensed under <b>CC BY 4.0</b>: free to use and adapt, with credit. The icons were generated with ChatGPT (OpenAI) and Claude (Anthropic) from human-written prompts, then vectorised and reviewed. For a figure legend, &ldquo;Figure created by the authors using Specimen Studio. Icons were generated from human prompts using ChatGPT (OpenAI) and Claude (Anthropic).&rdquo; is enough; Export shows it ready to copy. Please also check your journal&rsquo;s AI policy.</p></div>
-    <div class="sec"><span class="label">Claude version</span><p class="small" style="margin:0">Invited Claude users can also open Specimen Studio in Claude (browser or Claude app), with AI drawing (beta): <a href="https://claude.ai/artifact/FbV4uJuBRnNFq2Nyeigy2A" target="_blank" rel="noopener">open in Claude</a>. Your figures there are separate from the ones saved on this website.</p></div><div class="sec"><span class="label">Built with</span><p class="small" style="margin:0">Claude (Anthropic)</p></div>
+    <div class="sec"><span class="label">Claude version</span><p class="small" style="margin:0">Specimen Studio also opens in Claude (browser or Claude app), with AI drawing (beta): <a href="https://claude.ai/artifact/FbV4uJuBRnNFq2Nyeigy2A" target="_blank" rel="noopener">open in Claude</a>. Your figures there are separate from the ones saved on this website.</p></div><div class="sec"><span class="label">Built with</span><p class="small" style="margin:0">Claude (Anthropic)</p></div>
     <p class="small muted" style="margin:0">&copy; 2026 Nuria L&oacute;pez-Alc&aacute;ntara</p>
   </div>
 </div>
@@ -2186,6 +2186,8 @@ function alignSel(mode) {
 
 /* keyboard */
 // part of a text is selected while editing: style changes go to those characters only
+// an icon that came straight from the gallery (no point suggesting it back)
+const fromGallery = o => !!(o && o.iconId && LIB.icons.some(x => x.id === o.iconId));
 const textRanged = o => !!(o && o.isEditing && o.selectionStart !== o.selectionEnd);
 const typing = () => { const a = document.activeElement; const o = canvas.getActiveObject(); return (a && /^(INPUT|TEXTAREA|SELECT)$/.test(a.tagName) && !a.closest('.canvas-container')) || (o && o.isEditing); };
 document.addEventListener('keydown', e => {
@@ -4362,7 +4364,7 @@ function renderInspector() {
     <div class="sec"><span class="label">Align</span><div class="btnrow">${['l', 'ch', 'r', 't', 'cv', 'b'].map(k => `<button data-align="${k}" title="${{ l: 'Align left', ch: 'Align centres', r: 'Align right', t: 'Align top', cv: 'Align middles', b: 'Align bottom' }[k]}">${ICON[k]}</button>`).join('')}</div>
     <span class="label">Distribute</span><div class="btnrow"><button data-align="dh" title="Distribute horizontally">${ICON.dh}</button><button data-align="dv" title="Distribute vertically">${ICON.dv}</button></div></div>
     <div class="sec"><span class="label">Colour presets</span><div class="presetrow">${PRESETS.map(p => `<button class="pbtn" data-ipreset="${p.id}" title="${esc(p.label)}"><span class="pthumb" data-pv="${p.id}"></span>${esc(p.label)}</button>`).join('')}</div></div>
-    <div class="sec"><div class="row"><button class="btn grow" data-op="group">Group</button><button class="btn grow" data-op="save">Save to My icons</button></div>
+    <div class="sec"><div class="row"><button class="btn grow" data-op="group">Group</button><button class="btn grow" data-op="save">Save to My icons</button></div>${fromGallery(o) ? '' : `<button class="btn sm block" data-op="suggest" title="Save this icon as a file and open the form to send it to Specimen Studio for the gallery">Suggest for the gallery ↗</button>`}
     <div class="row"><button class="btn grow" data-op="dup">Duplicate</button><button class="btn grow danger" data-op="del">Delete</button></div></div>`;
   } else {
     const br = o.getBoundingRect(true, true);
@@ -4466,7 +4468,7 @@ function renderInspector() {
         <p class="small muted" style="margin:0" id="aiEditHint">${aiEditMode === 'redraw' ? 'Claude redraws the whole icon. Its look will change; Ctrl+Z restores it.' : 'The icon stays exactly as it is; Claude draws only what you ask for on top of it.'}</p>
         <textarea id="aiEditTxt" placeholder="${aiEditMode === 'redraw' ? 'e.g. make it a cross-section; show it apoptotic' : 'e.g. add rod-shaped bacteria on the surface; add three lipid droplets'}"></textarea>
         <button class="btn" id="aiEditGo" data-ai-action>AI draw</button><div class="status" id="inspAiStatus"></div></div>`}
-      <div class="sec"><div class="row"><button class="btn grow" data-op="ungroup">Ungroup</button><button class="btn grow" data-op="save">Save to My icons</button></div></div>`;
+      <div class="sec"><div class="row"><button class="btn grow" data-op="ungroup">Ungroup</button><button class="btn grow" data-op="save">Save to My icons</button></div>${fromGallery(o) ? '' : `<button class="btn sm block" data-op="suggest" title="Save this icon as a file and open the form to send it to Specimen Studio for the gallery">Suggest for the gallery ↗</button>`}</div>`;
     }
     if (o.type === 'image') {
       const os = o.getOriginalSize(), cx = o.cropX || 0, cy = o.cropY || 0;
@@ -4484,7 +4486,7 @@ function renderInspector() {
         <label class="small muted">Contrast <input type="range" id="adjC" min="-0.6" max="0.6" step="0.02" value="${getF('Contrast')?.contrast ?? 0}"></label>
         <label class="small muted">Saturation <input type="range" id="adjS" min="-1" max="1" step="0.02" value="${getF('Saturation')?.saturation ?? 0}"></label>
         <label class="check"><input type="checkbox" id="adjG" ${getF('Grayscale') ? 'checked' : ''}> Greyscale</label></div>
-      <div class="sec"><button class="btn block" data-op="save">Save to My icons</button></div>`;
+      <div class="sec"><button class="btn block" data-op="save">Save to My icons</button>${fromGallery(o) ? '' : `<button class="btn sm block" data-op="suggest" title="Save this icon as a file and open the form to send it to Specimen Studio for the gallery">Suggest for the gallery ↗</button>`}</div>`;
     }
     if (o.type === 'group' || o.type === 'image' || o.type === 'path') html += sourceSection(o);
     html += `<div class="sec"><div class="row"><button class="btn grow" data-op="dup">Duplicate</button><button class="btn grow" data-op="lock">Lock</button><button class="btn grow danger" data-op="del">Delete</button></div></div>`;
@@ -4739,6 +4741,18 @@ async function inspectorOp(op, o, btn) {
     case 'straight': o.set('curve', 0); canvas.requestRenderAll(); commit(); renderInspector(); break;
     case 'recrop': startCrop(o); break;
     case 'uncrop': removeCrop(o); break;
+    case 'suggest': {   // send an icon to Nuria for the gallery: open the form, then save the file to attach (21 Oct: no server on the website)
+      const parts = creditsOf(o.type === 'activeSelection' ? o.getObjects() : [o]);
+      if (parts.length) { toast('This icon contains parts from other sources (' + parts[0].split(',')[0] + '). Only send icons you made yourself.', 'err'); break; }
+      const a = document.createElement('a'); a.href = ICON_REQUEST_URL; a.target = '_blank'; a.rel = 'noopener'; document.body.appendChild(a); a.click(); a.remove();
+      const base = (o.name || 'my-icon').replace(/[^\w\- ]+/g, '').trim().replace(/\s+/g, '-').toLowerCase() || 'my-icon';
+      try {
+        if (o.type === 'image') { const c = elementToCanvas(o._originalElement || o.getElement(), 4000); await offerFile(base + '.png', await new Promise(r => c.toBlob(r, 'image/png'))); }
+        else await offerFile(base + '.svg', sanitizeSvg(await objectToSvg(o)));
+        toast('In the form, attach the file you just saved and say how you made the icon. Thank you!');
+      } catch (err) { toast(err.message || 'Could not save the file', 'err'); }
+      break;
+    }
     case 'save': {
       btn.disabled = true; const label = btn.textContent; btn.textContent = 'Saving…';
       try {
