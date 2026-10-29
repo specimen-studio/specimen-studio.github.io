@@ -7,8 +7,8 @@ International licence (CC BY 4.0): https://creativecommons.org/licenses/by/4.0/
 You may use, share and adapt them, also commercially, as long as you give credit.
 
 Credit in a figure legend - this line is sufficient:
-  Created with Specimen Studio. Icons were generated with ChatGPT (OpenAI) and
-  Claude (Anthropic) and vectorised.
+  Figure created by the authors using Specimen Studio. Icons were generated from
+  human prompts using ChatGPT (OpenAI) and Claude (Anthropic).
 
 For the methods / AI-use statement:
   Schematic icons were obtained from the Specimen Studio icon library (CC BY 4.0).
