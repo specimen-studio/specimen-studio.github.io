@@ -41,8 +41,9 @@ button{cursor:pointer}
 .brand{display:flex;align-items:baseline;gap:5px;font-family:var(--font-display);font-size:18px;letter-spacing:-.01em;white-space:nowrap;padding-right:6px}
 .brand svg{align-self:center;flex:none}
 .brand em{font-style:normal;color:var(--accent)}
-.projname{border:1px solid transparent;background:transparent;border-radius:6px;padding:5px 8px;font-weight:500;min-width:60px;width:240px;max-width:30vw}
+.projname{border:1px solid var(--accent);background:transparent;border-radius:6px;padding:5px 8px;font-weight:500;min-width:60px;width:240px;max-width:30vw}
 .projname:hover{border-color:var(--line)}
+#projName,#projName:hover{border-color:var(--accent);min-width:120px}
 .projname:focus{border-color:var(--accent);background:var(--panel-2);outline:none}
 .savestate{font-size:12px;color:var(--fg-3);white-space:nowrap}
 .savestate.dirty{color:var(--warn)}
@@ -370,7 +371,7 @@ body.resizing{cursor:col-resize;user-select:none}
       <button class="btn ghost icon" id="zoomIn" aria-label="Zoom in">+</button>
     </div>
     <button class="btn" id="btnSave" title="Save (Ctrl+S)">Save</button>
-    <button class="btn ghost" id="btnSaveAs" title="Save as a new, separate figure (Ctrl+Shift+S)">Save as…</button>
+    <button class="btn ghost" id="btnSaveAs" title="Save as a new, separate figure (Ctrl+Shift+S)">Save figure as…</button>
     <button class="btn primary" id="btnExport">Export</button>
     <button class="btn only-narrow" id="btnInspector" aria-label="Properties">Properties</button>
   </header>
@@ -538,10 +539,6 @@ body.resizing{cursor:col-resize;user-select:none}
         <input type="text" id="upCredit" placeholder="Credit line, e.g. Author, website, CC BY 4.0" hidden>
         <p class="small muted" style="margin:0">The licence travels with each icon, and the credit line for your figure legend is written automatically.</p></div>
       <div class="note"><b>Remove background</b>, <b>Convert to vector</b> and <b>Redraw with AI</b> appear in the right panel when a picture is selected.</div>
-      <div class="sec">
-        <span class="label">Tip for AI image tools</span>
-        <p class="small muted" style="margin:0">Ask ChatGPT or Gemini for <i>“a flat scientific vector icon of …, centred, on a plain white background, no text, no shadow”</i>. Plain backgrounds clean up best.</p>
-      </div>
       <div class="sec">
         <span class="label">Free icon libraries</span>
         <div id="freeSourcesUp"></div>
