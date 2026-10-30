@@ -2138,27 +2138,41 @@
    ]
   },
   {
-   "id": "organs/brown-fat",
-   "name": "Brown adipose tissue (lobulated)",
+   "id": "organs/female-reproductive-tract",
+   "name": "Female reproductive tract (mouse): ovaries and uterine horns",
    "cat": "organs",
    "tags": [
-    "brown adipose tissue",
-    "BAT",
-    "brown fat",
-    "thermogenesis",
-    "adipose",
-    "tissue"
+    "female reproductive tract",
+    "uterus",
+    "uterine horns",
+    "bicornuate uterus",
+    "ovary",
+    "ovaries",
+    "oviduct",
+    "cervix",
+    "reproductive system",
+    "mouse",
+    "female"
    ],
    "license": "own",
    "credit": "",
-   "file": "library/icons/organs/brown-fat.svg",
+   "file": "library/icons/organs/female-reproductive-tract.svg",
    "aliases": [
-    "BAT",
-    "brown fat",
-    "brown adipose tissue",
-    "thermogenesis",
-    "UCP1",
-    "braunes Fettgewebe"
+    "female reproductive tract",
+    "reproductive system",
+    "uterus",
+    "uterine horns",
+    "bicornuate uterus",
+    "ovary",
+    "ovaries",
+    "oviduct",
+    "fallopian tube",
+    "cervix",
+    "vagina",
+    "fertility",
+    "pregnancy",
+    "Gebärmutter",
+    "Eierstock"
    ]
   },
   {
@@ -2564,6 +2578,38 @@
     "cohort",
     "Maus",
     "Mäuse"
+   ]
+  },
+  {
+   "id": "animals/rat-white-side",
+   "name": "White lab rat, side view",
+   "cat": "animals",
+   "tags": [
+    "rat",
+    "lab rat",
+    "laboratory rat",
+    "albino rat",
+    "Wistar",
+    "Sprague-Dawley",
+    "rodent",
+    "animal model",
+    "side view"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/animals/rat-white-side.svg",
+   "aliases": [
+    "rat",
+    "lab rat",
+    "laboratory rat",
+    "white rat",
+    "albino rat",
+    "Wistar",
+    "Sprague-Dawley",
+    "rodent",
+    "animal model",
+    "Ratte",
+    "Laborratte"
    ]
   },
   {
