@@ -1548,31 +1548,6 @@
    ]
   },
   {
-   "id": "molecules/membrane-curved",
-   "name": "Membrane segment, curved",
-   "cat": "molecules",
-   "tags": [
-    "membrane",
-    "plasma membrane",
-    "lipid bilayer",
-    "cell membrane",
-    "curved membrane",
-    "bilayer"
-   ],
-   "license": "own",
-   "credit": "",
-   "file": "library/icons/molecules/membrane-curved.svg",
-   "aliases": [
-    "membrane",
-    "curved membrane",
-    "plasma membrane",
-    "lipid bilayer",
-    "cell membrane",
-    "cell surface",
-    "Membran"
-   ]
-  },
-  {
    "id": "molecules/methylation",
    "name": "DNA methylation",
    "cat": "molecules",
@@ -2044,28 +2019,6 @@
    ]
   },
   {
-   "id": "molecules/trimer",
-   "name": "Trimer (three subunits)",
-   "cat": "molecules",
-   "tags": [
-    "trimer",
-    "protein complex",
-    "three subunits",
-    "oligomer",
-    "multimer"
-   ],
-   "license": "own",
-   "credit": "",
-   "file": "library/icons/molecules/trimer.svg",
-   "aliases": [
-    "trimer",
-    "oligomer",
-    "multimer",
-    "protein complex",
-    "three subunits"
-   ]
-  },
-  {
    "id": "molecules/water",
    "name": "Water",
    "cat": "molecules",
@@ -2486,6 +2439,43 @@
    ]
   },
   {
+   "id": "organs/uterus-fetuses-section",
+   "name": "Pregnant uterus, cross-section with four fetuses",
+   "cat": "organs",
+   "tags": [
+    "pregnant uterus",
+    "uterus",
+    "fetus",
+    "fetuses",
+    "embryo",
+    "placenta",
+    "pregnancy",
+    "gestation",
+    "litter",
+    "mouse",
+    "cross-section"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/organs/uterus-fetuses-section.svg",
+   "aliases": [
+    "pregnant uterus",
+    "uterus",
+    "fetus",
+    "fetuses",
+    "embryo",
+    "placenta",
+    "pregnancy",
+    "gestation",
+    "litter",
+    "cross-section",
+    "mouse",
+    "Gebärmutter",
+    "Fötus",
+    "Schwangerschaft"
+   ]
+  },
+  {
    "id": "organs/white-adipose-section",
    "name": "White adipose tissue section with immune cells",
    "cat": "organs",
@@ -2783,6 +2773,34 @@
     "rodent diet",
     "food pellets",
     "Futter"
+   ]
+  },
+  {
+   "id": "lab/cuvette",
+   "name": "Cuvette (tall, with liquid)",
+   "cat": "lab",
+   "tags": [
+    "cuvette",
+    "spectrophotometer",
+    "absorbance",
+    "OD",
+    "sample cuvette",
+    "electroporation cuvette",
+    "cell"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/lab/cuvette.svg",
+   "aliases": [
+    "cuvette",
+    "spectrophotometer",
+    "absorbance",
+    "optical density",
+    "OD600",
+    "photometer",
+    "electroporation cuvette",
+    "sample",
+    "Küvette"
    ]
   },
   {
@@ -4162,6 +4180,38 @@
     "z-score",
     "expression matrix",
     "Clusteranalyse"
+   ]
+  },
+  {
+   "id": "data/omics-heatmap-atac",
+   "name": "Expression heatmap plus ATAC-seq tracks (multi-omics)",
+   "cat": "data",
+   "tags": [
+    "heatmap",
+    "gene expression",
+    "RNA-seq",
+    "ATAC-seq",
+    "chromatin accessibility",
+    "peaks",
+    "multi-omics",
+    "multiome",
+    "integration"
+   ],
+   "license": "own",
+   "credit": "",
+   "file": "library/icons/data/omics-heatmap-atac.svg",
+   "aliases": [
+    "heatmap",
+    "gene expression",
+    "RNA-seq",
+    "ATAC-seq",
+    "chromatin accessibility",
+    "peaks",
+    "signal tracks",
+    "multi-omics",
+    "multiome",
+    "integration",
+    "single-cell"
    ]
   },
   {
